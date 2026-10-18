@@ -1,0 +1,20 @@
+{
+  "version_id": "09fa06ed790e2951406513ff16ad312413ff994a1586e62e7a6cc463ad9e3026",
+  "project_id": "proj_ben_03",
+  "timeline_hash": "ff0852ca5820f0c0e9d7184414b3059a12570b5339ebb30515eecdb31f055306",
+  "parents": [
+    "bfc1865e7f3038d1ba15ace037ab86e3b9861ea598e1e57178e57f547dd40c4c"
+  ],
+  "branch": "ben/cut-08",
+  "author": "director",
+  "timestamp": "2026-06-20T13:00:44+05:30",
+  "message": "Director: color_grade, transition",
+  "op_ids": [
+    "proj_ben_03/op_0069",
+    "proj_ben_03/op_0070",
+    "proj_ben_03/op_0071",
+    "proj_ben_03/op_0072",
+    "proj_ben_03/op_0073"
+  ],
+  "session_id": "ben_s08"
+}

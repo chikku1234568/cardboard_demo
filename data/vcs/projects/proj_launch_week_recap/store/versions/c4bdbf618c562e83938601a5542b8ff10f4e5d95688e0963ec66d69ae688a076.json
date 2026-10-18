@@ -1,0 +1,17 @@
+{
+  "version_id": "c4bdbf618c562e83938601a5542b8ff10f4e5d95688e0963ec66d69ae688a076",
+  "project_id": "proj_launch_week_recap",
+  "timeline_hash": "4fa074fba1deee8fbd9abf1d8afe911785093515a8a31a4b9dcf27d430c5cb8b",
+  "parents": [
+    "80ce1c7636bd5d6b7b494ad0aa089473d7883a9040f08b8819c621116ddfa63c"
+  ],
+  "branch": "ben/alt-pacing",
+  "author": "ben",
+  "timestamp": "2026-10-16T12:25:00+05:30",
+  "message": "Keep more of the B-cam answer, duck music",
+  "op_ids": [
+    "proj_launch_week_recap/op_0006",
+    "proj_launch_week_recap/op_0007"
+  ],
+  "session_id": "team_northwind_s35"
+}

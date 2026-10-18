@@ -1,0 +1,99 @@
+{
+  "context_keys": [
+    "footage_type",
+    "prev_edit",
+    "format",
+    "section"
+  ],
+  "context_values": {
+    "footage_type": [
+      "talking_head",
+      "broll",
+      "screen_recording",
+      "product"
+    ],
+    "prev_edit": [
+      "jump_cut",
+      "scene_change",
+      "broll_insert",
+      "none"
+    ],
+    "format": [
+      "16:9",
+      "9:16",
+      "1:1"
+    ],
+    "section": [
+      "hook",
+      "body",
+      "outro"
+    ]
+  },
+  "actions": {
+    "transition": [
+      "hard_cut",
+      "crossfade",
+      "whip_pan",
+      "dip_to_black",
+      "zoom_punch",
+      "slide",
+      "glitch"
+    ],
+    "font": [
+      "Inter",
+      "Montserrat",
+      "Bebas Neue",
+      "Playfair Display",
+      "Roboto",
+      "Comic Sans MS"
+    ],
+    "color_grade": [
+      "warm_film",
+      "teal_orange",
+      "neutral_clean",
+      "high_contrast",
+      "pastel"
+    ],
+    "cut_length": [
+      "short",
+      "medium",
+      "long"
+    ],
+    "caption_style": [
+      "word_pop",
+      "minimal_modern",
+      "stacked",
+      "beast_mode",
+      "golden_serif"
+    ],
+    "music_mood": [
+      "upbeat",
+      "chill_lofi",
+      "cinematic",
+      "corporate",
+      "dramatic_horror"
+    ]
+  },
+  "cut_length_buckets_seconds": {
+    "short": [
+      0.6,
+      1.5
+    ],
+    "medium": [
+      1.5,
+      4.0
+    ],
+    "long": [
+      4.0,
+      7.5
+    ]
+  },
+  "event_types": [
+    "agent_edit",
+    "user_accept",
+    "user_override",
+    "undo",
+    "user_edit",
+    "explicit_statement"
+  ]
+}

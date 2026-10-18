@@ -1,0 +1,30 @@
+{
+  "project_id": "proj_team_northwind_09",
+  "note": "Branch refs. No main: every branch is a peer.",
+  "branches": {
+    "rough-cut": {
+      "head": "a496ed7728c8641bbbe016666679041bb6d43510cca2e9c966bdc27eea19b943",
+      "created_from": null,
+      "created_by": "ben",
+      "created_at": "2026-09-16T17:38:00+05:30"
+    },
+    "ben/cut-25": {
+      "head": "8004cc7f0c39238edfe50a38173c8245bab4c3cff0307708165e65e34ec83709",
+      "created_from": "a496ed7728c8641bbbe016666679041bb6d43510cca2e9c966bdc27eea19b943",
+      "created_by": "ben",
+      "created_at": "2026-09-16T17:38:30+05:30"
+    },
+    "cara/cut-26": {
+      "head": "83e48302766a19754c75a0a93d967c1adf6506f52a036fc8b9155e2773f46f5f",
+      "created_from": "a496ed7728c8641bbbe016666679041bb6d43510cca2e9c966bdc27eea19b943",
+      "created_by": "cara",
+      "created_at": "2026-09-17T11:46:30+05:30"
+    },
+    "ava/cut-27": {
+      "head": "6dabdb6f659914727a48c63b35a71a85c769992430b9b7add0aa25f545e1b236",
+      "created_from": "a496ed7728c8641bbbe016666679041bb6d43510cca2e9c966bdc27eea19b943",
+      "created_by": "ava",
+      "created_at": "2026-09-23T19:21:30+05:30"
+    }
+  }
+}

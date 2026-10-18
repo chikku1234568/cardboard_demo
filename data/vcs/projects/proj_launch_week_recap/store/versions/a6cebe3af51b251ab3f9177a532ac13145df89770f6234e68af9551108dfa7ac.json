@@ -1,0 +1,17 @@
+{
+  "version_id": "a6cebe3af51b251ab3f9177a532ac13145df89770f6234e68af9551108dfa7ac",
+  "project_id": "proj_launch_week_recap",
+  "timeline_hash": "903b11fe87ae32d2203445c722c558d65ffadeb68bf481a394d8415bec5ba145",
+  "parents": [
+    "9446faed921b7653cd3dd39c5fea5652e0abe13ce157e9842611e81f506b4a06"
+  ],
+  "branch": "ava/alt-ending",
+  "author": "ava",
+  "timestamp": "2026-10-17T09:40:00+05:30",
+  "message": "Shorter sign-off: split and drop the tail",
+  "op_ids": [
+    "proj_launch_week_recap/op_0008",
+    "proj_launch_week_recap/op_0009"
+  ],
+  "session_id": "team_northwind_s36"
+}

@@ -1,0 +1,1802 @@
+[
+ {
+  "after": "ben_s01",
+  "nodes": {
+   "Project": 1,
+   "Session": 1,
+   "Op": 41,
+   "Context": 66,
+   "Preference": 124,
+   "Creator": 3,
+   "Team": 1,
+   "Brand": 1
+  },
+  "relationships": 744,
+  "active_preferences": 112,
+  "supersessions": 0
+ },
+ {
+  "after": "ava_s01",
+  "nodes": {
+   "Project": 2,
+   "Session": 2,
+   "Op": 85,
+   "Context": 100,
+   "Preference": 212,
+   "Creator": 3,
+   "Team": 1,
+   "Brand": 1
+  },
+  "relationships": 1322,
+  "active_preferences": 200,
+  "supersessions": 0
+ },
+ {
+  "after": "ava_s02",
+  "nodes": {
+   "Project": 2,
+   "Session": 3,
+   "Op": 118,
+   "Context": 135,
+   "Preference": 322,
+   "ChatStatement": 1,
+   "Creator": 3,
+   "Team": 1,
+   "Brand": 1
+  },
+  "relationships": 2048,
+  "active_preferences": 310,
+  "supersessions": 0
+ },
+ {
+  "after": "ben_s02",
+  "nodes": {
+   "Project": 2,
+   "Session": 4,
+   "Op": 174,
+   "Context": 137,
+   "Preference": 498,
+   "ChatStatement": 1,
+   "Creator": 3,
+   "Team": 1,
+   "Brand": 1
+  },
+  "relationships": 3205,
+  "active_preferences": 486,
+  "supersessions": 0
+ },
+ {
+  "after": "ben_s03",
+  "nodes": {
+   "Project": 2,
+   "Session": 5,
+   "Op": 212,
+   "Context": 137,
+   "Preference": 555,
+   "ChatStatement": 2,
+   "Creator": 3,
+   "Team": 1,
+   "Brand": 1
+  },
+  "relationships": 3808,
+  "active_preferences": 543,
+  "supersessions": 0
+ },
+ {
+  "after": "team_northwind_s01",
+  "nodes": {
+   "Project": 3,
+   "Session": 6,
+   "Op": 248,
+   "Context": 145,
+   "Preference": 577,
+   "ChatStatement": 4,
+   "Creator": 3,
+   "Team": 1,
+   "Brand": 1
+  },
+  "relationships": 3997,
+  "active_preferences": 565,
+  "supersessions": 0
+ },
+ {
+  "after": "ben_s04",
+  "nodes": {
+   "Project": 4,
+   "Session": 7,
+   "Op": 291,
+   "Context": 155,
+   "Preference": 643,
+   "ChatStatement": 4,
+   "Creator": 3,
+   "Team": 1,
+   "Brand": 1
+  },
+  "relationships": 4542,
+  "active_preferences": 629,
+  "supersessions": 2
+ },
+ {
+  "after": "team_northwind_s02",
+  "nodes": {
+   "Project": 4,
+   "Session": 8,
+   "Op": 333,
+   "Context": 177,
+   "Preference": 697,
+   "ChatStatement": 4,
+   "Creator": 3,
+   "Team": 1,
+   "Brand": 1
+  },
+  "relationships": 4954,
+  "active_preferences": 683,
+  "supersessions": 2
+ },
+ {
+  "after": "ava_s03",
+  "nodes": {
+   "Project": 4,
+   "Session": 9,
+   "Op": 376,
+   "Context": 177,
+   "Preference": 847,
+   "ChatStatement": 4,
+   "Creator": 3,
+   "Team": 1,
+   "Brand": 1
+  },
+  "relationships": 5886,
+  "active_preferences": 833,
+  "supersessions": 2
+ },
+ {
+  "after": "ben_s05",
+  "nodes": {
+   "Project": 4,
+   "Session": 10,
+   "Op": 419,
+   "Context": 181,
+   "Preference": 1003,
+   "ChatStatement": 4,
+   "Creator": 3,
+   "Team": 1,
+   "Brand": 1
+  },
+  "relationships": 6856,
+  "active_preferences": 989,
+  "supersessions": 2
+ },
+ {
+  "after": "ben_s06",
+  "nodes": {
+   "Project": 4,
+   "Session": 11,
+   "Op": 463,
+   "Context": 181,
+   "Preference": 1066,
+   "ChatStatement": 5,
+   "Creator": 3,
+   "Team": 1,
+   "Brand": 1
+  },
+  "relationships": 7688,
+  "active_preferences": 1040,
+  "supersessions": 14
+ },
+ {
+  "after": "ben_s07",
+  "nodes": {
+   "Project": 5,
+   "Session": 12,
+   "Op": 507,
+   "Context": 187,
+   "Preference": 1084,
+   "ChatStatement": 5,
+   "Creator": 3,
+   "Team": 1,
+   "Brand": 1
+  },
+  "relationships": 8272,
+  "active_preferences": 1056,
+  "supersessions": 16
+ },
+ {
+  "after": "team_northwind_s03",
+  "nodes": {
+   "Project": 5,
+   "Session": 13,
+   "Op": 549,
+   "Context": 187,
+   "Preference": 1148,
+   "ChatStatement": 5,
+   "Creator": 3,
+   "Team": 1,
+   "Brand": 1
+  },
+  "relationships": 8751,
+  "active_preferences": 1118,
+  "supersessions": 18
+ },
+ {
+  "after": "ben_s08",
+  "nodes": {
+   "Project": 5,
+   "Session": 14,
+   "Op": 589,
+   "Context": 187,
+   "Preference": 1188,
+   "ChatStatement": 5,
+   "Creator": 3,
+   "Team": 1,
+   "Brand": 1
+  },
+  "relationships": 9346,
+  "active_preferences": 1158,
+  "supersessions": 18
+ },
+ {
+  "after": "team_northwind_s04",
+  "nodes": {
+   "Project": 6,
+   "Session": 15,
+   "Op": 630,
+   "Context": 203,
+   "Preference": 1213,
+   "ChatStatement": 5,
+   "Creator": 3,
+   "Team": 1,
+   "Brand": 1
+  },
+  "relationships": 9675,
+  "active_preferences": 1182,
+  "supersessions": 19
+ },
+ {
+  "after": "ben_s09",
+  "nodes": {
+   "Project": 6,
+   "Session": 16,
+   "Op": 666,
+   "Context": 203,
+   "Preference": 1285,
+   "ChatStatement": 5,
+   "Creator": 3,
+   "Team": 1,
+   "Brand": 1
+  },
+  "relationships": 10336,
+  "active_preferences": 1250,
+  "supersessions": 23
+ },
+ {
+  "after": "team_northwind_s05",
+  "nodes": {
+   "Project": 6,
+   "Session": 17,
+   "Op": 711,
+   "Context": 214,
+   "Preference": 1344,
+   "ChatStatement": 5,
+   "Creator": 3,
+   "Team": 1,
+   "Brand": 1
+  },
+  "relationships": 10844,
+  "active_preferences": 1307,
+  "supersessions": 25
+ },
+ {
+  "after": "ava_s04",
+  "nodes": {
+   "Project": 7,
+   "Session": 18,
+   "Op": 746,
+   "Context": 216,
+   "Preference": 1401,
+   "ChatStatement": 5,
+   "Creator": 3,
+   "Team": 1,
+   "Brand": 1
+  },
+  "relationships": 11231,
+  "active_preferences": 1364,
+  "supersessions": 25
+ },
+ {
+  "after": "ben_s10",
+  "nodes": {
+   "Project": 8,
+   "Session": 19,
+   "Op": 794,
+   "Context": 216,
+   "Preference": 1445,
+   "ChatStatement": 5,
+   "Creator": 3,
+   "Team": 1,
+   "Brand": 1
+  },
+  "relationships": 12011,
+  "active_preferences": 1388,
+  "supersessions": 45
+ },
+ {
+  "after": "ava_s05",
+  "nodes": {
+   "Project": 8,
+   "Session": 20,
+   "Op": 833,
+   "Context": 217,
+   "Preference": 1501,
+   "ChatStatement": 6,
+   "Creator": 3,
+   "Team": 1,
+   "Brand": 1
+  },
+  "relationships": 12498,
+  "active_preferences": 1444,
+  "supersessions": 45
+ },
+ {
+  "after": "team_northwind_s06",
+  "nodes": {
+   "Project": 8,
+   "Session": 21,
+   "Op": 881,
+   "Context": 217,
+   "Preference": 1560,
+   "ChatStatement": 6,
+   "Creator": 3,
+   "Team": 1,
+   "Brand": 1
+  },
+  "relationships": 13063,
+  "active_preferences": 1502,
+  "supersessions": 46
+ },
+ {
+  "after": "ava_s06",
+  "nodes": {
+   "Project": 8,
+   "Session": 22,
+   "Op": 915,
+   "Context": 217,
+   "Preference": 1652,
+   "ChatStatement": 6,
+   "Creator": 3,
+   "Team": 1,
+   "Brand": 1
+  },
+  "relationships": 13771,
+  "active_preferences": 1594,
+  "supersessions": 46
+ },
+ {
+  "after": "ava_s07",
+  "nodes": {
+   "Project": 9,
+   "Session": 23,
+   "Op": 953,
+   "Context": 217,
+   "Preference": 1696,
+   "ChatStatement": 6,
+   "Creator": 3,
+   "Team": 1,
+   "Brand": 1
+  },
+  "relationships": 14284,
+  "active_preferences": 1638,
+  "supersessions": 46
+ },
+ {
+  "after": "ava_s08",
+  "nodes": {
+   "Project": 9,
+   "Session": 24,
+   "Op": 993,
+   "Context": 220,
+   "Preference": 1752,
+   "ChatStatement": 6,
+   "Creator": 3,
+   "Team": 1,
+   "Brand": 1
+  },
+  "relationships": 14832,
+  "active_preferences": 1692,
+  "supersessions": 48
+ },
+ {
+  "after": "ben_s11",
+  "nodes": {
+   "Project": 9,
+   "Session": 25,
+   "Op": 1036,
+   "Context": 220,
+   "Preference": 1820,
+   "ChatStatement": 6,
+   "Creator": 3,
+   "Team": 1,
+   "Brand": 1
+  },
+  "relationships": 15439,
+  "active_preferences": 1760,
+  "supersessions": 48
+ },
+ {
+  "after": "ava_s09",
+  "nodes": {
+   "Project": 9,
+   "Session": 26,
+   "Op": 1084,
+   "Context": 220,
+   "Preference": 1870,
+   "ChatStatement": 7,
+   "Creator": 3,
+   "Team": 1,
+   "Brand": 1
+  },
+  "relationships": 16116,
+  "active_preferences": 1806,
+  "supersessions": 52
+ },
+ {
+  "after": "ava_s10",
+  "nodes": {
+   "Project": 10,
+   "Session": 27,
+   "Op": 1125,
+   "Context": 220,
+   "Preference": 1921,
+   "ChatStatement": 7,
+   "Creator": 3,
+   "Team": 1,
+   "Brand": 1
+  },
+  "relationships": 16692,
+  "active_preferences": 1857,
+  "supersessions": 52
+ },
+ {
+  "after": "ben_s12",
+  "nodes": {
+   "Project": 10,
+   "Session": 28,
+   "Op": 1172,
+   "Context": 254,
+   "Preference": 1962,
+   "ChatStatement": 7,
+   "Creator": 3,
+   "Team": 1,
+   "Brand": 1
+  },
+  "relationships": 17245,
+  "active_preferences": 1897,
+  "supersessions": 53
+ },
+ {
+  "after": "ben_s13",
+  "nodes": {
+   "Project": 11,
+   "Session": 29,
+   "Op": 1222,
+   "Context": 256,
+   "Preference": 1974,
+   "ChatStatement": 7,
+   "Creator": 3,
+   "Team": 1,
+   "Brand": 1
+  },
+  "relationships": 17924,
+  "active_preferences": 1909,
+  "supersessions": 53
+ },
+ {
+  "after": "team_northwind_s07",
+  "nodes": {
+   "Project": 12,
+   "Session": 30,
+   "Op": 1263,
+   "Context": 260,
+   "Preference": 1995,
+   "ChatStatement": 7,
+   "Creator": 3,
+   "Team": 1,
+   "Brand": 1
+  },
+  "relationships": 18306,
+  "active_preferences": 1930,
+  "supersessions": 53
+ },
+ {
+  "after": "ava_s11",
+  "nodes": {
+   "Project": 12,
+   "Session": 31,
+   "Op": 1309,
+   "Context": 260,
+   "Preference": 2054,
+   "ChatStatement": 7,
+   "Creator": 3,
+   "Team": 1,
+   "Brand": 1
+  },
+  "relationships": 19090,
+  "active_preferences": 1988,
+  "supersessions": 54
+ },
+ {
+  "after": "ben_s14",
+  "nodes": {
+   "Project": 12,
+   "Session": 32,
+   "Op": 1351,
+   "Context": 264,
+   "Preference": 2137,
+   "ChatStatement": 7,
+   "Creator": 3,
+   "Team": 1,
+   "Brand": 1
+  },
+  "relationships": 19905,
+  "active_preferences": 2055,
+  "supersessions": 70
+ },
+ {
+  "after": "team_northwind_s08",
+  "nodes": {
+   "Project": 12,
+   "Session": 33,
+   "Op": 1393,
+   "Context": 266,
+   "Preference": 2176,
+   "ChatStatement": 8,
+   "Creator": 3,
+   "Team": 1,
+   "Brand": 1
+  },
+  "relationships": 20311,
+  "active_preferences": 2093,
+  "supersessions": 71
+ },
+ {
+  "after": "ava_s12",
+  "nodes": {
+   "Project": 12,
+   "Session": 34,
+   "Op": 1437,
+   "Context": 266,
+   "Preference": 2211,
+   "ChatStatement": 8,
+   "Creator": 3,
+   "Team": 1,
+   "Brand": 1
+  },
+  "relationships": 20980,
+  "active_preferences": 2125,
+  "supersessions": 74
+ },
+ {
+  "after": "team_northwind_s09",
+  "nodes": {
+   "Project": 12,
+   "Session": 35,
+   "Op": 1482,
+   "Context": 266,
+   "Preference": 2240,
+   "ChatStatement": 8,
+   "Creator": 3,
+   "Team": 1,
+   "Brand": 1
+  },
+  "relationships": 21399,
+  "active_preferences": 2154,
+  "supersessions": 74
+ },
+ {
+  "after": "ava_s13",
+  "nodes": {
+   "Project": 13,
+   "Session": 36,
+   "Op": 1523,
+   "Context": 292,
+   "Preference": 2280,
+   "ChatStatement": 8,
+   "Creator": 3,
+   "Team": 1,
+   "Brand": 1
+  },
+  "relationships": 21950,
+  "active_preferences": 2194,
+  "supersessions": 74
+ },
+ {
+  "after": "ava_s14",
+  "nodes": {
+   "Project": 13,
+   "Session": 37,
+   "Op": 1561,
+   "Context": 296,
+   "Preference": 2310,
+   "ChatStatement": 9,
+   "Creator": 3,
+   "Team": 1,
+   "Brand": 1
+  },
+  "relationships": 22414,
+  "active_preferences": 2223,
+  "supersessions": 75
+ },
+ {
+  "after": "ben_s15",
+  "nodes": {
+   "Project": 13,
+   "Session": 38,
+   "Op": 1609,
+   "Context": 306,
+   "Preference": 2404,
+   "ChatStatement": 10,
+   "Creator": 3,
+   "Team": 1,
+   "Brand": 1
+  },
+  "relationships": 23298,
+  "active_preferences": 2311,
+  "supersessions": 81
+ },
+ {
+  "after": "ben_s16",
+  "nodes": {
+   "Project": 14,
+   "Session": 39,
+   "Op": 1648,
+   "Context": 314,
+   "Preference": 2465,
+   "ChatStatement": 10,
+   "Creator": 3,
+   "Team": 1,
+   "Brand": 1
+  },
+  "relationships": 23920,
+  "active_preferences": 2370,
+  "supersessions": 83
+ },
+ {
+  "after": "ava_s15",
+  "nodes": {
+   "Project": 14,
+   "Session": 40,
+   "Op": 1683,
+   "Context": 318,
+   "Preference": 2499,
+   "ChatStatement": 10,
+   "Creator": 3,
+   "Team": 1,
+   "Brand": 1
+  },
+  "relationships": 24482,
+  "active_preferences": 2400,
+  "supersessions": 87
+ },
+ {
+  "after": "ben_s17",
+  "nodes": {
+   "Project": 14,
+   "Session": 41,
+   "Op": 1736,
+   "Context": 320,
+   "Preference": 2544,
+   "ChatStatement": 10,
+   "Creator": 3,
+   "Team": 1,
+   "Brand": 1
+  },
+  "relationships": 25273,
+  "active_preferences": 2444,
+  "supersessions": 88
+ },
+ {
+  "after": "ava_s16",
+  "nodes": {
+   "Project": 15,
+   "Session": 42,
+   "Op": 1787,
+   "Context": 320,
+   "Preference": 2570,
+   "ChatStatement": 10,
+   "Creator": 3,
+   "Team": 1,
+   "Brand": 1
+  },
+  "relationships": 25940,
+  "active_preferences": 2470,
+  "supersessions": 88
+ },
+ {
+  "after": "team_northwind_s10",
+  "nodes": {
+   "Project": 16,
+   "Session": 43,
+   "Op": 1829,
+   "Context": 328,
+   "Preference": 2585,
+   "ChatStatement": 10,
+   "Creator": 3,
+   "Team": 1,
+   "Brand": 1
+  },
+  "relationships": 26313,
+  "active_preferences": 2485,
+  "supersessions": 88
+ },
+ {
+  "after": "ava_s17",
+  "nodes": {
+   "Project": 16,
+   "Session": 44,
+   "Op": 1860,
+   "Context": 328,
+   "Preference": 2598,
+   "ChatStatement": 10,
+   "Creator": 3,
+   "Team": 1,
+   "Brand": 1
+  },
+  "relationships": 26726,
+  "active_preferences": 2498,
+  "supersessions": 88
+ },
+ {
+  "after": "ben_s18",
+  "nodes": {
+   "Project": 16,
+   "Session": 46,
+   "Op": 1915,
+   "Context": 328,
+   "Preference": 2605,
+   "ChatStatement": 10,
+   "Creator": 3,
+   "Team": 1,
+   "Brand": 1
+  },
+  "relationships": 27337,
+  "active_preferences": 2504,
+  "supersessions": 89
+ },
+ {
+  "after": "ava_s18",
+  "nodes": {
+   "Project": 16,
+   "Session": 46,
+   "Op": 1945,
+   "Context": 328,
+   "Preference": 2665,
+   "ChatStatement": 10,
+   "Creator": 3,
+   "Team": 1,
+   "Brand": 1
+  },
+  "relationships": 28121,
+  "active_preferences": 2556,
+  "supersessions": 97
+ },
+ {
+  "after": "ava_s19",
+  "nodes": {
+   "Project": 17,
+   "Session": 47,
+   "Op": 1980,
+   "Context": 328,
+   "Preference": 2690,
+   "ChatStatement": 10,
+   "Creator": 3,
+   "Team": 1,
+   "Brand": 1
+  },
+  "relationships": 28731,
+  "active_preferences": 2575,
+  "supersessions": 103
+ },
+ {
+  "after": "ava_s20",
+  "nodes": {
+   "Project": 18,
+   "Session": 49,
+   "Op": 2058,
+   "Context": 328,
+   "Preference": 2720,
+   "ChatStatement": 10,
+   "Creator": 3,
+   "Team": 1,
+   "Brand": 1
+  },
+  "relationships": 29485,
+  "active_preferences": 2598,
+  "supersessions": 110
+ },
+ {
+  "after": "ben_s19",
+  "nodes": {
+   "Project": 18,
+   "Session": 49,
+   "Op": 2068,
+   "Context": 328,
+   "Preference": 2759,
+   "ChatStatement": 10,
+   "Creator": 3,
+   "Team": 1,
+   "Brand": 1
+  },
+  "relationships": 30139,
+  "active_preferences": 2629,
+  "supersessions": 118
+ },
+ {
+  "after": "team_northwind_s11",
+  "nodes": {
+   "Project": 18,
+   "Session": 50,
+   "Op": 2105,
+   "Context": 328,
+   "Preference": 2796,
+   "ChatStatement": 10,
+   "Creator": 3,
+   "Team": 1,
+   "Brand": 1
+  },
+  "relationships": 30532,
+  "active_preferences": 2664,
+  "supersessions": 120
+ },
+ {
+  "after": "team_northwind_s12",
+  "nodes": {
+   "Project": 18,
+   "Session": 51,
+   "Op": 2146,
+   "Context": 331,
+   "Preference": 2806,
+   "ChatStatement": 10,
+   "Creator": 3,
+   "Team": 1,
+   "Brand": 1
+  },
+  "relationships": 30839,
+  "active_preferences": 2674,
+  "supersessions": 120
+ },
+ {
+  "after": "team_northwind_s13",
+  "nodes": {
+   "Project": 19,
+   "Session": 52,
+   "Op": 2184,
+   "Context": 334,
+   "Preference": 2820,
+   "ChatStatement": 10,
+   "Creator": 3,
+   "Team": 1,
+   "Brand": 1
+  },
+  "relationships": 31140,
+  "active_preferences": 2687,
+  "supersessions": 121
+ },
+ {
+  "after": "ben_s20",
+  "nodes": {
+   "Project": 19,
+   "Session": 53,
+   "Op": 2224,
+   "Context": 334,
+   "Preference": 2894,
+   "ChatStatement": 10,
+   "Creator": 3,
+   "Team": 1,
+   "Brand": 1
+  },
+  "relationships": 31938,
+  "active_preferences": 2744,
+  "supersessions": 138
+ },
+ {
+  "after": "ava_s21",
+  "nodes": {
+   "Project": 19,
+   "Session": 55,
+   "Op": 2296,
+   "Context": 334,
+   "Preference": 2919,
+   "ChatStatement": 11,
+   "Creator": 3,
+   "Team": 1,
+   "Brand": 1
+  },
+  "relationships": 32612,
+  "active_preferences": 2765,
+  "supersessions": 142
+ },
+ {
+  "after": "team_northwind_s14",
+  "nodes": {
+   "Project": 19,
+   "Session": 55,
+   "Op": 2301,
+   "Context": 334,
+   "Preference": 2935,
+   "ChatStatement": 11,
+   "Creator": 3,
+   "Team": 1,
+   "Brand": 1
+  },
+  "relationships": 32903,
+  "active_preferences": 2777,
+  "supersessions": 146
+ },
+ {
+  "after": "team_northwind_s15",
+  "nodes": {
+   "Project": 19,
+   "Session": 56,
+   "Op": 2345,
+   "Context": 334,
+   "Preference": 2960,
+   "ChatStatement": 11,
+   "Creator": 3,
+   "Team": 1,
+   "Brand": 1
+  },
+  "relationships": 33374,
+  "active_preferences": 2798,
+  "supersessions": 150
+ },
+ {
+  "after": "ben_s21",
+  "nodes": {
+   "Project": 19,
+   "Session": 57,
+   "Op": 2388,
+   "Context": 334,
+   "Preference": 2994,
+   "ChatStatement": 11,
+   "Creator": 3,
+   "Team": 1,
+   "Brand": 1
+  },
+  "relationships": 34174,
+  "active_preferences": 2820,
+  "supersessions": 162
+ },
+ {
+  "after": "ava_s22",
+  "nodes": {
+   "Project": 20,
+   "Session": 58,
+   "Op": 2427,
+   "Context": 334,
+   "Preference": 3032,
+   "ChatStatement": 11,
+   "Creator": 3,
+   "Team": 1,
+   "Brand": 1
+  },
+  "relationships": 34807,
+  "active_preferences": 2847,
+  "supersessions": 173
+ },
+ {
+  "after": "ben_s22",
+  "nodes": {
+   "Project": 21,
+   "Session": 59,
+   "Op": 2471,
+   "Context": 334,
+   "Preference": 3043,
+   "ChatStatement": 12,
+   "Creator": 3,
+   "Team": 1,
+   "Brand": 1
+  },
+  "relationships": 35345,
+  "active_preferences": 2856,
+  "supersessions": 175
+ },
+ {
+  "after": "ben_s23",
+  "nodes": {
+   "Project": 21,
+   "Session": 60,
+   "Op": 2518,
+   "Context": 334,
+   "Preference": 3097,
+   "ChatStatement": 12,
+   "Creator": 3,
+   "Team": 1,
+   "Brand": 1
+  },
+  "relationships": 36072,
+  "active_preferences": 2907,
+  "supersessions": 178
+ },
+ {
+  "after": "team_northwind_s16",
+  "nodes": {
+   "Project": 22,
+   "Session": 61,
+   "Op": 2560,
+   "Context": 336,
+   "Preference": 3118,
+   "ChatStatement": 12,
+   "Creator": 3,
+   "Team": 1,
+   "Brand": 1
+  },
+  "relationships": 36434,
+  "active_preferences": 2926,
+  "supersessions": 180
+ },
+ {
+  "after": "ben_s24",
+  "nodes": {
+   "Project": 22,
+   "Session": 62,
+   "Op": 2604,
+   "Context": 336,
+   "Preference": 3160,
+   "ChatStatement": 12,
+   "Creator": 3,
+   "Team": 1,
+   "Brand": 1
+  },
+  "relationships": 37128,
+  "active_preferences": 2963,
+  "supersessions": 185
+ },
+ {
+  "after": "team_northwind_s17",
+  "nodes": {
+   "Project": 22,
+   "Session": 63,
+   "Op": 2648,
+   "Context": 336,
+   "Preference": 3171,
+   "ChatStatement": 12,
+   "Creator": 3,
+   "Team": 1,
+   "Brand": 1
+  },
+  "relationships": 37501,
+  "active_preferences": 2974,
+  "supersessions": 185
+ },
+ {
+  "after": "ben_s25",
+  "nodes": {
+   "Project": 23,
+   "Session": 64,
+   "Op": 2691,
+   "Context": 338,
+   "Preference": 3182,
+   "ChatStatement": 12,
+   "Creator": 3,
+   "Team": 1,
+   "Brand": 1
+  },
+  "relationships": 38026,
+  "active_preferences": 2984,
+  "supersessions": 186
+ },
+ {
+  "after": "ava_s23",
+  "nodes": {
+   "Project": 23,
+   "Session": 65,
+   "Op": 2726,
+   "Context": 338,
+   "Preference": 3228,
+   "ChatStatement": 12,
+   "Creator": 3,
+   "Team": 1,
+   "Brand": 1
+  },
+  "relationships": 38659,
+  "active_preferences": 3018,
+  "supersessions": 198
+ },
+ {
+  "after": "team_northwind_s18",
+  "nodes": {
+   "Project": 23,
+   "Session": 66,
+   "Op": 2767,
+   "Context": 339,
+   "Preference": 3243,
+   "ChatStatement": 12,
+   "Creator": 3,
+   "Team": 1,
+   "Brand": 1
+  },
+  "relationships": 39039,
+  "active_preferences": 3028,
+  "supersessions": 203
+ },
+ {
+  "after": "ava_s24",
+  "nodes": {
+   "Project": 23,
+   "Session": 67,
+   "Op": 2806,
+   "Context": 339,
+   "Preference": 3275,
+   "ChatStatement": 12,
+   "Creator": 3,
+   "Team": 1,
+   "Brand": 1
+  },
+  "relationships": 39624,
+  "active_preferences": 3052,
+  "supersessions": 211
+ },
+ {
+  "after": "ava_s25",
+  "nodes": {
+   "Project": 24,
+   "Session": 68,
+   "Op": 2851,
+   "Context": 339,
+   "Preference": 3315,
+   "ChatStatement": 12,
+   "Creator": 3,
+   "Team": 1,
+   "Brand": 1
+  },
+  "relationships": 40382,
+  "active_preferences": 3090,
+  "supersessions": 213
+ },
+ {
+  "after": "team_northwind_s19",
+  "nodes": {
+   "Project": 25,
+   "Session": 69,
+   "Op": 2888,
+   "Context": 339,
+   "Preference": 3333,
+   "ChatStatement": 13,
+   "Creator": 3,
+   "Team": 1,
+   "Brand": 1
+  },
+  "relationships": 40770,
+  "active_preferences": 3103,
+  "supersessions": 218
+ },
+ {
+  "after": "ava_s26",
+  "nodes": {
+   "Project": 25,
+   "Session": 70,
+   "Op": 2931,
+   "Context": 339,
+   "Preference": 3354,
+   "ChatStatement": 13,
+   "Creator": 3,
+   "Team": 1,
+   "Brand": 1
+  },
+  "relationships": 41442,
+  "active_preferences": 3115,
+  "supersessions": 227
+ },
+ {
+  "after": "team_northwind_s20",
+  "nodes": {
+   "Project": 25,
+   "Session": 71,
+   "Op": 2974,
+   "Context": 339,
+   "Preference": 3367,
+   "ChatStatement": 14,
+   "Creator": 3,
+   "Team": 1,
+   "Brand": 1
+  },
+  "relationships": 41863,
+  "active_preferences": 3125,
+  "supersessions": 230
+ },
+ {
+  "after": "team_northwind_s21",
+  "nodes": {
+   "Project": 25,
+   "Session": 73,
+   "Op": 3039,
+   "Context": 339,
+   "Preference": 3385,
+   "ChatStatement": 15,
+   "Creator": 3,
+   "Team": 1,
+   "Brand": 1
+  },
+  "relationships": 42390,
+  "active_preferences": 3138,
+  "supersessions": 235
+ },
+ {
+  "after": "ava_s27",
+  "nodes": {
+   "Project": 25,
+   "Session": 73,
+   "Op": 3055,
+   "Context": 339,
+   "Preference": 3424,
+   "ChatStatement": 15,
+   "Creator": 3,
+   "Team": 1,
+   "Brand": 1
+  },
+  "relationships": 42967,
+  "active_preferences": 3175,
+  "supersessions": 237
+ },
+ {
+  "after": "ben_s26",
+  "nodes": {
+   "Project": 25,
+   "Session": 74,
+   "Op": 3098,
+   "Context": 345,
+   "Preference": 3477,
+   "ChatStatement": 15,
+   "Creator": 3,
+   "Team": 1,
+   "Brand": 1
+  },
+  "relationships": 43600,
+  "active_preferences": 3225,
+  "supersessions": 240
+ },
+ {
+  "after": "ben_s27",
+  "nodes": {
+   "Project": 25,
+   "Session": 75,
+   "Op": 3141,
+   "Context": 345,
+   "Preference": 3522,
+   "ChatStatement": 15,
+   "Creator": 3,
+   "Team": 1,
+   "Brand": 1
+  },
+  "relationships": 44322,
+  "active_preferences": 3265,
+  "supersessions": 245
+ },
+ {
+  "after": "ben_s28",
+  "nodes": {
+   "Project": 26,
+   "Session": 76,
+   "Op": 3186,
+   "Context": 345,
+   "Preference": 3542,
+   "ChatStatement": 15,
+   "Creator": 3,
+   "Team": 1,
+   "Brand": 1
+  },
+  "relationships": 45024,
+  "active_preferences": 3281,
+  "supersessions": 249
+ },
+ {
+  "after": "team_northwind_s22",
+  "nodes": {
+   "Project": 27,
+   "Session": 77,
+   "Op": 3234,
+   "Context": 345,
+   "Preference": 3552,
+   "ChatStatement": 15,
+   "Creator": 3,
+   "Team": 1,
+   "Brand": 1
+  },
+  "relationships": 45419,
+  "active_preferences": 3291,
+  "supersessions": 249
+ },
+ {
+  "after": "team_northwind_s23",
+  "nodes": {
+   "Project": 27,
+   "Session": 78,
+   "Op": 3280,
+   "Context": 345,
+   "Preference": 3564,
+   "ChatStatement": 15,
+   "Creator": 3,
+   "Team": 1,
+   "Brand": 1
+  },
+  "relationships": 45830,
+  "active_preferences": 3301,
+  "supersessions": 251
+ },
+ {
+  "after": "ben_s29",
+  "nodes": {
+   "Project": 27,
+   "Session": 79,
+   "Op": 3317,
+   "Context": 345,
+   "Preference": 3577,
+   "ChatStatement": 15,
+   "Creator": 3,
+   "Team": 1,
+   "Brand": 1
+  },
+  "relationships": 46407,
+  "active_preferences": 3310,
+  "supersessions": 255
+ },
+ {
+  "after": "ava_s28",
+  "nodes": {
+   "Project": 28,
+   "Session": 80,
+   "Op": 3360,
+   "Context": 345,
+   "Preference": 3613,
+   "ChatStatement": 15,
+   "Creator": 3,
+   "Team": 1,
+   "Brand": 1
+  },
+  "relationships": 47156,
+  "active_preferences": 3336,
+  "supersessions": 265
+ },
+ {
+  "after": "team_northwind_s24",
+  "nodes": {
+   "Project": 28,
+   "Session": 81,
+   "Op": 3400,
+   "Context": 349,
+   "Preference": 3639,
+   "ChatStatement": 15,
+   "Creator": 3,
+   "Team": 1,
+   "Brand": 1
+  },
+  "relationships": 47461,
+  "active_preferences": 3362,
+  "supersessions": 265
+ },
+ {
+  "after": "ava_s29",
+  "nodes": {
+   "Project": 28,
+   "Session": 82,
+   "Op": 3437,
+   "Context": 351,
+   "Preference": 3695,
+   "ChatStatement": 15,
+   "Creator": 3,
+   "Team": 1,
+   "Brand": 1
+  },
+  "relationships": 48075,
+  "active_preferences": 3412,
+  "supersessions": 271
+ },
+ {
+  "after": "team_northwind_s25",
+  "nodes": {
+   "Project": 29,
+   "Session": 83,
+   "Op": 3474,
+   "Context": 351,
+   "Preference": 3710,
+   "ChatStatement": 15,
+   "Creator": 3,
+   "Team": 1,
+   "Brand": 1
+  },
+  "relationships": 48481,
+  "active_preferences": 3419,
+  "supersessions": 279
+ },
+ {
+  "after": "team_northwind_s26",
+  "nodes": {
+   "Project": 29,
+   "Session": 84,
+   "Op": 3505,
+   "Context": 351,
+   "Preference": 3737,
+   "ChatStatement": 15,
+   "Creator": 3,
+   "Team": 1,
+   "Brand": 1
+  },
+  "relationships": 48765,
+  "active_preferences": 3446,
+  "supersessions": 279
+ },
+ {
+  "after": "ben_s30",
+  "nodes": {
+   "Project": 29,
+   "Session": 85,
+   "Op": 3553,
+   "Context": 351,
+   "Preference": 3767,
+   "ChatStatement": 15,
+   "Creator": 3,
+   "Team": 1,
+   "Brand": 1
+  },
+  "relationships": 49490,
+  "active_preferences": 3472,
+  "supersessions": 283
+ },
+ {
+  "after": "team_northwind_s27",
+  "nodes": {
+   "Project": 29,
+   "Session": 86,
+   "Op": 3591,
+   "Context": 351,
+   "Preference": 3781,
+   "ChatStatement": 15,
+   "Creator": 3,
+   "Team": 1,
+   "Brand": 1
+  },
+  "relationships": 49824,
+  "active_preferences": 3482,
+  "supersessions": 287
+ },
+ {
+  "after": "ava_s30",
+  "nodes": {
+   "Project": 29,
+   "Session": 87,
+   "Op": 3633,
+   "Context": 351,
+   "Preference": 3825,
+   "ChatStatement": 15,
+   "Creator": 3,
+   "Team": 1,
+   "Brand": 1
+  },
+  "relationships": 50535,
+  "active_preferences": 3520,
+  "supersessions": 293
+ },
+ {
+  "after": "ava_s31",
+  "nodes": {
+   "Project": 30,
+   "Session": 88,
+   "Op": 3678,
+   "Context": 351,
+   "Preference": 3838,
+   "ChatStatement": 15,
+   "Creator": 3,
+   "Team": 1,
+   "Brand": 1
+  },
+  "relationships": 51120,
+  "active_preferences": 3531,
+  "supersessions": 295
+ },
+ {
+  "after": "ava_s32",
+  "nodes": {
+   "Project": 30,
+   "Session": 89,
+   "Op": 3716,
+   "Context": 351,
+   "Preference": 3864,
+   "ChatStatement": 15,
+   "Creator": 3,
+   "Team": 1,
+   "Brand": 1
+  },
+  "relationships": 51690,
+  "active_preferences": 3548,
+  "supersessions": 304
+ },
+ {
+  "after": "team_northwind_s28",
+  "nodes": {
+   "Project": 31,
+   "Session": 90,
+   "Op": 3760,
+   "Context": 351,
+   "Preference": 3879,
+   "ChatStatement": 15,
+   "Creator": 3,
+   "Team": 1,
+   "Brand": 1
+  },
+  "relationships": 52022,
+  "active_preferences": 3563,
+  "supersessions": 304
+ },
+ {
+  "after": "ben_s31",
+  "nodes": {
+   "Project": 32,
+   "Session": 91,
+   "Op": 3803,
+   "Context": 356,
+   "Preference": 3922,
+   "ChatStatement": 15,
+   "Creator": 3,
+   "Team": 1,
+   "Brand": 1
+  },
+  "relationships": 52645,
+  "active_preferences": 3602,
+  "supersessions": 308
+ },
+ {
+  "after": "ben_s32",
+  "nodes": {
+   "Project": 32,
+   "Session": 92,
+   "Op": 3847,
+   "Context": 358,
+   "Preference": 3989,
+   "ChatStatement": 15,
+   "Creator": 3,
+   "Team": 1,
+   "Brand": 1
+  },
+  "relationships": 53396,
+  "active_preferences": 3665,
+  "supersessions": 312
+ },
+ {
+  "after": "ben_s33",
+  "nodes": {
+   "Project": 32,
+   "Session": 93,
+   "Op": 3888,
+   "Context": 359,
+   "Preference": 4017,
+   "ChatStatement": 15,
+   "Creator": 3,
+   "Team": 1,
+   "Brand": 1
+  },
+  "relationships": 54085,
+  "active_preferences": 3687,
+  "supersessions": 318
+ },
+ {
+  "after": "ava_s33",
+  "nodes": {
+   "Project": 32,
+   "Session": 94,
+   "Op": 3925,
+   "Context": 359,
+   "Preference": 4045,
+   "ChatStatement": 15,
+   "Creator": 3,
+   "Team": 1,
+   "Brand": 1
+  },
+  "relationships": 54641,
+  "active_preferences": 3707,
+  "supersessions": 326
+ },
+ {
+  "after": "team_northwind_s29",
+  "nodes": {
+   "Project": 32,
+   "Session": 95,
+   "Op": 3966,
+   "Context": 359,
+   "Preference": 4049,
+   "ChatStatement": 15,
+   "Creator": 3,
+   "Team": 1,
+   "Brand": 1
+  },
+  "relationships": 54928,
+  "active_preferences": 3711,
+  "supersessions": 326
+ },
+ {
+  "after": "team_northwind_s30",
+  "nodes": {
+   "Project": 32,
+   "Session": 96,
+   "Op": 4008,
+   "Context": 359,
+   "Preference": 4065,
+   "ChatStatement": 15,
+   "Creator": 3,
+   "Team": 1,
+   "Brand": 1
+  },
+  "relationships": 55321,
+  "active_preferences": 3724,
+  "supersessions": 329
+ },
+ {
+  "after": "ava_s34",
+  "nodes": {
+   "Project": 33,
+   "Session": 97,
+   "Op": 4049,
+   "Context": 360,
+   "Preference": 4105,
+   "ChatStatement": 15,
+   "Creator": 3,
+   "Team": 1,
+   "Brand": 1
+  },
+  "relationships": 55965,
+  "active_preferences": 3762,
+  "supersessions": 331
+ },
+ {
+  "after": "team_northwind_s31",
+  "nodes": {
+   "Project": 34,
+   "Session": 98,
+   "Op": 4085,
+   "Context": 363,
+   "Preference": 4123,
+   "ChatStatement": 15,
+   "Creator": 3,
+   "Team": 1,
+   "Brand": 1
+  },
+  "relationships": 56261,
+  "active_preferences": 3780,
+  "supersessions": 331
+ },
+ {
+  "after": "team_northwind_s32",
+  "nodes": {
+   "Project": 34,
+   "Session": 99,
+   "Op": 4128,
+   "Context": 363,
+   "Preference": 4126,
+   "ChatStatement": 15,
+   "Creator": 3,
+   "Team": 1,
+   "Brand": 1
+  },
+  "relationships": 56553,
+  "active_preferences": 3783,
+  "supersessions": 331
+ },
+ {
+  "after": "ava_s35",
+  "nodes": {
+   "Project": 34,
+   "Session": 100,
+   "Op": 4163,
+   "Context": 365,
+   "Preference": 4185,
+   "ChatStatement": 15,
+   "Creator": 3,
+   "Team": 1,
+   "Brand": 1
+  },
+  "relationships": 57097,
+  "active_preferences": 3842,
+  "supersessions": 331
+ },
+ {
+  "after": "ben_s34",
+  "nodes": {
+   "Project": 35,
+   "Session": 101,
+   "Op": 4208,
+   "Context": 367,
+   "Preference": 4188,
+   "ChatStatement": 15,
+   "Creator": 3,
+   "Team": 1,
+   "Brand": 1
+  },
+  "relationships": 57615,
+  "active_preferences": 3845,
+  "supersessions": 331
+ },
+ {
+  "after": "ava_s36",
+  "nodes": {
+   "Project": 35,
+   "Session": 102,
+   "Op": 4246,
+   "Context": 367,
+   "Preference": 4232,
+   "ChatStatement": 15,
+   "Creator": 3,
+   "Team": 1,
+   "Brand": 1
+  },
+  "relationships": 58368,
+  "active_preferences": 3874,
+  "supersessions": 346
+ },
+ {
+  "after": "team_northwind_s33",
+  "nodes": {
+   "Project": 36,
+   "Session": 103,
+   "Op": 4248,
+   "Context": 367,
+   "Preference": 4233,
+   "ChatStatement": 15,
+   "Creator": 3,
+   "Team": 1,
+   "Brand": 1
+  },
+  "relationships": 58393,
+  "active_preferences": 3875,
+  "supersessions": 346
+ },
+ {
+  "after": "team_northwind_s34",
+  "nodes": {
+   "Project": 36,
+   "Session": 104,
+   "Op": 4249,
+   "Context": 367,
+   "Preference": 4233,
+   "ChatStatement": 15,
+   "Creator": 3,
+   "Team": 1,
+   "Brand": 1
+  },
+  "relationships": 58405,
+  "active_preferences": 3875,
+  "supersessions": 346
+ },
+ {
+  "after": "team_northwind_s35",
+  "nodes": {
+   "Project": 36,
+   "Session": 105,
+   "Op": 4250,
+   "Context": 367,
+   "Preference": 4233,
+   "ChatStatement": 15,
+   "Creator": 3,
+   "Team": 1,
+   "Brand": 1
+  },
+  "relationships": 58409,
+  "active_preferences": 3875,
+  "supersessions": 346
+ },
+ {
+  "after": "team_northwind_s36",
+  "nodes": {
+   "Project": 36,
+   "Session": 106,
+   "Op": 4252,
+   "Context": 367,
+   "Preference": 4233,
+   "ChatStatement": 15,
+   "Creator": 3,
+   "Team": 1,
+   "Brand": 1
+  },
+  "relationships": 58414,
+  "active_preferences": 3875,
+  "supersessions": 346
+ }
+]

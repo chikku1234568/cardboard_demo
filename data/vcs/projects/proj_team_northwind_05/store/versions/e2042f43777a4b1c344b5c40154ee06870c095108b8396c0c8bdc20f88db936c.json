@@ -1,0 +1,20 @@
+{
+  "version_id": "e2042f43777a4b1c344b5c40154ee06870c095108b8396c0c8bdc20f88db936c",
+  "project_id": "proj_team_northwind_05",
+  "timeline_hash": "676528808c14b22ad091b29233e7a0c60716e08c6a2edc7fef2523e9459e47da",
+  "parents": [
+    "63dedc7f2bb37db61d7b80c0612295b759e39bb42cea13c2c9a1cf91331a290f"
+  ],
+  "branch": "ben/cut-14",
+  "author": "director",
+  "timestamp": "2026-08-13T15:51:53+05:30",
+  "message": "Director: color_grade, cut_length, music_mood, transition",
+  "op_ids": [
+    "proj_team_northwind_05/op_0062",
+    "proj_team_northwind_05/op_0063",
+    "proj_team_northwind_05/op_0064",
+    "proj_team_northwind_05/op_0065",
+    "proj_team_northwind_05/op_0066"
+  ],
+  "session_id": "team_northwind_s14"
+}

@@ -1,0 +1,18 @@
+{
+  "version_id": "ba43a80a74b35595a4a1f16c5a83870ac92120628e5013546444308924df080b",
+  "project_id": "proj_ben_10",
+  "timeline_hash": "9f316a07f3561d567db1baec3aa421fecfe5f4d38f8e5efe1f2b06412f10964f",
+  "parents": [
+    "3978221b31a75315d48c7ac0f74427ddfba33ac2454f7c8ef240c6cc6e90bc24"
+  ],
+  "branch": "ben/cut-29",
+  "author": "director",
+  "timestamp": "2026-09-12T16:45:34+05:30",
+  "message": "Director: caption_style, color_grade, font",
+  "op_ids": [
+    "proj_ben_10/op_0078",
+    "proj_ben_10/op_0079",
+    "proj_ben_10/op_0080"
+  ],
+  "session_id": "ben_s29"
+}

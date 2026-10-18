@@ -1,0 +1,20 @@
+{
+  "version_id": "2b8188e89e9ef1a7e4b20f2917963ce939f61bada6cda442757f50d3cc81d847",
+  "project_id": "proj_ava_06",
+  "timeline_hash": "f2965a704920f9380a915c2ef7928b9e60b7900577fe9f30f7b46fe794849142",
+  "parents": [
+    "7c590b0c83c7a14d0fe183d58e3d17775e9b97f5252a3e877f4ae0b85044a8cf"
+  ],
+  "branch": "ava/cut-17",
+  "author": "director",
+  "timestamp": "2026-08-02T19:06:16+05:30",
+  "message": "Director: caption_style, font, music_mood, transition",
+  "op_ids": [
+    "proj_ava_06/op_0072",
+    "proj_ava_06/op_0073",
+    "proj_ava_06/op_0074",
+    "proj_ava_06/op_0075",
+    "proj_ava_06/op_0076"
+  ],
+  "session_id": "ava_s17"
+}

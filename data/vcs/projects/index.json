@@ -1,0 +1,507 @@
+{
+  "note": "One content-addressed store per project; no main branch anywhere.",
+  "projects": [
+    {
+      "project_id": "proj_ava_01",
+      "owner_subject": "ava",
+      "project_scope": "team",
+      "brand_id": "northwind",
+      "sessions": [
+        "ava_s01",
+        "ava_s02",
+        "ava_s03"
+      ],
+      "n_versions": 31,
+      "n_ops": 122,
+      "flagship": false
+    },
+    {
+      "project_id": "proj_ava_02",
+      "owner_subject": "ava",
+      "project_scope": "private",
+      "brand_id": null,
+      "sessions": [
+        "ava_s04",
+        "ava_s05",
+        "ava_s06"
+      ],
+      "n_versions": 27,
+      "n_ops": 110,
+      "flagship": false
+    },
+    {
+      "project_id": "proj_ava_03",
+      "owner_subject": "ava",
+      "project_scope": "private",
+      "brand_id": null,
+      "sessions": [
+        "ava_s07",
+        "ava_s08",
+        "ava_s09"
+      ],
+      "n_versions": 29,
+      "n_ops": 128,
+      "flagship": false
+    },
+    {
+      "project_id": "proj_ava_04",
+      "owner_subject": "ava",
+      "project_scope": "team",
+      "brand_id": "northwind",
+      "sessions": [
+        "ava_s10",
+        "ava_s11",
+        "ava_s12"
+      ],
+      "n_versions": 28,
+      "n_ops": 132,
+      "flagship": false
+    },
+    {
+      "project_id": "proj_ava_05",
+      "owner_subject": "ava",
+      "project_scope": "team",
+      "brand_id": "northwind",
+      "sessions": [
+        "ava_s13",
+        "ava_s14",
+        "ava_s15"
+      ],
+      "n_versions": 25,
+      "n_ops": 116,
+      "flagship": false
+    },
+    {
+      "project_id": "proj_ava_06",
+      "owner_subject": "ava",
+      "project_scope": "team",
+      "brand_id": "northwind",
+      "sessions": [
+        "ava_s16",
+        "ava_s17",
+        "ava_s18"
+      ],
+      "n_versions": 25,
+      "n_ops": 123,
+      "flagship": false
+    },
+    {
+      "project_id": "proj_ava_07",
+      "owner_subject": "ava",
+      "project_scope": "team",
+      "brand_id": "northwind",
+      "sessions": [
+        "ava_s19",
+        "ava_s20",
+        "ava_s21"
+      ],
+      "n_versions": 27,
+      "n_ops": 115,
+      "flagship": false
+    },
+    {
+      "project_id": "proj_ava_08",
+      "owner_subject": "ava",
+      "project_scope": "private",
+      "brand_id": null,
+      "sessions": [
+        "ava_s22",
+        "ava_s23",
+        "ava_s24"
+      ],
+      "n_versions": 27,
+      "n_ops": 115,
+      "flagship": false
+    },
+    {
+      "project_id": "proj_ava_09",
+      "owner_subject": "ava",
+      "project_scope": "private",
+      "brand_id": null,
+      "sessions": [
+        "ava_s25",
+        "ava_s26",
+        "ava_s27"
+      ],
+      "n_versions": 29,
+      "n_ops": 128,
+      "flagship": false
+    },
+    {
+      "project_id": "proj_ava_10",
+      "owner_subject": "ava",
+      "project_scope": "private",
+      "brand_id": null,
+      "sessions": [
+        "ava_s28",
+        "ava_s29",
+        "ava_s30"
+      ],
+      "n_versions": 26,
+      "n_ops": 123,
+      "flagship": false
+    },
+    {
+      "project_id": "proj_ava_11",
+      "owner_subject": "ava",
+      "project_scope": "private",
+      "brand_id": null,
+      "sessions": [
+        "ava_s31",
+        "ava_s32",
+        "ava_s33"
+      ],
+      "n_versions": 27,
+      "n_ops": 120,
+      "flagship": false
+    },
+    {
+      "project_id": "proj_ava_12",
+      "owner_subject": "ava",
+      "project_scope": "team",
+      "brand_id": "northwind",
+      "sessions": [
+        "ava_s34",
+        "ava_s35",
+        "ava_s36"
+      ],
+      "n_versions": 27,
+      "n_ops": 116,
+      "flagship": false
+    },
+    {
+      "project_id": "proj_ben_01",
+      "owner_subject": "ben",
+      "project_scope": "team",
+      "brand_id": "northwind",
+      "sessions": [
+        "ben_s01",
+        "ben_s02",
+        "ben_s03"
+      ],
+      "n_versions": 32,
+      "n_ops": 138,
+      "flagship": false
+    },
+    {
+      "project_id": "proj_ben_02",
+      "owner_subject": "ben",
+      "project_scope": "private",
+      "brand_id": null,
+      "sessions": [
+        "ben_s04",
+        "ben_s05",
+        "ben_s06"
+      ],
+      "n_versions": 30,
+      "n_ops": 133,
+      "flagship": false
+    },
+    {
+      "project_id": "proj_ben_03",
+      "owner_subject": "ben",
+      "project_scope": "team",
+      "brand_id": "northwind",
+      "sessions": [
+        "ben_s07",
+        "ben_s08",
+        "ben_s09"
+      ],
+      "n_versions": 30,
+      "n_ops": 123,
+      "flagship": false
+    },
+    {
+      "project_id": "proj_ben_04",
+      "owner_subject": "ben",
+      "project_scope": "team",
+      "brand_id": "northwind",
+      "sessions": [
+        "ben_s10",
+        "ben_s11",
+        "ben_s12"
+      ],
+      "n_versions": 31,
+      "n_ops": 140,
+      "flagship": false
+    },
+    {
+      "project_id": "proj_ben_05",
+      "owner_subject": "ben",
+      "project_scope": "team",
+      "brand_id": "northwind",
+      "sessions": [
+        "ben_s13",
+        "ben_s14",
+        "ben_s15"
+      ],
+      "n_versions": 31,
+      "n_ops": 142,
+      "flagship": false
+    },
+    {
+      "project_id": "proj_ben_06",
+      "owner_subject": "ben",
+      "project_scope": "private",
+      "brand_id": null,
+      "sessions": [
+        "ben_s16",
+        "ben_s17",
+        "ben_s18"
+      ],
+      "n_versions": 29,
+      "n_ops": 138,
+      "flagship": false
+    },
+    {
+      "project_id": "proj_ben_07",
+      "owner_subject": "ben",
+      "project_scope": "private",
+      "brand_id": null,
+      "sessions": [
+        "ben_s19",
+        "ben_s20",
+        "ben_s21"
+      ],
+      "n_versions": 27,
+      "n_ops": 130,
+      "flagship": false
+    },
+    {
+      "project_id": "proj_ben_08",
+      "owner_subject": "ben",
+      "project_scope": "private",
+      "brand_id": null,
+      "sessions": [
+        "ben_s22",
+        "ben_s23",
+        "ben_s24"
+      ],
+      "n_versions": 30,
+      "n_ops": 136,
+      "flagship": false
+    },
+    {
+      "project_id": "proj_ben_09",
+      "owner_subject": "ben",
+      "project_scope": "team",
+      "brand_id": "northwind",
+      "sessions": [
+        "ben_s25",
+        "ben_s26",
+        "ben_s27"
+      ],
+      "n_versions": 28,
+      "n_ops": 132,
+      "flagship": false
+    },
+    {
+      "project_id": "proj_ben_10",
+      "owner_subject": "ben",
+      "project_scope": "private",
+      "brand_id": null,
+      "sessions": [
+        "ben_s28",
+        "ben_s29",
+        "ben_s30"
+      ],
+      "n_versions": 31,
+      "n_ops": 132,
+      "flagship": false
+    },
+    {
+      "project_id": "proj_ben_11",
+      "owner_subject": "ben",
+      "project_scope": "private",
+      "brand_id": null,
+      "sessions": [
+        "ben_s31",
+        "ben_s32",
+        "ben_s33"
+      ],
+      "n_versions": 28,
+      "n_ops": 131,
+      "flagship": false
+    },
+    {
+      "project_id": "proj_ben_12",
+      "owner_subject": "ben",
+      "project_scope": "private",
+      "brand_id": null,
+      "sessions": [
+        "ben_s34"
+      ],
+      "n_versions": 12,
+      "n_ops": 46,
+      "flagship": false
+    },
+    {
+      "project_id": "proj_team_northwind_01",
+      "owner_subject": "team_northwind",
+      "project_scope": "team",
+      "brand_id": "northwind",
+      "sessions": [
+        "team_northwind_s01",
+        "team_northwind_s02",
+        "team_northwind_s03"
+      ],
+      "n_versions": 27,
+      "n_ops": 122,
+      "flagship": false
+    },
+    {
+      "project_id": "proj_team_northwind_02",
+      "owner_subject": "team_northwind",
+      "project_scope": "team",
+      "brand_id": "northwind",
+      "sessions": [
+        "team_northwind_s04",
+        "team_northwind_s05",
+        "team_northwind_s06"
+      ],
+      "n_versions": 31,
+      "n_ops": 136,
+      "flagship": false
+    },
+    {
+      "project_id": "proj_team_northwind_03",
+      "owner_subject": "team_northwind",
+      "project_scope": "team",
+      "brand_id": "northwind",
+      "sessions": [
+        "team_northwind_s07",
+        "team_northwind_s08",
+        "team_northwind_s09"
+      ],
+      "n_versions": 28,
+      "n_ops": 129,
+      "flagship": false
+    },
+    {
+      "project_id": "proj_team_northwind_04",
+      "owner_subject": "team_northwind",
+      "project_scope": "team",
+      "brand_id": "northwind",
+      "sessions": [
+        "team_northwind_s10",
+        "team_northwind_s11",
+        "team_northwind_s12"
+      ],
+      "n_versions": 26,
+      "n_ops": 121,
+      "flagship": false
+    },
+    {
+      "project_id": "proj_team_northwind_05",
+      "owner_subject": "team_northwind",
+      "project_scope": "team",
+      "brand_id": "northwind",
+      "sessions": [
+        "team_northwind_s13",
+        "team_northwind_s14",
+        "team_northwind_s15"
+      ],
+      "n_versions": 25,
+      "n_ops": 124,
+      "flagship": false
+    },
+    {
+      "project_id": "proj_team_northwind_06",
+      "owner_subject": "team_northwind",
+      "project_scope": "team",
+      "brand_id": "northwind",
+      "sessions": [
+        "team_northwind_s16",
+        "team_northwind_s17",
+        "team_northwind_s18"
+      ],
+      "n_versions": 29,
+      "n_ops": 129,
+      "flagship": false
+    },
+    {
+      "project_id": "proj_team_northwind_07",
+      "owner_subject": "team_northwind",
+      "project_scope": "team",
+      "brand_id": "northwind",
+      "sessions": [
+        "team_northwind_s19",
+        "team_northwind_s20",
+        "team_northwind_s21"
+      ],
+      "n_versions": 28,
+      "n_ops": 126,
+      "flagship": false
+    },
+    {
+      "project_id": "proj_team_northwind_08",
+      "owner_subject": "team_northwind",
+      "project_scope": "team",
+      "brand_id": "northwind",
+      "sessions": [
+        "team_northwind_s22",
+        "team_northwind_s23",
+        "team_northwind_s24"
+      ],
+      "n_versions": 30,
+      "n_ops": 135,
+      "flagship": false
+    },
+    {
+      "project_id": "proj_team_northwind_09",
+      "owner_subject": "team_northwind",
+      "project_scope": "team",
+      "brand_id": "northwind",
+      "sessions": [
+        "team_northwind_s25",
+        "team_northwind_s26",
+        "team_northwind_s27"
+      ],
+      "n_versions": 24,
+      "n_ops": 107,
+      "flagship": false
+    },
+    {
+      "project_id": "proj_team_northwind_10",
+      "owner_subject": "team_northwind",
+      "project_scope": "team",
+      "brand_id": "northwind",
+      "sessions": [
+        "team_northwind_s28",
+        "team_northwind_s29",
+        "team_northwind_s30"
+      ],
+      "n_versions": 28,
+      "n_ops": 128,
+      "flagship": false
+    },
+    {
+      "project_id": "proj_team_northwind_11",
+      "owner_subject": "team_northwind",
+      "project_scope": "team",
+      "brand_id": "northwind",
+      "sessions": [
+        "team_northwind_s31",
+        "team_northwind_s32"
+      ],
+      "n_versions": 19,
+      "n_ops": 81,
+      "flagship": false
+    },
+    {
+      "project_id": "proj_launch_week_recap",
+      "owner_subject": "team_northwind",
+      "project_scope": "team",
+      "brand_id": "northwind",
+      "sessions": [
+        "team_northwind_s33",
+        "team_northwind_s34",
+        "team_northwind_s35",
+        "team_northwind_s36"
+      ],
+      "n_versions": 8,
+      "n_ops": 13,
+      "flagship": true
+    }
+  ]
+}

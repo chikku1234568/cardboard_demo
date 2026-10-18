@@ -1,0 +1,12 @@
+{
+  "version_id": "a539abae38abee79d661b051006aec6b7871b9f343e8d6a5a43c3a8e5160606f",
+  "project_id": "proj_team_northwind_01",
+  "timeline_hash": "3db581c98637be26e25bb9aa97c562cacf5e50ff8f1ec0b821fc0305a4f4b94a",
+  "parents": [],
+  "branch": "rough-cut",
+  "author": "ben",
+  "timestamp": "2026-06-08T17:15:00+05:30",
+  "message": "Import footage (rough assembly)",
+  "op_ids": [],
+  "session_id": "team_northwind_s01"
+}

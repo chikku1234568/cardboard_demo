@@ -1,0 +1,17 @@
+{
+  "version_id": "c2f0edba7ad6e51c54760ba62b2150d5fb2753fb52bfe046ce02e041493165d5",
+  "project_id": "proj_ava_05",
+  "timeline_hash": "62cc07320085101d61309f1bce41ee878e299871fbb574f8beca48355175a5a9",
+  "parents": [
+    "bdf8ef260c4ff0711649e7d232d9973209f3412286a710b71c2cee7594b0d50a"
+  ],
+  "branch": "ava/cut-14",
+  "author": "director",
+  "timestamp": "2026-07-23T17:45:12+05:30",
+  "message": "Director: caption_style, font",
+  "op_ids": [
+    "proj_ava_05/op_0078",
+    "proj_ava_05/op_0079"
+  ],
+  "session_id": "ava_s14"
+}

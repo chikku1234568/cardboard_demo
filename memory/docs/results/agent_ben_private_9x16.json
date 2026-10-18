@@ -1,0 +1,1141 @@
+{
+ "cut": {
+  "project_id": "proj_ben_12",
+  "actor": "ben",
+  "project_scope": "private",
+  "project_owner": "ben",
+  "brand_id": null,
+  "format": "9:16",
+  "title": "Demo cut",
+  "clips": [
+   {
+    "clip_id": "clp_0002",
+    "section": "hook",
+    "footage_type": "broll",
+    "prev_edit": "jump_cut"
+   },
+   {
+    "clip_id": "clp_0003",
+    "section": "body",
+    "footage_type": "talking_head",
+    "prev_edit": "scene_change"
+   },
+   {
+    "clip_id": "clp_0004",
+    "section": "body",
+    "footage_type": "product",
+    "prev_edit": "scene_change"
+   },
+   {
+    "clip_id": "clp_0005",
+    "section": "body",
+    "footage_type": "talking_head",
+    "prev_edit": "jump_cut"
+   },
+   {
+    "clip_id": "clp_0006",
+    "section": "body",
+    "footage_type": "talking_head",
+    "prev_edit": "broll_insert"
+   },
+   {
+    "clip_id": "clp_0007",
+    "section": "body",
+    "footage_type": "talking_head",
+    "prev_edit": "scene_change"
+   },
+   {
+    "clip_id": "clp_0008",
+    "section": "outro",
+    "footage_type": "talking_head",
+    "prev_edit": "broll_insert"
+   }
+  ]
+ },
+ "ops": [
+  {
+   "type": "add_effect",
+   "author": "director",
+   "on_behalf_of": "ben",
+   "category": "color_grade",
+   "context": {
+    "footage_type": "broll",
+    "prev_edit": "jump_cut",
+    "format": "9:16",
+    "section": "hook"
+   },
+   "payload": {
+    "effect": {
+     "id": "fx_new_01",
+     "target_id": "clp_0002",
+     "type": "color_grade",
+     "params": {
+      "look": "high_contrast",
+      "intensity": 0.6
+     }
+    }
+   },
+   "memory": {
+    "action": "high_contrast",
+    "confidence": 0.75,
+    "why": [
+     "Fell back from [footage_type=broll, prev_edit=jump_cut, format=9:16, section=hook] to the most reliable broader context [footage_type=broll, format=9:16].",
+     "ben: high_contrast holds 97% of the decayed weight here (effective support 6.4 after decay, 8 supporting events, 0 rejections of it); confidence 0.75 (Wilson lower bound).",
+     "Private project: ben's preference applies over team standard neutral_clean (private > team)."
+    ],
+    "source_events": [
+     "proj_ben_12/op_0009",
+     "proj_ben_11/op_0107",
+     "proj_ben_09/op_0109",
+     "proj_ben_09/op_0042",
+     "proj_ben_05/op_0024",
+     "proj_ben_04/op_0045",
+     "proj_ben_04/op_0031",
+     "proj_ben_03/op_0042"
+    ],
+    "preference_id": "ben/any/color_grade/footage_type=broll|format=9:16/high_contrast#1",
+    "conflicts": [],
+    "blocked": []
+   }
+  },
+  {
+   "type": "trim_clip",
+   "author": "director",
+   "on_behalf_of": "ben",
+   "category": "cut_length",
+   "context": {
+    "footage_type": "broll",
+    "prev_edit": "jump_cut",
+    "format": "9:16",
+    "section": "hook"
+   },
+   "payload": {
+    "clip_id": "clp_0002",
+    "edge": "out",
+    "after": {
+     "duration": 1.2
+    },
+    "bucket": "short"
+   },
+   "memory": {
+    "action": "short",
+    "confidence": 0.91,
+    "why": [
+     "Fell back from [footage_type=broll, prev_edit=jump_cut, format=9:16, section=hook] to the most reliable broader context [footage_type=broll].",
+     "ben: short holds 100% of the decayed weight here (effective support 16.6 after decay, 19 supporting events, 0 rejections of it); confidence 0.91 (Wilson lower bound).",
+     "Private project: ben's preference applies over team standard medium (private > team)."
+    ],
+    "source_events": [
+     "proj_ben_11/op_0101",
+     "proj_ben_11/op_0057",
+     "proj_ben_09/op_0128",
+     "proj_ben_09/op_0085",
+     "proj_ben_09/op_0063",
+     "proj_ben_09/op_0021",
+     "proj_ben_08/op_0102",
+     "proj_ben_08/op_0073"
+    ],
+    "preference_id": "ben/any/cut_length/footage_type=broll/short#1",
+    "conflicts": [],
+    "blocked": []
+   }
+  },
+  {
+   "type": "add_transition",
+   "author": "director",
+   "on_behalf_of": "ben",
+   "category": "transition",
+   "context": {
+    "footage_type": "talking_head",
+    "prev_edit": "scene_change",
+    "format": "9:16",
+    "section": "body"
+   },
+   "payload": {
+    "transition": {
+     "id": "tr_new_03",
+     "track_id": "V1",
+     "from_clip": "clp_0002",
+     "to_clip": "clp_0003",
+     "type": "hard_cut",
+     "duration": 0.4
+    }
+   },
+   "memory": {
+    "action": "hard_cut",
+    "confidence": 0.757,
+    "why": [
+     "Exact context match [footage_type=talking_head, prev_edit=scene_change, format=9:16, section=body].",
+     "ben: hard_cut holds 90% of the decayed weight here (effective support 14.3 after decay, 16 supporting events, 2 rejections of it); confidence 0.76 (Wilson lower bound).",
+     "Private project: ben's preference applies over team standard crossfade (private > team)."
+    ],
+    "source_events": [
+     "proj_ben_12/op_0031",
+     "proj_ben_10/op_0066",
+     "proj_ben_10/op_0064",
+     "proj_ben_10/op_0031",
+     "proj_ben_10/op_0021",
+     "proj_ben_09/op_0110",
+     "proj_ben_09/op_0022",
+     "proj_ben_08/op_0020"
+    ],
+    "preference_id": "ben/any/transition/footage_type=talking_head|prev_edit=scene_change|format=9:16|section=body/hard_cut#1",
+    "conflicts": [],
+    "blocked": []
+   }
+  },
+  {
+   "type": "add_effect",
+   "author": "director",
+   "on_behalf_of": "ben",
+   "category": "color_grade",
+   "context": {
+    "footage_type": "talking_head",
+    "prev_edit": "scene_change",
+    "format": "9:16",
+    "section": "body"
+   },
+   "payload": {
+    "effect": {
+     "id": "fx_new_04",
+     "target_id": "clp_0003",
+     "type": "color_grade",
+     "params": {
+      "look": "high_contrast",
+      "intensity": 0.6
+     }
+    }
+   },
+   "memory": {
+    "action": "high_contrast",
+    "confidence": 0.806,
+    "why": [
+     "Fell back from [footage_type=talking_head, prev_edit=scene_change, format=9:16, section=body] to the most reliable broader context [footage_type=talking_head, format=9:16, section=body].",
+     "ben: high_contrast holds 100% of the decayed weight here (effective support 6.8 after decay, 8 supporting events, 1 rejections of it); confidence 0.81 (Wilson lower bound).",
+     "Private project: ben's preference applies over team standard neutral_clean (private > team)."
+    ],
+    "source_events": [
+     "proj_ben_12/op_0011",
+     "proj_ben_11/op_0109",
+     "proj_ben_10/op_0065",
+     "proj_ben_10/op_0034",
+     "proj_ben_06/op_0115",
+     "proj_ben_06/op_0106",
+     "proj_ben_02/op_0118",
+     "proj_ben_02/op_0057"
+    ],
+    "preference_id": "ben/private/color_grade/footage_type=talking_head|format=9:16|section=body/high_contrast#1",
+    "conflicts": [],
+    "blocked": []
+   }
+  },
+  {
+   "type": "trim_clip",
+   "author": "director",
+   "on_behalf_of": "ben",
+   "category": "cut_length",
+   "context": {
+    "footage_type": "talking_head",
+    "prev_edit": "scene_change",
+    "format": "9:16",
+    "section": "body"
+   },
+   "payload": {
+    "clip_id": "clp_0003",
+    "edge": "out",
+    "after": {
+     "duration": 2.8
+    },
+    "bucket": "medium"
+   },
+   "memory": {
+    "action": "medium",
+    "confidence": 0.591,
+    "why": [
+     "Exact context match [footage_type=talking_head, prev_edit=scene_change, format=9:16, section=body].",
+     "ben: medium holds 80% of the decayed weight here (effective support 8.7 after decay, 9 supporting events, 1 rejections of it); confidence 0.59 (Wilson lower bound)."
+    ],
+    "source_events": [
+     "proj_ben_12/op_0037",
+     "proj_ben_10/op_0067",
+     "proj_ben_10/op_0022",
+     "proj_ben_06/op_0114",
+     "proj_ben_06/op_0059",
+     "proj_ben_03/op_0108",
+     "proj_ben_03/op_0029",
+     "proj_ben_01/op_0063"
+    ],
+    "preference_id": "ben/any/cut_length/footage_type=talking_head|prev_edit=scene_change|format=9:16|section=body/medium#1",
+    "conflicts": [],
+    "blocked": []
+   }
+  },
+  {
+   "type": "add_transition",
+   "author": "director",
+   "on_behalf_of": "ben",
+   "category": "transition",
+   "context": {
+    "footage_type": "product",
+    "prev_edit": "scene_change",
+    "format": "9:16",
+    "section": "body"
+   },
+   "payload": {
+    "transition": {
+     "id": "tr_new_06",
+     "track_id": "V1",
+     "from_clip": "clp_0003",
+     "to_clip": "clp_0004",
+     "type": "slide",
+     "duration": 0.4
+    }
+   },
+   "memory": {
+    "action": "slide",
+    "confidence": 0.842,
+    "why": [
+     "Exact context match [footage_type=product, prev_edit=scene_change, format=9:16, section=body].",
+     "ben: slide holds 100% of the decayed weight here (effective support 8.7 after decay, 9 supporting events, 0 rejections of it); confidence 0.84 (Wilson lower bound).",
+     "Private project: ben's preference applies over team standard crossfade (private > team)."
+    ],
+    "source_events": [
+     "proj_ben_12/op_0017",
+     "proj_ben_11/op_0110",
+     "proj_ben_10/op_0056",
+     "proj_ben_10/op_0018",
+     "proj_ben_07/op_0107",
+     "proj_ben_07/op_0022",
+     "proj_ben_02/op_0119",
+     "proj_ben_02/op_0077"
+    ],
+    "preference_id": "ben/private/transition/footage_type=product|prev_edit=scene_change|format=9:16|section=body/slide#1",
+    "conflicts": [],
+    "blocked": []
+   }
+  },
+  {
+   "type": "add_effect",
+   "author": "director",
+   "on_behalf_of": "ben",
+   "category": "color_grade",
+   "context": {
+    "footage_type": "product",
+    "prev_edit": "scene_change",
+    "format": "9:16",
+    "section": "body"
+   },
+   "payload": {
+    "effect": {
+     "id": "fx_new_07",
+     "target_id": "clp_0004",
+     "type": "color_grade",
+     "params": {
+      "look": "high_contrast",
+      "intensity": 0.6
+     }
+    }
+   },
+   "memory": {
+    "action": "high_contrast",
+    "confidence": 0.806,
+    "why": [
+     "Fell back from [footage_type=product, prev_edit=scene_change, format=9:16, section=body] to the most reliable broader context [footage_type=product, format=9:16, section=body].",
+     "ben: high_contrast holds 96% of the decayed weight here (effective support 11.4 after decay, 13 supporting events, 0 rejections of it); confidence 0.81 (Wilson lower bound).",
+     "Private project: ben's preference applies over team standard neutral_clean (private > team)."
+    ],
+    "source_events": [
+     "proj_ben_12/op_0019",
+     "proj_ben_10/op_0020",
+     "proj_ben_08/op_0032",
+     "proj_ben_07/op_0114",
+     "proj_ben_06/op_0126",
+     "proj_ben_06/op_0082",
+     "proj_ben_06/op_0073",
+     "proj_ben_05/op_0021"
+    ],
+    "preference_id": "ben/any/color_grade/footage_type=product|format=9:16|section=body/high_contrast#1",
+    "conflicts": [],
+    "blocked": []
+   }
+  },
+  {
+   "type": "trim_clip",
+   "author": "director",
+   "on_behalf_of": "ben",
+   "category": "cut_length",
+   "context": {
+    "footage_type": "product",
+    "prev_edit": "scene_change",
+    "format": "9:16",
+    "section": "body"
+   },
+   "payload": {
+    "clip_id": "clp_0004",
+    "edge": "out",
+    "after": {
+     "duration": 1.2
+    },
+    "bucket": "short"
+   },
+   "memory": {
+    "action": "short",
+    "confidence": 0.733,
+    "why": [
+     "Exact context match [footage_type=product, prev_edit=scene_change, format=9:16, section=body].",
+     "ben: short holds 100% of the decayed weight here (effective support 4.5 after decay, 6 supporting events, 0 rejections of it); confidence 0.73 (Wilson lower bound).",
+     "Private project: ben's preference applies over team standard medium (private > team)."
+    ],
+    "source_events": [
+     "proj_ben_12/op_0018",
+     "proj_ben_10/op_0057",
+     "proj_ben_10/op_0019",
+     "proj_ben_07/op_0023",
+     "proj_ben_02/op_0120",
+     "proj_ben_02/op_0033"
+    ],
+    "preference_id": "ben/private/cut_length/footage_type=product|prev_edit=scene_change|format=9:16|section=body/short#1",
+    "conflicts": [],
+    "blocked": []
+   }
+  },
+  {
+   "type": "add_transition",
+   "author": "director",
+   "on_behalf_of": "ben",
+   "category": "transition",
+   "context": {
+    "footage_type": "talking_head",
+    "prev_edit": "jump_cut",
+    "format": "9:16",
+    "section": "body"
+   },
+   "payload": {
+    "transition": {
+     "id": "tr_new_09",
+     "track_id": "V1",
+     "from_clip": "clp_0004",
+     "to_clip": "clp_0005",
+     "type": "zoom_punch",
+     "duration": 0.4
+    }
+   },
+   "memory": {
+    "action": "zoom_punch",
+    "confidence": 0.879,
+    "why": [
+     "Exact context match [footage_type=talking_head, prev_edit=jump_cut, format=9:16, section=body].",
+     "ben: zoom_punch holds 97% of the decayed weight here (effective support 22.0 after decay, 24 supporting events, 0 rejections of it); confidence 0.88 (Wilson lower bound).",
+     "Private project: ben's preference applies over team standard hard_cut (private > team)."
+    ],
+    "source_events": [
+     "proj_ben_12/op_0020",
+     "proj_ben_11/op_0117",
+     "proj_ben_11/op_0108",
+     "proj_ben_10/op_0074",
+     "proj_ben_10/op_0040",
+     "proj_ben_09/op_0118",
+     "proj_ben_09/op_0100",
+     "proj_ben_09/op_0029"
+    ],
+    "preference_id": "ben/any/transition/footage_type=talking_head|prev_edit=jump_cut|format=9:16|section=body/zoom_punch#1",
+    "conflicts": [],
+    "blocked": []
+   }
+  },
+  {
+   "type": "add_effect",
+   "author": "director",
+   "on_behalf_of": "ben",
+   "category": "color_grade",
+   "context": {
+    "footage_type": "talking_head",
+    "prev_edit": "jump_cut",
+    "format": "9:16",
+    "section": "body"
+   },
+   "payload": {
+    "effect": {
+     "id": "fx_new_10",
+     "target_id": "clp_0005",
+     "type": "color_grade",
+     "params": {
+      "look": "high_contrast",
+      "intensity": 0.6
+     }
+    }
+   },
+   "memory": {
+    "action": "high_contrast",
+    "confidence": 0.806,
+    "why": [
+     "Fell back from [footage_type=talking_head, prev_edit=jump_cut, format=9:16, section=body] to the most reliable broader context [footage_type=talking_head, format=9:16, section=body].",
+     "ben: high_contrast holds 100% of the decayed weight here (effective support 6.8 after decay, 8 supporting events, 1 rejections of it); confidence 0.81 (Wilson lower bound).",
+     "Private project: ben's preference applies over team standard neutral_clean (private > team)."
+    ],
+    "source_events": [
+     "proj_ben_12/op_0011",
+     "proj_ben_11/op_0109",
+     "proj_ben_10/op_0065",
+     "proj_ben_10/op_0034",
+     "proj_ben_06/op_0115",
+     "proj_ben_06/op_0106",
+     "proj_ben_02/op_0118",
+     "proj_ben_02/op_0057"
+    ],
+    "preference_id": "ben/private/color_grade/footage_type=talking_head|format=9:16|section=body/high_contrast#1",
+    "conflicts": [],
+    "blocked": []
+   }
+  },
+  {
+   "type": "trim_clip",
+   "author": "director",
+   "on_behalf_of": "ben",
+   "category": "cut_length",
+   "context": {
+    "footage_type": "talking_head",
+    "prev_edit": "jump_cut",
+    "format": "9:16",
+    "section": "body"
+   },
+   "payload": {
+    "clip_id": "clp_0005",
+    "edge": "out",
+    "after": {
+     "duration": 2.8
+    },
+    "bucket": "medium"
+   },
+   "memory": {
+    "action": "medium",
+    "confidence": 0.762,
+    "why": [
+     "Fell back from [footage_type=talking_head, prev_edit=jump_cut, format=9:16, section=body] to the most reliable broader context [footage_type=talking_head, prev_edit=jump_cut, section=body].",
+     "ben: medium holds 91% of the decayed weight here (effective support 12.8 after decay, 16 supporting events, 2 rejections of it); confidence 0.76 (Wilson lower bound)."
+    ],
+    "source_events": [
+     "proj_ben_12/op_0021",
+     "proj_ben_11/op_0075",
+     "proj_ben_11/op_0029",
+     "proj_ben_11/op_0017",
+     "proj_ben_10/op_0123",
+     "proj_ben_09/op_0061",
+     "proj_ben_09/op_0031",
+     "proj_ben_09/op_0018"
+    ],
+    "preference_id": "ben/any/cut_length/footage_type=talking_head|prev_edit=jump_cut|section=body/medium#1",
+    "conflicts": [],
+    "blocked": []
+   }
+  },
+  {
+   "type": "add_transition",
+   "author": "director",
+   "on_behalf_of": "ben",
+   "category": "transition",
+   "context": {
+    "footage_type": "talking_head",
+    "prev_edit": "broll_insert",
+    "format": "9:16",
+    "section": "body"
+   },
+   "payload": {
+    "transition": {
+     "id": "tr_new_12",
+     "track_id": "V1",
+     "from_clip": "clp_0005",
+     "to_clip": "clp_0006",
+     "type": "hard_cut",
+     "duration": 0.4
+    }
+   },
+   "memory": {
+    "action": "hard_cut",
+    "confidence": 0.586,
+    "why": [
+     "Fell back from [footage_type=talking_head, prev_edit=broll_insert, format=9:16, section=body] to the most reliable broader context [footage_type=talking_head, prev_edit=broll_insert].",
+     "ben: hard_cut holds 74% of the decayed weight here (effective support 16.0 after decay, 14 supporting events, 0 rejections of it); confidence 0.59 (Wilson lower bound).",
+     "5 narrower context(s) skipped as stale, e.g. skipped [footage_type=talking_head, prev_edit=broll_insert, format=9:16, section=body] (private): its hard_cut was superseded by slide in [prev_edit=broll_insert, section=body] (private) at ben_s20 and not re-confirmed since.",
+     "Private project: ben's preference applies over team standard crossfade (private > team)."
+    ],
+    "source_events": [
+     "proj_ben_09/op_0051",
+     "proj_ben_09/op_0007",
+     "proj_ben_05/op_0132",
+     "proj_ben_05/op_0081",
+     "proj_ben_05/op_0036",
+     "proj_ben_03/op_0067",
+     "proj_ben_03/op_0056",
+     "proj_ben_03/op_0027"
+    ],
+    "preference_id": "ben/any/transition/footage_type=talking_head|prev_edit=broll_insert/hard_cut#1",
+    "conflicts": [],
+    "blocked": []
+   }
+  },
+  {
+   "type": "add_effect",
+   "author": "director",
+   "on_behalf_of": "ben",
+   "category": "color_grade",
+   "context": {
+    "footage_type": "talking_head",
+    "prev_edit": "broll_insert",
+    "format": "9:16",
+    "section": "body"
+   },
+   "payload": {
+    "effect": {
+     "id": "fx_new_13",
+     "target_id": "clp_0006",
+     "type": "color_grade",
+     "params": {
+      "look": "high_contrast",
+      "intensity": 0.6
+     }
+    }
+   },
+   "memory": {
+    "action": "high_contrast",
+    "confidence": 0.806,
+    "why": [
+     "Fell back from [footage_type=talking_head, prev_edit=broll_insert, format=9:16, section=body] to the most reliable broader context [footage_type=talking_head, format=9:16, section=body].",
+     "ben: high_contrast holds 100% of the decayed weight here (effective support 6.8 after decay, 8 supporting events, 1 rejections of it); confidence 0.81 (Wilson lower bound).",
+     "Private project: ben's preference applies over team standard neutral_clean (private > team)."
+    ],
+    "source_events": [
+     "proj_ben_12/op_0011",
+     "proj_ben_11/op_0109",
+     "proj_ben_10/op_0065",
+     "proj_ben_10/op_0034",
+     "proj_ben_06/op_0115",
+     "proj_ben_06/op_0106",
+     "proj_ben_02/op_0118",
+     "proj_ben_02/op_0057"
+    ],
+    "preference_id": "ben/private/color_grade/footage_type=talking_head|format=9:16|section=body/high_contrast#1",
+    "conflicts": [],
+    "blocked": []
+   }
+  },
+  {
+   "type": "trim_clip",
+   "author": "director",
+   "on_behalf_of": "ben",
+   "category": "cut_length",
+   "context": {
+    "footage_type": "talking_head",
+    "prev_edit": "broll_insert",
+    "format": "9:16",
+    "section": "body"
+   },
+   "payload": {
+    "clip_id": "clp_0006",
+    "edge": "out",
+    "after": {
+     "duration": 2.8
+    },
+    "bucket": "medium"
+   },
+   "memory": {
+    "action": "medium",
+    "confidence": 0.693,
+    "why": [
+     "Exact context match [footage_type=talking_head, prev_edit=broll_insert, format=9:16, section=body].",
+     "ben: medium holds 100% of the decayed weight here (effective support 3.7 after decay, 4 supporting events, 0 rejections of it); confidence 0.69 (Wilson lower bound)."
+    ],
+    "source_events": [
+     "proj_ben_12/op_0029",
+     "proj_ben_02/op_0110",
+     "proj_ben_02/op_0069",
+     "proj_ben_02/op_0023"
+    ],
+    "preference_id": "ben/private/cut_length/footage_type=talking_head|prev_edit=broll_insert|format=9:16|section=body/medium#1",
+    "conflicts": [],
+    "blocked": []
+   }
+  },
+  {
+   "type": "add_transition",
+   "author": "director",
+   "on_behalf_of": "ben",
+   "category": "transition",
+   "context": {
+    "footage_type": "talking_head",
+    "prev_edit": "scene_change",
+    "format": "9:16",
+    "section": "body"
+   },
+   "payload": {
+    "transition": {
+     "id": "tr_new_15",
+     "track_id": "V1",
+     "from_clip": "clp_0006",
+     "to_clip": "clp_0007",
+     "type": "hard_cut",
+     "duration": 0.4
+    }
+   },
+   "memory": {
+    "action": "hard_cut",
+    "confidence": 0.757,
+    "why": [
+     "Exact context match [footage_type=talking_head, prev_edit=scene_change, format=9:16, section=body].",
+     "ben: hard_cut holds 90% of the decayed weight here (effective support 14.3 after decay, 16 supporting events, 2 rejections of it); confidence 0.76 (Wilson lower bound).",
+     "Private project: ben's preference applies over team standard crossfade (private > team)."
+    ],
+    "source_events": [
+     "proj_ben_12/op_0031",
+     "proj_ben_10/op_0066",
+     "proj_ben_10/op_0064",
+     "proj_ben_10/op_0031",
+     "proj_ben_10/op_0021",
+     "proj_ben_09/op_0110",
+     "proj_ben_09/op_0022",
+     "proj_ben_08/op_0020"
+    ],
+    "preference_id": "ben/any/transition/footage_type=talking_head|prev_edit=scene_change|format=9:16|section=body/hard_cut#1",
+    "conflicts": [],
+    "blocked": []
+   }
+  },
+  {
+   "type": "add_effect",
+   "author": "director",
+   "on_behalf_of": "ben",
+   "category": "color_grade",
+   "context": {
+    "footage_type": "talking_head",
+    "prev_edit": "scene_change",
+    "format": "9:16",
+    "section": "body"
+   },
+   "payload": {
+    "effect": {
+     "id": "fx_new_16",
+     "target_id": "clp_0007",
+     "type": "color_grade",
+     "params": {
+      "look": "high_contrast",
+      "intensity": 0.6
+     }
+    }
+   },
+   "memory": {
+    "action": "high_contrast",
+    "confidence": 0.806,
+    "why": [
+     "Fell back from [footage_type=talking_head, prev_edit=scene_change, format=9:16, section=body] to the most reliable broader context [footage_type=talking_head, format=9:16, section=body].",
+     "ben: high_contrast holds 100% of the decayed weight here (effective support 6.8 after decay, 8 supporting events, 1 rejections of it); confidence 0.81 (Wilson lower bound).",
+     "Private project: ben's preference applies over team standard neutral_clean (private > team)."
+    ],
+    "source_events": [
+     "proj_ben_12/op_0011",
+     "proj_ben_11/op_0109",
+     "proj_ben_10/op_0065",
+     "proj_ben_10/op_0034",
+     "proj_ben_06/op_0115",
+     "proj_ben_06/op_0106",
+     "proj_ben_02/op_0118",
+     "proj_ben_02/op_0057"
+    ],
+    "preference_id": "ben/private/color_grade/footage_type=talking_head|format=9:16|section=body/high_contrast#1",
+    "conflicts": [],
+    "blocked": []
+   }
+  },
+  {
+   "type": "trim_clip",
+   "author": "director",
+   "on_behalf_of": "ben",
+   "category": "cut_length",
+   "context": {
+    "footage_type": "talking_head",
+    "prev_edit": "scene_change",
+    "format": "9:16",
+    "section": "body"
+   },
+   "payload": {
+    "clip_id": "clp_0007",
+    "edge": "out",
+    "after": {
+     "duration": 2.8
+    },
+    "bucket": "medium"
+   },
+   "memory": {
+    "action": "medium",
+    "confidence": 0.591,
+    "why": [
+     "Exact context match [footage_type=talking_head, prev_edit=scene_change, format=9:16, section=body].",
+     "ben: medium holds 80% of the decayed weight here (effective support 8.7 after decay, 9 supporting events, 1 rejections of it); confidence 0.59 (Wilson lower bound)."
+    ],
+    "source_events": [
+     "proj_ben_12/op_0037",
+     "proj_ben_10/op_0067",
+     "proj_ben_10/op_0022",
+     "proj_ben_06/op_0114",
+     "proj_ben_06/op_0059",
+     "proj_ben_03/op_0108",
+     "proj_ben_03/op_0029",
+     "proj_ben_01/op_0063"
+    ],
+    "preference_id": "ben/any/cut_length/footage_type=talking_head|prev_edit=scene_change|format=9:16|section=body/medium#1",
+    "conflicts": [],
+    "blocked": []
+   }
+  },
+  {
+   "type": "add_transition",
+   "author": "director",
+   "on_behalf_of": "ben",
+   "category": "transition",
+   "context": {
+    "footage_type": "talking_head",
+    "prev_edit": "broll_insert",
+    "format": "9:16",
+    "section": "outro"
+   },
+   "payload": {
+    "transition": {
+     "id": "tr_new_18",
+     "track_id": "V1",
+     "from_clip": "clp_0007",
+     "to_clip": "clp_0008",
+     "type": "hard_cut",
+     "duration": 0.4
+    }
+   },
+   "memory": {
+    "action": "hard_cut",
+    "confidence": 0.586,
+    "why": [
+     "Fell back from [footage_type=talking_head, prev_edit=broll_insert, format=9:16, section=outro] to the most reliable broader context [footage_type=talking_head, prev_edit=broll_insert].",
+     "ben: hard_cut holds 74% of the decayed weight here (effective support 16.0 after decay, 14 supporting events, 0 rejections of it); confidence 0.59 (Wilson lower bound).",
+     "1 narrower context(s) skipped as stale, e.g. skipped [footage_type=talking_head, prev_edit=broll_insert] (private): its hard_cut was superseded by slide in [prev_edit=broll_insert] (private) at ben_s20 and not re-confirmed since.",
+     "Private project: ben's preference applies over team standard crossfade (private > team)."
+    ],
+    "source_events": [
+     "proj_ben_09/op_0051",
+     "proj_ben_09/op_0007",
+     "proj_ben_05/op_0132",
+     "proj_ben_05/op_0081",
+     "proj_ben_05/op_0036",
+     "proj_ben_03/op_0067",
+     "proj_ben_03/op_0056",
+     "proj_ben_03/op_0027"
+    ],
+    "preference_id": "ben/any/transition/footage_type=talking_head|prev_edit=broll_insert/hard_cut#1",
+    "conflicts": [],
+    "blocked": []
+   }
+  },
+  {
+   "type": "add_effect",
+   "author": "director",
+   "on_behalf_of": "ben",
+   "category": "color_grade",
+   "context": {
+    "footage_type": "talking_head",
+    "prev_edit": "broll_insert",
+    "format": "9:16",
+    "section": "outro"
+   },
+   "payload": {
+    "effect": {
+     "id": "fx_new_19",
+     "target_id": "clp_0008",
+     "type": "color_grade",
+     "params": {
+      "look": "high_contrast",
+      "intensity": 0.6
+     }
+    }
+   },
+   "memory": {
+    "action": "high_contrast",
+    "confidence": 0.778,
+    "why": [
+     "Fell back from [footage_type=talking_head, prev_edit=broll_insert, format=9:16, section=outro] to the most reliable broader context [footage_type=talking_head, format=9:16].",
+     "ben: high_contrast holds 88% of the decayed weight here (effective support 25.6 after decay, 27 supporting events, 4 rejections of it); confidence 0.78 (Wilson lower bound).",
+     "Private project: ben's preference applies over team standard neutral_clean (private > team)."
+    ],
+    "source_events": [
+     "proj_ben_12/op_0011",
+     "proj_ben_11/op_0109",
+     "proj_ben_10/op_0081",
+     "proj_ben_10/op_0065",
+     "proj_ben_10/op_0034",
+     "proj_ben_10/op_0010",
+     "proj_ben_09/op_0119",
+     "proj_ben_09/op_0117"
+    ],
+    "preference_id": "ben/any/color_grade/footage_type=talking_head|format=9:16/high_contrast#1",
+    "conflicts": [],
+    "blocked": []
+   }
+  },
+  {
+   "type": "trim_clip",
+   "author": "director",
+   "on_behalf_of": "ben",
+   "category": "cut_length",
+   "context": {
+    "footage_type": "talking_head",
+    "prev_edit": "broll_insert",
+    "format": "9:16",
+    "section": "outro"
+   },
+   "payload": {
+    "clip_id": "clp_0008",
+    "edge": "out",
+    "after": {
+     "duration": 1.2
+    },
+    "bucket": "short"
+   },
+   "memory": {
+    "action": "short",
+    "confidence": 0.791,
+    "why": [
+     "Fell back from [footage_type=talking_head, prev_edit=broll_insert, format=9:16, section=outro] to the most reliable broader context [footage_type=talking_head, section=outro].",
+     "ben: short holds 98% of the decayed weight here (effective support 8.0 after decay, 9 supporting events, 0 rejections of it); confidence 0.79 (Wilson lower bound).",
+     "Private project: ben's preference applies over team standard medium (private > team)."
+    ],
+    "source_events": [
+     "proj_ben_12/op_0039",
+     "proj_ben_10/op_0126",
+     "proj_ben_10/op_0076",
+     "proj_ben_08/op_0085",
+     "proj_ben_07/op_0126",
+     "proj_ben_07/op_0041",
+     "proj_ben_05/op_0136",
+     "proj_ben_05/op_0090"
+    ],
+    "preference_id": "ben/any/cut_length/footage_type=talking_head|section=outro/short#1",
+    "conflicts": [],
+    "blocked": []
+   }
+  },
+  {
+   "type": "add_clip",
+   "author": "director",
+   "on_behalf_of": "ben",
+   "category": "music_mood",
+   "context": {
+    "footage_type": "broll",
+    "format": "9:16",
+    "section": "hook"
+   },
+   "payload": {
+    "track_id": "A1",
+    "clip": {
+     "id": "clp_music_21",
+     "music_mood": "upbeat",
+     "asset_label": "music_upbeat",
+     "section": "hook"
+    }
+   },
+   "memory": {
+    "action": "upbeat",
+    "confidence": 0.871,
+    "why": [
+     "Fell back from [footage_type=broll, format=9:16, section=hook] to the most reliable broader context [format=9:16, section=hook].",
+     "ben: upbeat holds 100% of the decayed weight here (effective support 11.1 after decay, 12 supporting events, 0 rejections of it); confidence 0.87 (Wilson lower bound).",
+     "Private project: ben's preference applies over team standard corporate (private > team)."
+    ],
+    "source_events": [
+     "proj_ben_12/op_0008",
+     "proj_ben_11/op_0098",
+     "proj_ben_10/op_0054",
+     "proj_ben_10/op_0009",
+     "proj_ben_08/op_0010",
+     "proj_ben_07/op_0095",
+     "proj_ben_07/op_0010",
+     "proj_ben_06/op_0104"
+    ],
+    "preference_id": "ben/private/music_mood/format=9:16|section=hook/upbeat#1",
+    "conflicts": [],
+    "blocked": []
+   }
+  },
+  {
+   "type": "add_clip",
+   "author": "director",
+   "on_behalf_of": "ben",
+   "category": "music_mood",
+   "context": {
+    "footage_type": "talking_head",
+    "format": "9:16",
+    "section": "body"
+   },
+   "payload": {
+    "track_id": "A1",
+    "clip": {
+     "id": "clp_music_22",
+     "music_mood": "upbeat",
+     "asset_label": "music_upbeat",
+     "section": "body"
+    }
+   },
+   "memory": {
+    "action": "upbeat",
+    "confidence": 0.805,
+    "why": [
+     "Exact context match [footage_type=talking_head, format=9:16, section=body].",
+     "ben: upbeat holds 94% of the decayed weight here (effective support 14.5 after decay, 16 supporting events, 0 rejections of it); confidence 0.80 (Wilson lower bound).",
+     "Private project: ben's preference applies over team standard corporate (private > team)."
+    ],
+    "source_events": [
+     "proj_ben_12/op_0027",
+     "proj_ben_11/op_0120",
+     "proj_ben_10/op_0073",
+     "proj_ben_10/op_0033",
+     "proj_ben_10/op_0029",
+     "proj_ben_09/op_0019",
+     "proj_ben_08/op_0021",
+     "proj_ben_06/op_0060"
+    ],
+    "preference_id": "ben/any/music_mood/footage_type=talking_head|format=9:16|section=body/upbeat#1",
+    "conflicts": [],
+    "blocked": []
+   }
+  },
+  {
+   "type": "add_clip",
+   "author": "director",
+   "on_behalf_of": "ben",
+   "category": "music_mood",
+   "context": {
+    "footage_type": "talking_head",
+    "format": "9:16",
+    "section": "outro"
+   },
+   "payload": {
+    "track_id": "A1",
+    "clip": {
+     "id": "clp_music_23",
+     "music_mood": "upbeat",
+     "asset_label": "music_upbeat",
+     "section": "outro"
+    }
+   },
+   "memory": {
+    "action": "upbeat",
+    "confidence": 0.627,
+    "why": [
+     "Fell back from [footage_type=talking_head, format=9:16, section=outro] to the most reliable broader context [footage_type=talking_head, section=outro].",
+     "ben: upbeat holds 83% of the decayed weight here (effective support 9.0 after decay, 10 supporting events, 2 rejections of it); confidence 0.63 (Wilson lower bound)."
+    ],
+    "source_events": [
+     "proj_ben_12/op_0040",
+     "proj_ben_10/op_0127",
+     "proj_ben_10/op_0077",
+     "proj_ben_08/op_0132",
+     "proj_ben_08/op_0086",
+     "proj_ben_07/op_0127",
+     "proj_ben_07/op_0084",
+     "proj_ben_05/op_0140"
+    ],
+    "preference_id": "ben/any/music_mood/footage_type=talking_head|section=outro/upbeat#1",
+    "conflicts": [],
+    "blocked": []
+   }
+  },
+  {
+   "type": "add_text",
+   "author": "director",
+   "on_behalf_of": "ben",
+   "category": "font",
+   "context": {
+    "format": "9:16",
+    "section": "hook"
+   },
+   "payload": {
+    "text_layer": {
+     "id": "txt_title_24",
+     "track_id": "T1",
+     "role": "title",
+     "text": "Demo cut",
+     "style": {
+      "font": "Bebas Neue"
+     }
+    }
+   },
+   "memory": {
+    "action": "Bebas Neue",
+    "confidence": 0.695,
+    "why": [
+     "Exact context match [format=9:16, section=hook].",
+     "ben: Bebas Neue holds 89% of the decayed weight here (effective support 9.1 after decay, 9 supporting events, 0 rejections of it); confidence 0.69 (Wilson lower bound).",
+     "Private project: ben's preference applies over team standard Inter (private > team)."
+    ],
+    "source_events": [
+     "proj_ben_12/op_0045",
+     "proj_ben_11/op_0130",
+     "proj_ben_10/op_0083",
+     "proj_ben_10/op_0044",
+     "proj_ben_07/op_0044",
+     "proj_ben_06/op_0137",
+     "proj_ben_06/op_0092",
+     "proj_ben_02/op_0131"
+    ],
+    "preference_id": "ben/private/font/format=9:16|section=hook/Bebas Neue#1",
+    "conflicts": [],
+    "blocked": []
+   }
+  },
+  {
+   "type": "add_text",
+   "author": "director",
+   "on_behalf_of": "ben",
+   "category": "caption_style",
+   "context": {
+    "format": "9:16",
+    "footage_type": "broll",
+    "section": "hook"
+   },
+   "payload": {
+    "text_layer": {
+     "id": "txt_cap_25",
+     "track_id": "T1",
+     "role": "captions",
+     "style": {
+      "preset": "beast_mode"
+     }
+    }
+   },
+   "memory": {
+    "action": "beast_mode",
+    "confidence": 0.894,
+    "why": [
+     "Fell back from [footage_type=broll, format=9:16, section=hook] to the most reliable broader context [format=9:16].",
+     "ben: beast_mode holds 100% of the decayed weight here (effective support 13.8 after decay, 13 supporting events, 0 rejections of it); confidence 0.89 (Wilson lower bound).",
+     "Explicit statement(s): 'For my own shorts I prefer beast mode captions, big and loud.' (chat_0008)",
+     "Private project: ben's preference applies over team standard stacked (private > team)."
+    ],
+    "source_events": [
+     "proj_ben_12/op_0046",
+     "proj_ben_11/op_0131",
+     "proj_ben_10/op_0084",
+     "proj_ben_10/op_0046",
+     "proj_ben_08/op_0045",
+     "proj_ben_07/op_0130",
+     "proj_ben_07/op_0046",
+     "proj_ben_06/op_0138",
+     "chat_0008"
+    ],
+    "preference_id": "ben/private/caption_style/format=9:16/beast_mode#1",
+    "conflicts": [],
+    "blocked": []
+   }
+  }
+ ],
+ "ask_user": [],
+ "notes": [
+  "planned 25 memory lookups for 7 clips",
+  "no brand: private project, no hard constraints applied"
+ ],
+ "llm_note": "(no LLM key in env: deterministic agent, no LLM note)"
+}

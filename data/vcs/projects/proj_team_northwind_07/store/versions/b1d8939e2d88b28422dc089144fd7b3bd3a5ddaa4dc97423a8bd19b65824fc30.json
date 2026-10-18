@@ -1,0 +1,20 @@
+{
+  "version_id": "b1d8939e2d88b28422dc089144fd7b3bd3a5ddaa4dc97423a8bd19b65824fc30",
+  "project_id": "proj_team_northwind_07",
+  "timeline_hash": "9a6da173d3db35ed1d801f58b7dc9672698365dd8047ca50c627f7c6041d476f",
+  "parents": [
+    "014168adde4b74d60cc68b7af6a1c20bf757a5ee5b2e1456038201883da923be"
+  ],
+  "branch": "ben/cut-20",
+  "author": "director",
+  "timestamp": "2026-09-05T21:01:36+05:30",
+  "message": "Director: caption_style, color_grade, font, music_mood, transition",
+  "op_ids": [
+    "proj_team_northwind_07/op_0073",
+    "proj_team_northwind_07/op_0074",
+    "proj_team_northwind_07/op_0075",
+    "proj_team_northwind_07/op_0076",
+    "proj_team_northwind_07/op_0077"
+  ],
+  "session_id": "team_northwind_s20"
+}

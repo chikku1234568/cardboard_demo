@@ -1,0 +1,20 @@
+{
+  "version_id": "0a90098cccc6089859a89b062fb465df401d2a526af5cd5e82880795a3e55939",
+  "project_id": "proj_ava_02",
+  "timeline_hash": "d2e626736a9374dec7347576015939e95389da730fe5e77e772200b8820c6868",
+  "parents": [
+    "83cc4a23b93d9989606059d6ee45414c5e0c8e495db1951f9977dc563e85cca4"
+  ],
+  "branch": "ava/cut-04",
+  "author": "director",
+  "timestamp": "2026-06-22T19:13:05+05:30",
+  "message": "Director: cut_length, transition",
+  "op_ids": [
+    "proj_ava_02/op_0011",
+    "proj_ava_02/op_0012",
+    "proj_ava_02/op_0013",
+    "proj_ava_02/op_0014",
+    "proj_ava_02/op_0015"
+  ],
+  "session_id": "ava_s04"
+}

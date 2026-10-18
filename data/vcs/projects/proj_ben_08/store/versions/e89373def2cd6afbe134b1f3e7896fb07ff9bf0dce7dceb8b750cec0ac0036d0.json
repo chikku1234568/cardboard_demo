@@ -1,0 +1,16 @@
+{
+  "version_id": "e89373def2cd6afbe134b1f3e7896fb07ff9bf0dce7dceb8b750cec0ac0036d0",
+  "project_id": "proj_ben_08",
+  "timeline_hash": "4a0cad9765e793c371a6b2ef2764606e1cd74f9c0b277527c5793d4ec41ff6fc",
+  "parents": [
+    "00a24ab5ab7ba5a41c2eb7c8bfc7f8feb25d8db717e0e594d343c3262884dd7a"
+  ],
+  "branch": "ben/cut-23",
+  "author": "director",
+  "timestamp": "2026-08-25T19:15:15+05:30",
+  "message": "Director: caption_style",
+  "op_ids": [
+    "proj_ben_08/op_0091"
+  ],
+  "session_id": "ben_s23"
+}

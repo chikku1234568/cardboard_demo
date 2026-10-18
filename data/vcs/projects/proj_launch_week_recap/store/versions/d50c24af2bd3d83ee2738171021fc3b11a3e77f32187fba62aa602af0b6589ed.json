@@ -1,0 +1,19 @@
+{
+  "version_id": "d50c24af2bd3d83ee2738171021fc3b11a3e77f32187fba62aa602af0b6589ed",
+  "project_id": "proj_launch_week_recap",
+  "timeline_hash": "a6361486ed09c5359f893916d4c8ee39e0311ef64c96b6eeffd661bb7688de4c",
+  "parents": [
+    "a6cebe3af51b251ab3f9177a532ac13145df89770f6234e68af9551108dfa7ac"
+  ],
+  "branch": "ava/alt-ending",
+  "author": "ava",
+  "timestamp": "2026-10-17T09:55:00+05:30",
+  "message": "Desk b-roll over the demo, graded teal/orange",
+  "op_ids": [
+    "proj_launch_week_recap/op_0010",
+    "proj_launch_week_recap/op_0011",
+    "proj_launch_week_recap/op_0012",
+    "proj_launch_week_recap/op_0013"
+  ],
+  "session_id": "team_northwind_s36"
+}

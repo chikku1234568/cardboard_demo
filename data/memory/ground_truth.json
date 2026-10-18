@@ -1,0 +1,745 @@
+{
+  "WARNING": "Synthetic data. Rules were planted by generators/world_spec.py + gen_world.py (seed 8). Metrics on this data measure recovery of planted structure only.",
+  "seed": 8,
+  "cast": {
+    "people": {
+      "ava": {
+        "role": "creator",
+        "bio": "talking-head YouTuber; lead editor on team projects"
+      },
+      "ben": {
+        "role": "creator",
+        "bio": "short-form creator; second editor on team projects"
+      },
+      "cara": {
+        "role": "team_lead",
+        "bio": "Northwind team lead; owns titles/motion and the brand"
+      }
+    },
+    "agents": {
+      "director": {
+        "role": "agent",
+        "bio": "Cardboard-style editing agent; every op it makes is on_behalf_of the session's user"
+      }
+    },
+    "teams": {
+      "team_northwind": {
+        "members": [
+          "cara",
+          "ava",
+          "ben"
+        ],
+        "lead": "cara",
+        "brand_id": "northwind"
+      }
+    },
+    "subjects": {
+      "ava": "creator",
+      "ben": "creator",
+      "team_northwind": "team"
+    }
+  },
+  "subjects": {
+    "ava": {
+      "kind": "creator",
+      "sessions": 36,
+      "team": "team_northwind",
+      "brand_share": 0.25,
+      "formats": {
+        "16:9": 0.55,
+        "9:16": 0.35,
+        "1:1": 0.1
+      },
+      "footage": {
+        "talking_head": 0.55,
+        "broll": 0.3,
+        "screen_recording": 0.1,
+        "product": 0.05
+      }
+    },
+    "ben": {
+      "kind": "creator",
+      "sessions": 34,
+      "team": "team_northwind",
+      "brand_share": 0.3,
+      "formats": {
+        "9:16": 0.7,
+        "16:9": 0.2,
+        "1:1": 0.1
+      },
+      "footage": {
+        "talking_head": 0.45,
+        "product": 0.3,
+        "broll": 0.2,
+        "screen_recording": 0.05
+      }
+    },
+    "team_northwind": {
+      "kind": "team",
+      "sessions": 32,
+      "members": [
+        "cara",
+        "ava",
+        "ben"
+      ],
+      "formats": {
+        "16:9": 0.45,
+        "9:16": 0.45,
+        "1:1": 0.1
+      },
+      "footage": {
+        "talking_head": 0.45,
+        "broll": 0.25,
+        "product": 0.2,
+        "screen_recording": 0.1
+      }
+    }
+  },
+  "context_keys": [
+    "footage_type",
+    "prev_edit",
+    "format",
+    "section"
+  ],
+  "rule_resolution": "For (subject, category, context, project_scope) the most specific matching rule inside its session window generates the user's choice with probability `strength`; otherwise `alt_action` if the rule has one, else a uniform random non-banned alternative. Ramp rules use 0.65 for their first `ramp` sessions with `ramp_old_action` as the off-choice. Section footage_type/prev_edit are fixed per project (properties of the imported footage); format is per session (set_format op on the session branch).",
+  "rules": [
+    {
+      "id": "ava.tr.th_jump.old",
+      "subject": "ava",
+      "category": "transition",
+      "match": {
+        "footage_type": "talking_head",
+        "prev_edit": "jump_cut"
+      },
+      "action": "crossfade",
+      "strength": 0.88,
+      "sessions": [
+        1,
+        17
+      ],
+      "note": "pre-drift style"
+    },
+    {
+      "id": "ava.tr.th_jump.new",
+      "subject": "ava",
+      "category": "transition",
+      "match": {
+        "footage_type": "talking_head",
+        "prev_edit": "jump_cut"
+      },
+      "action": "whip_pan",
+      "strength": 0.9,
+      "sessions": [
+        18,
+        null
+      ],
+      "ramp": 3,
+      "ramp_old_action": "crossfade",
+      "note": "DRIFT: replaces crossfade; first 3 sessions are a ramp (~65% whip_pan)"
+    },
+    {
+      "id": "ava.tr.broll",
+      "subject": "ava",
+      "category": "transition",
+      "match": {
+        "footage_type": "broll"
+      },
+      "action": "crossfade",
+      "strength": 0.85,
+      "note": "crossfade stays correct for b-roll after the drift (context-specific, must NOT be superseded)"
+    },
+    {
+      "id": "ava.tr.screen",
+      "subject": "ava",
+      "category": "transition",
+      "match": {
+        "footage_type": "screen_recording"
+      },
+      "action": "hard_cut",
+      "strength": 0.85
+    },
+    {
+      "id": "ava.tr.default",
+      "subject": "ava",
+      "category": "transition",
+      "match": {},
+      "action": "hard_cut",
+      "strength": 0.7
+    },
+    {
+      "id": "ava.cap.vertical",
+      "subject": "ava",
+      "category": "caption_style",
+      "match": {
+        "format": "9:16"
+      },
+      "action": "word_pop",
+      "strength": 0.9
+    },
+    {
+      "id": "ava.cap.default",
+      "subject": "ava",
+      "category": "caption_style",
+      "match": {},
+      "action": "minimal_modern",
+      "strength": 0.85
+    },
+    {
+      "id": "ava.cg.th",
+      "subject": "ava",
+      "category": "color_grade",
+      "match": {
+        "footage_type": "talking_head"
+      },
+      "action": "warm_film",
+      "strength": 0.9
+    },
+    {
+      "id": "ava.cg.broll",
+      "subject": "ava",
+      "category": "color_grade",
+      "match": {
+        "footage_type": "broll"
+      },
+      "action": "teal_orange",
+      "strength": 0.8
+    },
+    {
+      "id": "ava.cg.default",
+      "subject": "ava",
+      "category": "color_grade",
+      "match": {},
+      "action": "neutral_clean",
+      "strength": 0.7
+    },
+    {
+      "id": "ava.cut.hook",
+      "subject": "ava",
+      "category": "cut_length",
+      "match": {
+        "section": "hook"
+      },
+      "action": "short",
+      "strength": 0.85
+    },
+    {
+      "id": "ava.cut.body",
+      "subject": "ava",
+      "category": "cut_length",
+      "match": {
+        "section": "body"
+      },
+      "action": "medium",
+      "strength": 0.8
+    },
+    {
+      "id": "ava.cut.outro",
+      "subject": "ava",
+      "category": "cut_length",
+      "match": {
+        "section": "outro"
+      },
+      "action": "long",
+      "strength": 0.75
+    },
+    {
+      "id": "ava.mus.hook",
+      "subject": "ava",
+      "category": "music_mood",
+      "match": {
+        "section": "hook"
+      },
+      "action": "upbeat",
+      "strength": 0.85
+    },
+    {
+      "id": "ava.mus.outro",
+      "subject": "ava",
+      "category": "music_mood",
+      "match": {
+        "section": "outro"
+      },
+      "action": "cinematic",
+      "strength": 0.8
+    },
+    {
+      "id": "ava.mus.default",
+      "subject": "ava",
+      "category": "music_mood",
+      "match": {},
+      "action": "chill_lofi",
+      "strength": 0.75
+    },
+    {
+      "id": "ava.font",
+      "subject": "ava",
+      "category": "font",
+      "match": {},
+      "action": "Montserrat",
+      "strength": 0.92
+    },
+    {
+      "id": "ben.tr.th_jump",
+      "subject": "ben",
+      "category": "transition",
+      "match": {
+        "footage_type": "talking_head",
+        "prev_edit": "jump_cut"
+      },
+      "action": "zoom_punch",
+      "strength": 0.88
+    },
+    {
+      "id": "ben.tr.product",
+      "subject": "ben",
+      "category": "transition",
+      "match": {
+        "footage_type": "product"
+      },
+      "action": "slide",
+      "strength": 0.85
+    },
+    {
+      "id": "ben.tr.default",
+      "subject": "ben",
+      "category": "transition",
+      "match": {},
+      "action": "hard_cut",
+      "strength": 0.75
+    },
+    {
+      "id": "ben.cap.vertical.private",
+      "subject": "ben",
+      "category": "caption_style",
+      "match": {
+        "format": "9:16",
+        "project_scope": "private"
+      },
+      "action": "beast_mode",
+      "strength": 0.9,
+      "note": "CONFLICT: ben's private preference vs team rule team.cap.vertical (stacked)"
+    },
+    {
+      "id": "ben.cap.vertical.team",
+      "subject": "ben",
+      "category": "caption_style",
+      "match": {
+        "format": "9:16",
+        "project_scope": "team"
+      },
+      "action": "stacked",
+      "strength": 0.7,
+      "alt_action": "beast_mode",
+      "note": "CONFLICT: in team-scope projects ben mostly follows the team (stacked); the other ~30% is beast_mode"
+    },
+    {
+      "id": "ben.cap.default",
+      "subject": "ben",
+      "category": "caption_style",
+      "match": {},
+      "action": "stacked",
+      "strength": 0.8
+    },
+    {
+      "id": "ben.cg",
+      "subject": "ben",
+      "category": "color_grade",
+      "match": {},
+      "action": "high_contrast",
+      "strength": 0.85
+    },
+    {
+      "id": "ben.font.private",
+      "subject": "ben",
+      "category": "font",
+      "match": {
+        "project_scope": "private"
+      },
+      "action": "Bebas Neue",
+      "strength": 0.9
+    },
+    {
+      "id": "ben.font.team",
+      "subject": "ben",
+      "category": "font",
+      "match": {
+        "project_scope": "team"
+      },
+      "action": "Montserrat",
+      "strength": 0.85,
+      "note": "brand-safe in team projects; a few Bebas Neue attempts are planted brand violations"
+    },
+    {
+      "id": "ben.cut.th_body",
+      "subject": "ben",
+      "category": "cut_length",
+      "match": {
+        "footage_type": "talking_head",
+        "section": "body"
+      },
+      "action": "medium",
+      "strength": 0.8
+    },
+    {
+      "id": "ben.cut.default",
+      "subject": "ben",
+      "category": "cut_length",
+      "match": {},
+      "action": "short",
+      "strength": 0.85
+    },
+    {
+      "id": "ben.mus",
+      "subject": "ben",
+      "category": "music_mood",
+      "match": {},
+      "action": "upbeat",
+      "strength": 0.85
+    },
+    {
+      "id": "team.tr.th_jump",
+      "subject": "team_northwind",
+      "category": "transition",
+      "match": {
+        "footage_type": "talking_head",
+        "prev_edit": "jump_cut"
+      },
+      "action": "hard_cut",
+      "strength": 0.85
+    },
+    {
+      "id": "team.tr.default",
+      "subject": "team_northwind",
+      "category": "transition",
+      "match": {},
+      "action": "crossfade",
+      "strength": 0.75
+    },
+    {
+      "id": "team.cap.vertical",
+      "subject": "team_northwind",
+      "category": "caption_style",
+      "match": {
+        "format": "9:16"
+      },
+      "action": "stacked",
+      "strength": 0.92,
+      "note": "CONFLICT counterpart of ben.cap.vertical.private"
+    },
+    {
+      "id": "team.cap.default",
+      "subject": "team_northwind",
+      "category": "caption_style",
+      "match": {},
+      "action": "minimal_modern",
+      "strength": 0.85
+    },
+    {
+      "id": "team.font",
+      "subject": "team_northwind",
+      "category": "font",
+      "match": {},
+      "action": "Inter",
+      "strength": 0.92
+    },
+    {
+      "id": "team.cg",
+      "subject": "team_northwind",
+      "category": "color_grade",
+      "match": {},
+      "action": "neutral_clean",
+      "strength": 0.88
+    },
+    {
+      "id": "team.cut",
+      "subject": "team_northwind",
+      "category": "cut_length",
+      "match": {},
+      "action": "medium",
+      "strength": 0.8
+    },
+    {
+      "id": "team.mus.outro",
+      "subject": "team_northwind",
+      "category": "music_mood",
+      "match": {
+        "section": "outro"
+      },
+      "action": "upbeat",
+      "strength": 0.8
+    },
+    {
+      "id": "team.mus.default",
+      "subject": "team_northwind",
+      "category": "music_mood",
+      "match": {},
+      "action": "corporate",
+      "strength": 0.85
+    }
+  ],
+  "drift": {
+    "subject": "ava",
+    "category": "transition",
+    "context": {
+      "footage_type": "talking_head",
+      "prev_edit": "jump_cut"
+    },
+    "from_action": "crossfade",
+    "to_action": "whip_pan",
+    "drift_session_no": 18,
+    "drift_session_id": "ava_s18",
+    "drift_date": "2026-08-03T20:37:00+05:30",
+    "ramp_sessions": 3,
+    "must_not_drift": [
+      {
+        "context": {
+          "footage_type": "broll"
+        },
+        "action": "crossfade",
+        "why": "same old action in a different context stays valid"
+      }
+    ],
+    "supporting_statement_session_no": 21
+  },
+  "conflicts": [
+    {
+      "id": "conflict.ben_vs_team.captions_vertical",
+      "category": "caption_style",
+      "context": {
+        "format": "9:16"
+      },
+      "private": {
+        "subject": "ben",
+        "action": "beast_mode",
+        "rule": "ben.cap.vertical.private"
+      },
+      "team": {
+        "subject": "team_northwind",
+        "action": "stacked",
+        "rule": "team.cap.vertical"
+      },
+      "expected_behaviour": "Do not silently pick. Private project -> beast_mode (private > team). Team/brand project -> stacked, surfaced as a conflict citing source events from both sides."
+    },
+    {
+      "id": "conflict.ben_font_vs_brand",
+      "category": "font",
+      "private": {
+        "subject": "ben",
+        "action": "Bebas Neue"
+      },
+      "brand": {
+        "brand_id": "northwind",
+        "allowed": [
+          "Inter",
+          "Montserrat"
+        ]
+      },
+      "expected_behaviour": "Brand hard constraint wins in brand projects: never suggest Bebas Neue there."
+    }
+  ],
+  "brand_violations_planted": [
+    {
+      "op_id": "proj_ava_04/op_0042",
+      "decision_id": "ava_s11_d01",
+      "session_id": "ava_s11",
+      "who": "agent",
+      "category": "transition",
+      "action": "glitch"
+    },
+    {
+      "op_id": "proj_ben_03/op_0122",
+      "decision_id": "ben_s09_d16",
+      "session_id": "ben_s09",
+      "who": "user",
+      "category": "font",
+      "action": "Bebas Neue"
+    },
+    {
+      "op_id": "proj_ben_09/op_0043",
+      "decision_id": "ben_s25_d19",
+      "session_id": "ben_s25",
+      "who": "user",
+      "category": "font",
+      "action": "Bebas Neue"
+    },
+    {
+      "op_id": "proj_team_northwind_02/op_0035",
+      "decision_id": "team_northwind_s04_d19",
+      "session_id": "team_northwind_s04",
+      "who": "agent",
+      "category": "font",
+      "action": "Comic Sans MS"
+    },
+    {
+      "op_id": "proj_team_northwind_04/op_0081",
+      "decision_id": "team_northwind_s12_d01",
+      "session_id": "team_northwind_s12",
+      "who": "agent",
+      "category": "transition",
+      "action": "glitch"
+    },
+    {
+      "op_id": "proj_team_northwind_09/op_0040",
+      "decision_id": "team_northwind_s26_d02",
+      "session_id": "team_northwind_s26",
+      "who": "agent",
+      "category": "music_mood",
+      "action": "dramatic_horror"
+    }
+  ],
+  "explicit_statements": [
+    {
+      "subject": "ava",
+      "session_no": 2,
+      "actor": "ava",
+      "text": "Always use Montserrat for my titles.",
+      "refers_to_rule": "ava.font"
+    },
+    {
+      "subject": "ava",
+      "session_no": 5,
+      "actor": "ava",
+      "text": "Keep my face shots warm, like film. No cold grades on me.",
+      "refers_to_rule": "ava.cg.th"
+    },
+    {
+      "subject": "ava",
+      "session_no": 9,
+      "actor": "ava",
+      "text": "For vertical shorts I like the word pop captions.",
+      "refers_to_rule": "ava.cap.vertical"
+    },
+    {
+      "subject": "ava",
+      "session_no": 14,
+      "actor": "ava",
+      "text": "The render is slow today, ugh.",
+      "refers_to_rule": null
+    },
+    {
+      "subject": "ava",
+      "session_no": 21,
+      "actor": "ava",
+      "text": "I've been into whip pans after jump cuts lately, keep doing that.",
+      "refers_to_rule": "ava.tr.th_jump.new"
+    },
+    {
+      "subject": "ava",
+      "session_no": 27,
+      "actor": "ava",
+      "text": "Make the intro snappier.",
+      "refers_to_rule": null
+    },
+    {
+      "subject": "ben",
+      "session_no": 3,
+      "actor": "ben",
+      "text": "Bebas Neue on everything for my channel.",
+      "refers_to_rule": "ben.font.private"
+    },
+    {
+      "subject": "ben",
+      "session_no": 6,
+      "actor": "ben",
+      "text": "For my own shorts I prefer beast mode captions, big and loud.",
+      "refers_to_rule": "ben.cap.vertical.private"
+    },
+    {
+      "subject": "ben",
+      "session_no": 15,
+      "actor": "ben",
+      "text": "Can we try something different this time?",
+      "refers_to_rule": null
+    },
+    {
+      "subject": "ben",
+      "session_no": 22,
+      "actor": "ben",
+      "text": "Zoom punch on jump cuts, always.",
+      "refers_to_rule": "ben.tr.th_jump"
+    },
+    {
+      "subject": "team_northwind",
+      "session_no": 1,
+      "actor": "cara",
+      "text": "Team standard: stacked captions on all vertical shorts.",
+      "refers_to_rule": "team.cap.vertical"
+    },
+    {
+      "subject": "team_northwind",
+      "session_no": 1,
+      "actor": "cara",
+      "text": "Brand font is Inter for anything Northwind.",
+      "refers_to_rule": "team.font"
+    },
+    {
+      "subject": "team_northwind",
+      "session_no": 8,
+      "actor": "cara",
+      "text": "Hard cuts on jump cuts for team videos, no fancy transitions.",
+      "refers_to_rule": "team.tr.th_jump"
+    },
+    {
+      "subject": "team_northwind",
+      "session_no": 19,
+      "actor": "ben",
+      "text": "Honestly beast mode captions would do better on our shorts.",
+      "refers_to_rule": "ben.cap.vertical.private"
+    },
+    {
+      "subject": "team_northwind",
+      "session_no": 20,
+      "actor": "cara",
+      "text": "Sticking with stacked captions for team shorts, that's the standard.",
+      "refers_to_rule": "team.cap.vertical"
+    }
+  ],
+  "noise": {
+    "off_rule_choice": "1 - rule.strength (uniform over non-banned alternatives)",
+    "agent_matches_pref": 0.3,
+    "undo_then_override": 0.25,
+    "undo_no_replacement": 0.03
+  },
+  "flagship": {
+    "project_id": "proj_launch_week_recap",
+    "sessions": [
+      "team_northwind_s33",
+      "team_northwind_s34",
+      "team_northwind_s35",
+      "team_northwind_s36"
+    ],
+    "split": "flagship",
+    "note": "Scripted #10 demo. Its categorised user ops become user_edit memory events; they are not generated from the planted rules and are excluded from train/held-out."
+  },
+  "heldout": {
+    "rule": "last 6 generated sessions of each subject",
+    "session_ids": [
+      "ava_s31",
+      "ava_s32",
+      "ava_s33",
+      "ava_s34",
+      "ava_s35",
+      "ava_s36",
+      "ben_s29",
+      "ben_s30",
+      "ben_s31",
+      "ben_s32",
+      "ben_s33",
+      "ben_s34",
+      "team_northwind_s27",
+      "team_northwind_s28",
+      "team_northwind_s29",
+      "team_northwind_s30",
+      "team_northwind_s31",
+      "team_northwind_s32"
+    ],
+    "files": [
+      "splits/events_train.jsonl",
+      "splits/events_heldout.jsonl",
+      "splits/events_flagship.jsonl",
+      "splits/decisions_heldout.jsonl"
+    ],
+    "label": "decisions_heldout.final_action (null = user undid without a replacement)"
+  },
+  "baseline_definition": "most-frequent final_action per category over the subject's training events, ignoring context. Compute it; no numbers are claimed here."
+}

@@ -1,0 +1,339 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "cardboard_demo/timeline.schema.json",
+  "title": "Timeline (demo model)",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "project_id",
+    "name",
+    "settings",
+    "tracks",
+    "transitions",
+    "text_layers",
+    "effects"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "enum": [
+        "1.0"
+      ]
+    },
+    "project_id": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "settings": {
+      "type": "object",
+      "required": [
+        "fps",
+        "width",
+        "height",
+        "sample_rate",
+        "time_unit"
+      ],
+      "properties": {
+        "fps": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "width": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "height": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "sample_rate": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "time_unit": {
+          "type": "string",
+          "enum": [
+            "seconds"
+          ]
+        },
+        "aspect": {
+          "type": "string",
+          "enum": [
+            "16:9",
+            "9:16",
+            "1:1"
+          ]
+        }
+      }
+    },
+    "tracks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "kind",
+          "name",
+          "clips"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[VATX][0-9]+$"
+          },
+          "kind": {
+            "type": "string",
+            "enum": [
+              "video",
+              "audio",
+              "text"
+            ]
+          },
+          "name": {
+            "type": "string"
+          },
+          "clips": {
+            "type": "array",
+            "items": {
+              "$ref": "#/$defs/clip"
+            }
+          }
+        }
+      }
+    },
+    "transitions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "track_id",
+          "from_clip",
+          "to_clip",
+          "type",
+          "duration"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^tr_[0-9]+$"
+          },
+          "track_id": {
+            "type": "string"
+          },
+          "from_clip": {
+            "type": "string"
+          },
+          "to_clip": {
+            "type": "string"
+          },
+          "type": {
+            "type": "string",
+            "enum": [
+              "crossfade",
+              "whip_pan",
+              "dip_to_black",
+              "slide",
+              "zoom_punch",
+              "hard_cut",
+              "glitch"
+            ]
+          },
+          "duration": {
+            "type": "number",
+            "minimum": 0
+          }
+        }
+      }
+    },
+    "text_layers": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "track_id",
+          "text",
+          "start",
+          "duration",
+          "style"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^txt_[0-9]+$"
+          },
+          "track_id": {
+            "type": "string"
+          },
+          "text": {
+            "type": "string"
+          },
+          "start": {
+            "type": "number",
+            "minimum": 0
+          },
+          "duration": {
+            "type": "number",
+            "minimum": 0
+          },
+          "style": {
+            "type": "object",
+            "required": [
+              "font",
+              "size",
+              "color",
+              "position"
+            ],
+            "properties": {
+              "font": {
+                "type": "string"
+              },
+              "size": {
+                "type": "integer"
+              },
+              "color": {
+                "type": "string",
+                "pattern": "^#[0-9A-Fa-f]{6}$"
+              },
+              "position": {
+                "type": "string"
+              },
+              "animation": {
+                "type": "string"
+              },
+              "preset": {
+                "type": "string"
+              }
+            }
+          },
+          "role": {
+            "type": "string",
+            "enum": [
+              "title",
+              "lower_third",
+              "captions"
+            ]
+          }
+        }
+      }
+    },
+    "effects": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "target_id",
+          "type",
+          "params"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^fx_[0-9]+(_r)?$"
+          },
+          "target_id": {
+            "type": "string"
+          },
+          "type": {
+            "type": "string",
+            "enum": [
+              "color_grade",
+              "blur",
+              "vignette",
+              "grain",
+              "speed_ramp"
+            ]
+          },
+          "params": {
+            "type": "object"
+          }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "clip": {
+      "type": "object",
+      "required": [
+        "id",
+        "asset_hash",
+        "src_in",
+        "src_out",
+        "timeline_start",
+        "speed",
+        "volume",
+        "lineage"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^clp_[0-9]{4}$"
+        },
+        "asset_hash": {
+          "type": "string",
+          "pattern": "^sha256:[0-9a-f]{64}$"
+        },
+        "asset_label": {
+          "type": "string"
+        },
+        "src_in": {
+          "type": "number",
+          "minimum": 0
+        },
+        "src_out": {
+          "type": "number",
+          "minimum": 0
+        },
+        "timeline_start": {
+          "type": "number",
+          "minimum": 0
+        },
+        "speed": {
+          "type": "number",
+          "minimum": 0.1
+        },
+        "volume": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 2
+        },
+        "lineage": {
+          "type": "object",
+          "required": [
+            "origin",
+            "parent",
+            "created_by_op"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "origin": {
+              "type": "string"
+            },
+            "parent": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "created_by_op": {
+              "type": "string"
+            }
+          }
+        },
+        "music_mood": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

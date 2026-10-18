@@ -1,0 +1,38 @@
+{
+  "people": {
+    "ava": {
+      "role": "creator",
+      "bio": "talking-head YouTuber; lead editor on team projects"
+    },
+    "ben": {
+      "role": "creator",
+      "bio": "short-form creator; second editor on team projects"
+    },
+    "cara": {
+      "role": "team_lead",
+      "bio": "Northwind team lead; owns titles/motion and the brand"
+    }
+  },
+  "agents": {
+    "director": {
+      "role": "agent",
+      "bio": "Cardboard-style editing agent; every op it makes is on_behalf_of the session's user"
+    }
+  },
+  "teams": {
+    "team_northwind": {
+      "members": [
+        "cara",
+        "ava",
+        "ben"
+      ],
+      "lead": "cara",
+      "brand_id": "northwind"
+    }
+  },
+  "subjects": {
+    "ava": "creator",
+    "ben": "creator",
+    "team_northwind": "team"
+  }
+}

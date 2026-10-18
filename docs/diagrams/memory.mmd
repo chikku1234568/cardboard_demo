@@ -1,0 +1,16 @@
+flowchart LR
+  Cr(Creator) -->|MEMBER_OF / LEADS| T(Team) -->|USES_BRAND| Br(Brand)
+  Cr -->|HAS_PREFERENCE| P[Preference]
+  T -->|HAS_PREFERENCE| P
+  Br -->|HAS_PREFERENCE| P
+  P -->|IN_CONTEXT| Cx(Context) -->|GENERALIZES_TO| Cx2(broader Context)
+  P -->|"EVIDENCED_BY {kind, weight}"| Op(Op)
+  P -->|EVIDENCED_BY| Ch(ChatStatement)
+  P -->|CONTRADICTED_BY| Op
+  P -->|SUPERSEDES| Pold[older Preference]
+  Op -->|IN_SESSION| Se(Session) -->|IN_PROJECT| Pr(Project)
+  Se -->|"OF / BY"| Cr
+  Op -->|"ACCEPTS / REPLACES / REVERTS"| Op2(Op)
+  Op -->|"VIOLATES {rule}"| Br
+  Cr -->|SAID| Ch -->|IN_SESSION| Se
+  Ch -->|"PROPOSES_TO (non-lead)"| T

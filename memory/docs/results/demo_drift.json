@@ -1,0 +1,448 @@
+{
+ "planted": {
+  "subject": "ava",
+  "category": "transition",
+  "context": {
+   "footage_type": "talking_head",
+   "prev_edit": "jump_cut"
+  },
+  "from_action": "crossfade",
+  "to_action": "whip_pan",
+  "drift_session_no": 18,
+  "drift_session_id": "ava_s18",
+  "drift_date": "2026-08-03T20:37:00+05:30",
+  "ramp_sessions": 3,
+  "must_not_drift": [
+   {
+    "context": {
+     "footage_type": "broll"
+    },
+    "action": "crossfade",
+    "why": "same old action in a different context stays valid"
+   }
+  ],
+  "supporting_statement_session_no": 21
+ },
+ "graph_history_talking_head_after_jump_cut": [
+  {
+   "pref_id": "ava/any/transition/footage_type=talking_head|prev_edit=jump_cut/crossfade#1",
+   "observed_in": "any",
+   "context_key": "footage_type=talking_head|prev_edit=jump_cut",
+   "action": "crossfade",
+   "status": "superseded",
+   "origin": "implicit",
+   "valid_from": "2026-06-03T11:41:56+05:30",
+   "valid_from_session": "ava_s01",
+   "valid_to": "2026-08-29T18:52:12+05:30",
+   "valid_to_session": "ava_s23",
+   "share": 0.1713,
+   "support_count": 34,
+   "reason": "first reliable evidence in this context",
+   "supersedes_action": null,
+   "chat_ids": []
+  },
+  {
+   "pref_id": "ava/any/transition/footage_type=talking_head|prev_edit=jump_cut/whip_pan#1",
+   "observed_in": "any",
+   "context_key": "footage_type=talking_head|prev_edit=jump_cut",
+   "action": "whip_pan",
+   "status": "active",
+   "origin": "implicit",
+   "valid_from": "2026-08-29T18:52:12+05:30",
+   "valid_from_session": "ava_s23",
+   "valid_to": null,
+   "valid_to_session": null,
+   "share": 0.8862,
+   "support_count": 22,
+   "reason": "whip_pan led the recent window (83% of fast-decayed weight) in 2 consecutive sessions with new evidence",
+   "supersedes_action": "crossfade",
+   "chat_ids": []
+  }
+ ],
+ "graph_history_broll_control": [
+  {
+   "pref_id": "ava/any/transition/footage_type=broll/crossfade#1",
+   "observed_in": "any",
+   "context_key": "footage_type=broll",
+   "action": "crossfade",
+   "status": "active",
+   "origin": "implicit",
+   "valid_from": "2026-06-04T13:52:23+05:30",
+   "valid_from_session": "ava_s02",
+   "valid_to": null,
+   "valid_to_session": null,
+   "share": 0.8874,
+   "support_count": 58,
+   "reason": "first reliable evidence in this context",
+   "supersedes_action": null,
+   "chat_ids": []
+  }
+ ],
+ "suggest_now_talking_head_after_jump_cut": {
+  "category": "transition",
+  "context": {
+   "footage_type": "talking_head",
+   "prev_edit": "jump_cut",
+   "format": "16:9",
+   "section": "body"
+  },
+  "actor": "ava",
+  "project_owner": "ava",
+  "project_scope": "private",
+  "brand_id": null,
+  "action": "whip_pan",
+  "best_guess": "whip_pan",
+  "confidence": 0.648,
+  "abstain": false,
+  "why": [
+   "Fell back from [footage_type=talking_head, prev_edit=jump_cut, format=16:9, section=body] to the most reliable broader context [footage_type=talking_head, prev_edit=jump_cut, section=body].",
+   "ava: whip_pan holds 86% of the decayed weight here (effective support 8.5 after decay, 10 supporting events, 2 rejections of it); confidence 0.65 (Wilson lower bound).",
+   "Active since ava_s28: superseded crossfade (whip_pan led the recent window (83% of fast-decayed weight) in 2 consecutive sessions with new evidence).",
+   "2 narrower context(s) skipped as stale, e.g. skipped [footage_type=talking_head, prev_edit=jump_cut, format=16:9, section=body] (private): its crossfade was superseded by whip_pan in [footage_type=talking_head, prev_edit=jump_cut, format=16:9] (private) at ava_s28 and not re-confirmed since.",
+   "Private project: ava's preference applies over team standard hard_cut (private > team)."
+  ],
+  "source_events": [
+   "proj_ava_12/op_0098",
+   "proj_ava_12/op_0063",
+   "proj_ava_12/op_0029",
+   "proj_ava_11/op_0064",
+   "proj_ava_10/op_0090",
+   "proj_ava_10/op_0054",
+   "proj_ava_10/op_0010",
+   "proj_ava_08/op_0105"
+  ],
+  "context_used": "footage_type=talking_head|prev_edit=jump_cut|section=body",
+  "memory_owner": "ava",
+  "observed_in": "any",
+  "preference_id": "ava/any/transition/footage_type=talking_head|prev_edit=jump_cut|section=body/whip_pan#1",
+  "conflicts": [],
+  "blocked": []
+ },
+ "suggest_now_broll": {
+  "category": "transition",
+  "context": {
+   "footage_type": "broll",
+   "prev_edit": "jump_cut",
+   "format": "16:9",
+   "section": "body"
+  },
+  "actor": "ava",
+  "project_owner": "ava",
+  "project_scope": "private",
+  "brand_id": null,
+  "action": "crossfade",
+  "best_guess": "crossfade",
+  "confidence": 0.676,
+  "abstain": false,
+  "why": [
+   "Exact context match [footage_type=broll, prev_edit=jump_cut, format=16:9, section=body].",
+   "ava: crossfade holds 84% of the decayed weight here (effective support 12.8 after decay, 14 supporting events, 1 rejections of it); confidence 0.68 (Wilson lower bound)."
+  ],
+  "source_events": [
+   "proj_ava_11/op_0106",
+   "proj_ava_11/op_0094",
+   "proj_ava_11/op_0073",
+   "proj_ava_11/op_0066",
+   "proj_ava_11/op_0031",
+   "proj_ava_11/op_0030",
+   "proj_ava_11/op_0011",
+   "proj_ava_10/op_0100"
+  ],
+  "context_used": "footage_type=broll|prev_edit=jump_cut|format=16:9|section=body",
+  "memory_owner": "ava",
+  "observed_in": "any",
+  "preference_id": "ava/any/transition/footage_type=broll|prev_edit=jump_cut|format=16:9|section=body/crossfade#1",
+  "conflicts": [],
+  "blocked": []
+ },
+ "suggest_probe_by_session": [
+  {
+   "session_id": "ava_s01",
+   "drift_probe": "crossfade",
+   "drift_conf": 0.509,
+   "drift_abstain": false,
+   "control_probe": "crossfade",
+   "control_conf": 0.166
+  },
+  {
+   "session_id": "ava_s02",
+   "drift_probe": "crossfade",
+   "drift_conf": 0.654,
+   "drift_abstain": false,
+   "control_probe": "crossfade",
+   "control_conf": 0.442
+  },
+  {
+   "session_id": "ava_s03",
+   "drift_probe": "crossfade",
+   "drift_conf": 0.746,
+   "drift_abstain": false,
+   "control_probe": "crossfade",
+   "control_conf": 0.614
+  },
+  {
+   "session_id": "ava_s04",
+   "drift_probe": "crossfade",
+   "drift_conf": 0.524,
+   "drift_abstain": false,
+   "control_probe": "crossfade",
+   "control_conf": 0.524
+  },
+  {
+   "session_id": "ava_s05",
+   "drift_probe": "crossfade",
+   "drift_conf": 0.592,
+   "drift_abstain": false,
+   "control_probe": "crossfade",
+   "control_conf": 0.592
+  },
+  {
+   "session_id": "ava_s06",
+   "drift_probe": "crossfade",
+   "drift_conf": 0.695,
+   "drift_abstain": false,
+   "control_probe": "crossfade",
+   "control_conf": 0.635
+  },
+  {
+   "session_id": "ava_s07",
+   "drift_probe": "crossfade",
+   "drift_conf": 0.749,
+   "drift_abstain": false,
+   "control_probe": "crossfade",
+   "control_conf": 0.652
+  },
+  {
+   "session_id": "ava_s08",
+   "drift_probe": "crossfade",
+   "drift_conf": 0.58,
+   "drift_abstain": false,
+   "control_probe": "crossfade",
+   "control_conf": 0.639
+  },
+  {
+   "session_id": "ava_s09",
+   "drift_probe": "crossfade",
+   "drift_conf": 0.718,
+   "drift_abstain": false,
+   "control_probe": "crossfade",
+   "control_conf": 0.643
+  },
+  {
+   "session_id": "ava_s10",
+   "drift_probe": "crossfade",
+   "drift_conf": 0.718,
+   "drift_abstain": false,
+   "control_probe": "crossfade",
+   "control_conf": 0.625
+  },
+  {
+   "session_id": "ava_s11",
+   "drift_probe": "crossfade",
+   "drift_conf": 0.718,
+   "drift_abstain": false,
+   "control_probe": "crossfade",
+   "control_conf": 0.678
+  },
+  {
+   "session_id": "ava_s12",
+   "drift_probe": "crossfade",
+   "drift_conf": 0.718,
+   "drift_abstain": false,
+   "control_probe": "crossfade",
+   "control_conf": 0.546
+  },
+  {
+   "session_id": "ava_s13",
+   "drift_probe": "crossfade",
+   "drift_conf": 0.718,
+   "drift_abstain": false,
+   "control_probe": "crossfade",
+   "control_conf": 0.664
+  },
+  {
+   "session_id": "ava_s14",
+   "drift_probe": "crossfade",
+   "drift_conf": 0.718,
+   "drift_abstain": false,
+   "control_probe": "crossfade",
+   "control_conf": 0.664
+  },
+  {
+   "session_id": "ava_s15",
+   "drift_probe": "crossfade",
+   "drift_conf": 0.718,
+   "drift_abstain": false,
+   "control_probe": "crossfade",
+   "control_conf": 0.664
+  },
+  {
+   "session_id": "ava_s16",
+   "drift_probe": "crossfade",
+   "drift_conf": 0.55,
+   "drift_abstain": false,
+   "control_probe": "crossfade",
+   "control_conf": 0.509
+  },
+  {
+   "session_id": "ava_s17",
+   "drift_probe": "crossfade",
+   "drift_conf": 0.62,
+   "drift_abstain": false,
+   "control_probe": "crossfade",
+   "control_conf": 0.622
+  },
+  {
+   "session_id": "ava_s18",
+   "drift_probe": "crossfade",
+   "drift_conf": 0.672,
+   "drift_abstain": false,
+   "control_probe": "crossfade",
+   "control_conf": 0.675
+  },
+  {
+   "session_id": "ava_s19",
+   "drift_probe": "crossfade",
+   "drift_conf": 0.672,
+   "drift_abstain": false,
+   "control_probe": "crossfade",
+   "control_conf": 0.675
+  },
+  {
+   "session_id": "ava_s20",
+   "drift_probe": "crossfade",
+   "drift_conf": 0.672,
+   "drift_abstain": false,
+   "control_probe": "crossfade",
+   "control_conf": 0.729
+  },
+  {
+   "session_id": "ava_s21",
+   "drift_probe": "crossfade",
+   "drift_conf": 0.672,
+   "drift_abstain": false,
+   "control_probe": "crossfade",
+   "control_conf": 0.729
+  },
+  {
+   "session_id": "ava_s22",
+   "drift_probe": "crossfade",
+   "drift_conf": 0.672,
+   "drift_abstain": false,
+   "control_probe": "crossfade",
+   "control_conf": 0.729
+  },
+  {
+   "session_id": "ava_s23",
+   "drift_probe": "whip_pan",
+   "drift_conf": 0.667,
+   "drift_abstain": false,
+   "control_probe": "crossfade",
+   "control_conf": 0.729
+  },
+  {
+   "session_id": "ava_s24",
+   "drift_probe": "whip_pan",
+   "drift_conf": 0.763,
+   "drift_abstain": false,
+   "control_probe": "crossfade",
+   "control_conf": 0.729
+  },
+  {
+   "session_id": "ava_s25",
+   "drift_probe": "whip_pan",
+   "drift_conf": 0.763,
+   "drift_abstain": false,
+   "control_probe": "crossfade",
+   "control_conf": 0.729
+  },
+  {
+   "session_id": "ava_s26",
+   "drift_probe": "whip_pan",
+   "drift_conf": 0.763,
+   "drift_abstain": false,
+   "control_probe": "crossfade",
+   "control_conf": 0.729
+  },
+  {
+   "session_id": "ava_s27",
+   "drift_probe": "whip_pan",
+   "drift_conf": 0.763,
+   "drift_abstain": false,
+   "control_probe": "crossfade",
+   "control_conf": 0.729
+  },
+  {
+   "session_id": "ava_s28",
+   "drift_probe": "whip_pan",
+   "drift_conf": 0.533,
+   "drift_abstain": false,
+   "control_probe": "crossfade",
+   "control_conf": 0.757
+  },
+  {
+   "session_id": "ava_s29",
+   "drift_probe": "whip_pan",
+   "drift_conf": 0.629,
+   "drift_abstain": false,
+   "control_probe": "crossfade",
+   "control_conf": 0.757
+  },
+  {
+   "session_id": "ava_s30",
+   "drift_probe": "whip_pan",
+   "drift_conf": 0.685,
+   "drift_abstain": false,
+   "control_probe": "crossfade",
+   "control_conf": 0.646
+  },
+  {
+   "session_id": "ava_s31",
+   "drift_probe": "whip_pan",
+   "drift_conf": 0.695,
+   "drift_abstain": false,
+   "control_probe": "crossfade",
+   "control_conf": 0.833
+  },
+  {
+   "session_id": "ava_s32",
+   "drift_probe": "whip_pan",
+   "drift_conf": 0.551,
+   "drift_abstain": false,
+   "control_probe": "crossfade",
+   "control_conf": 0.738
+  },
+  {
+   "session_id": "ava_s33",
+   "drift_probe": "whip_pan",
+   "drift_conf": 0.701,
+   "drift_abstain": false,
+   "control_probe": "crossfade",
+   "control_conf": 0.676
+  },
+  {
+   "session_id": "ava_s34",
+   "drift_probe": "whip_pan",
+   "drift_conf": 0.529,
+   "drift_abstain": false,
+   "control_probe": "crossfade",
+   "control_conf": 0.676
+  },
+  {
+   "session_id": "ava_s35",
+   "drift_probe": "whip_pan",
+   "drift_conf": 0.623,
+   "drift_abstain": false,
+   "control_probe": "crossfade",
+   "control_conf": 0.676
+  },
+  {
+   "session_id": "ava_s36",
+   "drift_probe": "whip_pan",
+   "drift_conf": 0.648,
+   "drift_abstain": false,
+   "control_probe": "crossfade",
+   "control_conf": 0.676
+  }
+ ]
+}

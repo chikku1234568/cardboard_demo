@@ -1,0 +1,16 @@
+{
+  "version_id": "0286dbaa1fcabf75442d5e2654ef54abacf631a9391d9f586c7d47a0b6e12275",
+  "project_id": "proj_ava_09",
+  "timeline_hash": "6184272adc45a2b4f091ac3dbf5ea4981758ec0af2023921afe76d7f9fe63230",
+  "parents": [
+    "2ca7512194abda672453bbff5ecc14551a69162df34ee99cdb1c584d92af94eb"
+  ],
+  "branch": "ava/cut-26",
+  "author": "ava",
+  "timestamp": "2026-09-05T14:41:40+05:30",
+  "message": "Reformat to 9:16",
+  "op_ids": [
+    "proj_ava_09/op_0047"
+  ],
+  "session_id": "ava_s26"
+}

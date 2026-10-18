@@ -1,0 +1,43 @@
+flowchart TB
+  subgraph clients [Clients]
+    UI["React UI"]
+    CLI["CLI"]
+  end
+
+  API["Fastify API :4310"]
+  UI --> API
+
+  subgraph core [vcs/core]
+    Apply["apply op\nbefore must match"]
+    Diff["semantic diff\neditor sentences"]
+    Pull["selective pull\nours / theirs per op"]
+    Render["ffmpeg renderer"]
+    Store["content-addressed store"]
+  end
+
+  CLI --> Apply
+  API --> Apply
+  API --> Diff
+  API --> Pull
+  API --> Render
+  Apply --> Store
+  Pull --> Apply
+  Diff --> Store
+  Render --> Store
+
+  subgraph project [one project store]
+    Ops["ops.jsonl\nappend-only edit log"]
+    Obj["objects/\ntimeline snapshots by sha256"]
+    Ver["versions/\none commit, several ops"]
+    Refs["refs.json\npeer branches, no main"]
+  end
+
+  Store --> Ops
+  Store --> Obj
+  Store --> Ver
+  Store --> Refs
+  Ver --> Obj
+  Refs --> Ver
+
+  Media["media files\nlooked up by sha256"] --> Render
+  Render --> Mp4["mp4\ndisposable"]

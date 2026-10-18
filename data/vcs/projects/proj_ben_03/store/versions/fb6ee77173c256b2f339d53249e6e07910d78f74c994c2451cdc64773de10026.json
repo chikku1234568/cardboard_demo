@@ -1,0 +1,16 @@
+{
+  "version_id": "fb6ee77173c256b2f339d53249e6e07910d78f74c994c2451cdc64773de10026",
+  "project_id": "proj_ben_03",
+  "timeline_hash": "b7b6ec922ff545f2d57c108bf322c502f1dce42c1e9c2ba417383213b31f13e1",
+  "parents": [
+    "545807b8e2342145b663d6992877a791364f091fe37c3b3aa8a4970605980ac7"
+  ],
+  "branch": "ben/cut-07",
+  "author": "director",
+  "timestamp": "2026-06-17T15:26:34+05:30",
+  "message": "Director: caption_style",
+  "op_ids": [
+    "proj_ben_03/op_0044"
+  ],
+  "session_id": "ben_s07"
+}

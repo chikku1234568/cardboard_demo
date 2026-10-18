@@ -1,0 +1,221 @@
+{
+ "team_project (proj_team_northwind_*, owner team)": {
+  "category": "caption_style",
+  "context": {
+   "footage_type": "talking_head",
+   "prev_edit": "jump_cut",
+   "format": "9:16",
+   "section": "hook"
+  },
+  "actor": "ben",
+  "project_owner": "team_northwind",
+  "project_scope": "team",
+  "brand_id": "northwind",
+  "action": "stacked",
+  "best_guess": "stacked",
+  "confidence": 0.783,
+  "abstain": false,
+  "why": [
+   "Fell back from [footage_type=talking_head, prev_edit=jump_cut, format=9:16, section=hook] to the most reliable broader context [footage_type=talking_head, format=9:16].",
+   "team team_northwind: stacked holds 100% of the decayed weight here (effective support 5.9 after decay, 7 supporting events, 1 rejections of it); confidence 0.78 (Wilson lower bound).",
+   "1 conflict(s) surfaced; see conflicts[]."
+  ],
+  "source_events": [
+   "proj_team_northwind_11/op_0081",
+   "proj_team_northwind_07/op_0082",
+   "proj_team_northwind_07/op_0038",
+   "proj_team_northwind_06/op_0088",
+   "proj_team_northwind_04/op_0119",
+   "proj_team_northwind_01/op_0122",
+   "proj_team_northwind_01/op_0036"
+  ],
+  "context_used": "footage_type=talking_head|format=9:16",
+  "memory_owner": "team_northwind",
+  "observed_in": "team",
+  "preference_id": "team_northwind/team/caption_style/footage_type=talking_head|format=9:16/stacked#1",
+  "conflicts": [
+   {
+    "kind": "team_vs_private",
+    "category": "caption_style",
+    "context": {
+     "footage_type": "talking_head",
+     "prev_edit": "jump_cut",
+     "format": "9:16",
+     "section": "hook"
+    },
+    "private": {
+     "side": "private",
+     "owner": "ben",
+     "observed_in": "private",
+     "action": "beast_mode",
+     "confidence": 0.622,
+     "share": 1.0,
+     "context_used": "footage_type=talking_head|format=9:16",
+     "preference_id": "ben/private/caption_style/footage_type=talking_head|format=9:16/beast_mode#1",
+     "source_events": [
+      "proj_ben_06/op_0138",
+      "proj_ben_02/op_0133",
+      "proj_ben_02/op_0044"
+     ]
+    },
+    "team": {
+     "side": "team",
+     "owner": "team_northwind",
+     "observed_in": "team",
+     "action": "stacked",
+     "confidence": 0.783,
+     "share": 1.0,
+     "context_used": "footage_type=talking_head|format=9:16",
+     "preference_id": "team_northwind/team/caption_style/footage_type=talking_head|format=9:16/stacked#1",
+     "source_events": [
+      "proj_team_northwind_11/op_0081",
+      "proj_team_northwind_07/op_0082",
+      "proj_team_northwind_07/op_0038",
+      "proj_team_northwind_06/op_0088",
+      "proj_team_northwind_04/op_0119",
+      "proj_team_northwind_01/op_0122"
+     ]
+    },
+    "resolution": "team project: team standard applies; the private preference is surfaced, not applied",
+    "chat_citations": [
+     {
+      "chat_id": "chat_0014",
+      "actor": "ben",
+      "text": "Honestly beast mode captions would do better on our shorts.",
+      "session_id": "team_northwind_s19"
+     }
+    ]
+   }
+  ],
+  "blocked": []
+ },
+ "ben_private_project": {
+  "category": "caption_style",
+  "context": {
+   "footage_type": "talking_head",
+   "prev_edit": "jump_cut",
+   "format": "9:16",
+   "section": "hook"
+  },
+  "actor": "ben",
+  "project_owner": "ben",
+  "project_scope": "private",
+  "brand_id": null,
+  "action": "beast_mode",
+  "best_guess": "beast_mode",
+  "confidence": 0.622,
+  "abstain": false,
+  "why": [
+   "Fell back from [footage_type=talking_head, prev_edit=jump_cut, format=9:16, section=hook] to the most reliable broader context [footage_type=talking_head, format=9:16].",
+   "ben: beast_mode holds 100% of the decayed weight here (effective support 2.7 after decay, 3 supporting events, 0 rejections of it); confidence 0.62 (Wilson lower bound).",
+   "Private project: ben's preference applies over team standard stacked (private > team)."
+  ],
+  "source_events": [
+   "proj_ben_06/op_0138",
+   "proj_ben_02/op_0133",
+   "proj_ben_02/op_0044"
+  ],
+  "context_used": "footage_type=talking_head|format=9:16",
+  "memory_owner": "ben",
+  "observed_in": "private",
+  "preference_id": "ben/private/caption_style/footage_type=talking_head|format=9:16/beast_mode#1",
+  "conflicts": [],
+  "blocked": []
+ },
+ "ben_own_project_under_team_brand_scope": {
+  "category": "caption_style",
+  "context": {
+   "footage_type": "talking_head",
+   "prev_edit": "jump_cut",
+   "format": "9:16",
+   "section": "hook"
+  },
+  "actor": "ben",
+  "project_owner": "ben",
+  "project_scope": "team",
+  "brand_id": "northwind",
+  "action": "beast_mode",
+  "best_guess": "beast_mode",
+  "confidence": 0.721,
+  "abstain": false,
+  "why": [
+   "Fell back from [footage_type=talking_head, prev_edit=jump_cut, format=9:16, section=hook] to the most reliable broader context [format=9:16].",
+   "ben: beast_mode holds 87% of the decayed weight here (effective support 15.5 after decay, 16 supporting events, 0 rejections of it); confidence 0.72 (Wilson lower bound).",
+   "Active since ben_s06: superseded stacked (beast_mode led the recent window (80% of fast-decayed weight) in 2 consecutive sessions with new evidence).",
+   "1 narrower context(s) skipped as stale, e.g. skipped [footage_type=talking_head, format=9:16] (team): its beast_mode was superseded by stacked in [footage_type=talking_head] (team) at ben_s14 and not re-confirmed since.",
+   "1 conflict(s) surfaced; see conflicts[]."
+  ],
+  "source_events": [
+   "proj_ben_12/op_0046",
+   "proj_ben_11/op_0131",
+   "proj_ben_10/op_0084",
+   "proj_ben_10/op_0046",
+   "proj_ben_08/op_0045",
+   "proj_ben_07/op_0130",
+   "proj_ben_07/op_0046",
+   "proj_ben_06/op_0138"
+  ],
+  "context_used": "format=9:16",
+  "memory_owner": "ben",
+  "observed_in": "any",
+  "preference_id": "ben/any/caption_style/format=9:16/beast_mode#1",
+  "conflicts": [
+   {
+    "kind": "team_vs_private",
+    "category": "caption_style",
+    "context": {
+     "footage_type": "talking_head",
+     "prev_edit": "jump_cut",
+     "format": "9:16",
+     "section": "hook"
+    },
+    "private": {
+     "side": "private",
+     "owner": "ben",
+     "observed_in": "any",
+     "action": "beast_mode",
+     "confidence": 0.721,
+     "share": 0.867,
+     "context_used": "format=9:16",
+     "preference_id": "ben/any/caption_style/format=9:16/beast_mode#1",
+     "source_events": [
+      "proj_ben_12/op_0046",
+      "proj_ben_11/op_0131",
+      "proj_ben_10/op_0084",
+      "proj_ben_10/op_0046",
+      "proj_ben_08/op_0045",
+      "proj_ben_07/op_0130"
+     ]
+    },
+    "team": {
+     "side": "team",
+     "owner": "team_northwind",
+     "observed_in": "team",
+     "action": "stacked",
+     "confidence": 0.783,
+     "share": 1.0,
+     "context_used": "footage_type=talking_head|format=9:16",
+     "preference_id": "team_northwind/team/caption_style/footage_type=talking_head|format=9:16/stacked#1",
+     "source_events": [
+      "proj_team_northwind_11/op_0081",
+      "proj_team_northwind_07/op_0082",
+      "proj_team_northwind_07/op_0038",
+      "proj_team_northwind_06/op_0088",
+      "proj_team_northwind_04/op_0119",
+      "proj_team_northwind_01/op_0122"
+     ]
+    },
+    "resolution": "ben's own project under team scope: ben's team-scope behaviour applies; the team standard is surfaced",
+    "chat_citations": [
+     {
+      "chat_id": "chat_0014",
+      "actor": "ben",
+      "text": "Honestly beast mode captions would do better on our shorts.",
+      "session_id": "team_northwind_s19"
+     }
+    ]
+   }
+  ],
+  "blocked": []
+ }
+}

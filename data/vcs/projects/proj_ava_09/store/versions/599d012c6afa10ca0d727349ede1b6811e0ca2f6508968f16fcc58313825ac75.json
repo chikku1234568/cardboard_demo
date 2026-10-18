@@ -1,0 +1,16 @@
+{
+  "version_id": "599d012c6afa10ca0d727349ede1b6811e0ca2f6508968f16fcc58313825ac75",
+  "project_id": "proj_ava_09",
+  "timeline_hash": "8396409574d81da980d7437bceed95cc5cce5bd5fc2982c833e43b71223f6290",
+  "parents": [
+    "370e2fefe12c264b588b8a3938c0e46534c815e020942b58fa23a5680ca1467f"
+  ],
+  "branch": "ava/cut-25",
+  "author": "director",
+  "timestamp": "2026-09-03T15:40:44+05:30",
+  "message": "Director: caption_style",
+  "op_ids": [
+    "proj_ava_09/op_0045"
+  ],
+  "session_id": "ava_s25"
+}

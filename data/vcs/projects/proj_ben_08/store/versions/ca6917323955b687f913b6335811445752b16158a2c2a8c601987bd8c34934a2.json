@@ -1,0 +1,21 @@
+{
+  "version_id": "ca6917323955b687f913b6335811445752b16158a2c2a8c601987bd8c34934a2",
+  "project_id": "proj_ben_08",
+  "timeline_hash": "44081e072dd6ab96e34f8dad67a70e1b1af0c6c3724123538781e9411fc7845a",
+  "parents": [
+    "6443712cbfaecb632d0695f48f0eee89f6197c95ad25f9ecb32ec19103ef9567"
+  ],
+  "branch": "ben/cut-24",
+  "author": "ben",
+  "timestamp": "2026-08-26T19:38:36+05:30",
+  "message": "Review Director edits",
+  "op_ids": [
+    "proj_ben_08/op_0118",
+    "proj_ben_08/op_0119",
+    "proj_ben_08/op_0120",
+    "proj_ben_08/op_0121",
+    "proj_ben_08/op_0122",
+    "proj_ben_08/op_0123"
+  ],
+  "session_id": "ben_s24"
+}

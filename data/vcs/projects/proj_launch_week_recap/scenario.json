@@ -1,0 +1,135 @@
+{
+  "project_id": "proj_launch_week_recap",
+  "collaborators": {
+    "ava": "lead editor (A, D)",
+    "cara": "titles/motion (B)",
+    "ben": "second editor (C)"
+  },
+  "sessions": {
+    "base+A": "team_northwind_s33",
+    "B": "team_northwind_s34",
+    "C": "team_northwind_s35",
+    "D": "team_northwind_s36"
+  },
+  "story": [
+    "ava imports footage -> base version on branch rough-cut",
+    "A ava/tighter-cut: trims the B-cam answer clp_0003 (out edge 14.0s -> 12.8s) and swaps the opening crossfade for a whip pan",
+    "B cara/titles-broll (from base): adds a lower-third, moves product b-roll clp_0008 on V2 15.5s -> 17.0s, edits title copy",
+    "C ben/alt-pacing (from base): trims the SAME clip clp_0003 differently (out edge -> 13.4s) and ducks the music",
+    "D ava/alt-ending (from A's head): splits clp_0006 at 27.0s, deletes the tail half, adds desk b-roll with a teal/orange grade, bumps the warm grade, adds a slide transition"
+  ],
+  "edit_types_used": [
+    "add_clip",
+    "add_effect",
+    "add_text",
+    "add_transition",
+    "change_transition",
+    "delete_clip",
+    "edit_text",
+    "move_clip",
+    "set_volume",
+    "split_clip",
+    "trim_clip",
+    "update_effect"
+  ],
+  "selective_pull_expectations": [
+    {
+      "into": "ava/tighter-cut",
+      "from": "cara/titles-broll",
+      "common_ancestor": "80ce1c7636bd5d6b7b494ad0aa089473d7883a9040f08b8819c621116ddfa63c",
+      "ours_ops": [
+        "proj_launch_week_recap/op_0001",
+        "proj_launch_week_recap/op_0002"
+      ],
+      "theirs_ops": [
+        "proj_launch_week_recap/op_0003",
+        "proj_launch_week_recap/op_0004",
+        "proj_launch_week_recap/op_0005"
+      ],
+      "expected": "clean",
+      "conflicts": [],
+      "result_timeline_hash": "ac299656013d62180fb15cfaedf88d908349618797e130b6c3a4d96f8ff6dc34",
+      "result_file": "expected/pull__cara_titles-broll__into__ava_tighter-cut.json"
+    },
+    {
+      "into": "ava/tighter-cut",
+      "from": "ben/alt-pacing",
+      "common_ancestor": "80ce1c7636bd5d6b7b494ad0aa089473d7883a9040f08b8819c621116ddfa63c",
+      "ours_ops": [
+        "proj_launch_week_recap/op_0001",
+        "proj_launch_week_recap/op_0002"
+      ],
+      "theirs_ops": [
+        "proj_launch_week_recap/op_0006",
+        "proj_launch_week_recap/op_0007"
+      ],
+      "expected": "conflict",
+      "conflicts": [
+        {
+          "ours": "proj_launch_week_recap/op_0001",
+          "theirs": "proj_launch_week_recap/op_0006",
+          "reasons": [
+            {
+              "kind": "same_entity",
+              "entities": [
+                "clip:clp_0003",
+                "lineage:clp_0003"
+              ]
+            },
+            {
+              "kind": "overlapping_time_range",
+              "track_id": "V1",
+              "overlap": [
+                13.4,
+                14.0
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "into": "ava/alt-ending",
+      "from": "cara/titles-broll",
+      "common_ancestor": "80ce1c7636bd5d6b7b494ad0aa089473d7883a9040f08b8819c621116ddfa63c",
+      "ours_ops": [
+        "proj_launch_week_recap/op_0001",
+        "proj_launch_week_recap/op_0002",
+        "proj_launch_week_recap/op_0008",
+        "proj_launch_week_recap/op_0009",
+        "proj_launch_week_recap/op_0010",
+        "proj_launch_week_recap/op_0011",
+        "proj_launch_week_recap/op_0012",
+        "proj_launch_week_recap/op_0013"
+      ],
+      "theirs_ops": [
+        "proj_launch_week_recap/op_0003",
+        "proj_launch_week_recap/op_0004",
+        "proj_launch_week_recap/op_0005"
+      ],
+      "expected": "clean",
+      "conflicts": [],
+      "result_timeline_hash": "a8d2364f398e1fa9723b648d2f9c122eee61a8c6deaeb3b084c7c2679b761e86",
+      "result_file": "expected/pull__cara_titles-broll__into__ava_alt-ending.json"
+    },
+    {
+      "into": "cara/titles-broll",
+      "from": "ben/alt-pacing",
+      "common_ancestor": "80ce1c7636bd5d6b7b494ad0aa089473d7883a9040f08b8819c621116ddfa63c",
+      "ours_ops": [
+        "proj_launch_week_recap/op_0003",
+        "proj_launch_week_recap/op_0004",
+        "proj_launch_week_recap/op_0005"
+      ],
+      "theirs_ops": [
+        "proj_launch_week_recap/op_0006",
+        "proj_launch_week_recap/op_0007"
+      ],
+      "expected": "clean",
+      "conflicts": [],
+      "result_timeline_hash": "5e663f22e45d26f22d8112b620d9f8156082a19f56a712125bfcde13202d350a",
+      "result_file": "expected/pull__ben_alt-pacing__into__cara_titles-broll.json"
+    }
+  ],
+  "conflict_rule": "Two ops conflict if they touch the same entity (clip id or clip lineage origin, transition, text layer, effect) with different results, or overlapping time ranges on the same track (generators/vcs_store.py::ops_conflict)."
+}

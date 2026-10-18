@@ -1,0 +1,30 @@
+{
+  "project_id": "proj_team_northwind_02",
+  "note": "Branch refs. No main: every branch is a peer.",
+  "branches": {
+    "rough-cut": {
+      "head": "4a13bcad51c636269cca16c4c4708ffed1be2c4cef95a6614404ba6ead236eb1",
+      "created_from": null,
+      "created_by": "ava",
+      "created_at": "2026-06-21T12:39:00+05:30"
+    },
+    "ava/cut-04": {
+      "head": "9fe54c4f91a444eed9f2354f4b71435c9cb1033c513598903481141193854456",
+      "created_from": "4a13bcad51c636269cca16c4c4708ffed1be2c4cef95a6614404ba6ead236eb1",
+      "created_by": "ava",
+      "created_at": "2026-06-21T12:39:30+05:30"
+    },
+    "cara/cut-05": {
+      "head": "191f002f59f50d4a2cefb5059e5ee3584fdf607e11dd9a22be79ad795f3bcb57",
+      "created_from": "4a13bcad51c636269cca16c4c4708ffed1be2c4cef95a6614404ba6ead236eb1",
+      "created_by": "cara",
+      "created_at": "2026-06-22T17:02:30+05:30"
+    },
+    "cara/cut-06": {
+      "head": "85e0fa01a6630f82de629798dea64c353f8ccafb872b5102c8cfd5c14d1f917c",
+      "created_from": "4a13bcad51c636269cca16c4c4708ffed1be2c4cef95a6614404ba6ead236eb1",
+      "created_by": "cara",
+      "created_at": "2026-06-27T13:04:30+05:30"
+    }
+  }
+}

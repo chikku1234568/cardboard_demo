@@ -1,0 +1,564 @@
+{
+ "ben_font_in_brand_project": {
+  "category": "font",
+  "context": {
+   "format": "9:16",
+   "section": "hook"
+  },
+  "actor": "ben",
+  "project_owner": "ben",
+  "project_scope": "team",
+  "brand_id": "northwind",
+  "action": "Montserrat",
+  "best_guess": "Montserrat",
+  "confidence": 0.542,
+  "abstain": false,
+  "why": [
+   "Exact context match [format=9:16, section=hook].",
+   "ben: Montserrat holds 76% of the decayed weight here (effective support 8.4 after decay, 8 supporting events, 2 rejections of it); confidence 0.54 (Wilson lower bound).",
+   "Blocked by brand: Bebas Neue (northwind.fonts.allowed = ['Inter', 'Montserrat']; Bebas Neue is not allowed).",
+   "2 conflict(s) surfaced; see conflicts[]."
+  ],
+  "source_events": [
+   "proj_ben_09/op_0130",
+   "proj_ben_05/op_0049",
+   "proj_ben_04/op_0047",
+   "proj_ben_03/op_0085",
+   "proj_ben_03/op_0043",
+   "proj_ben_01/op_0137",
+   "proj_ben_01/op_0097",
+   "proj_ben_01/op_0041"
+  ],
+  "context_used": "format=9:16|section=hook",
+  "memory_owner": "ben",
+  "observed_in": "team",
+  "preference_id": "ben/team/font/format=9:16|section=hook/Montserrat#1",
+  "conflicts": [
+   {
+    "kind": "team_vs_private",
+    "category": "font",
+    "context": {
+     "format": "9:16",
+     "section": "hook"
+    },
+    "private": {
+     "side": "private",
+     "owner": "ben",
+     "observed_in": "team",
+     "action": "Montserrat",
+     "confidence": 0.542,
+     "share": 0.762,
+     "context_used": "format=9:16|section=hook",
+     "preference_id": "ben/team/font/format=9:16|section=hook/Montserrat#1",
+     "source_events": [
+      "proj_ben_09/op_0130",
+      "proj_ben_05/op_0049",
+      "proj_ben_04/op_0047",
+      "proj_ben_03/op_0085",
+      "proj_ben_03/op_0043",
+      "proj_ben_01/op_0137"
+     ]
+    },
+    "team": {
+     "side": "team",
+     "owner": "team_northwind",
+     "observed_in": "team",
+     "action": "Inter",
+     "confidence": 0.685,
+     "share": 0.868,
+     "context_used": "format=9:16|section=hook",
+     "preference_id": "team_northwind/team/font/format=9:16|section=hook/Inter#1",
+     "source_events": [
+      "proj_team_northwind_11/op_0080",
+      "proj_team_northwind_10/op_0044",
+      "proj_team_northwind_07/op_0124",
+      "proj_team_northwind_07/op_0081",
+      "proj_team_northwind_07/op_0037",
+      "proj_team_northwind_06/op_0086"
+     ]
+    },
+    "resolution": "ben's own project under team scope: ben's team-scope behaviour applies; the team standard is surfaced",
+    "chat_citations": []
+   },
+   {
+    "kind": "brand_vs_private",
+    "category": "font",
+    "context": {
+     "format": "9:16",
+     "section": "hook"
+    },
+    "private": {
+     "side": "private",
+     "owner": "ben",
+     "observed_in": "private",
+     "action": "Bebas Neue",
+     "confidence": 0.695,
+     "share": 0.89,
+     "context_used": "format=9:16|section=hook",
+     "preference_id": "ben/private/font/format=9:16|section=hook/Bebas Neue#1",
+     "source_events": [
+      "proj_ben_12/op_0045",
+      "proj_ben_11/op_0130",
+      "proj_ben_10/op_0083",
+      "proj_ben_10/op_0044",
+      "proj_ben_07/op_0044",
+      "proj_ben_06/op_0137"
+     ]
+    },
+    "brand": {
+     "brand_id": "northwind",
+     "rule": "northwind.fonts.allowed = ['Inter', 'Montserrat']; Bebas Neue is not allowed"
+    },
+    "resolution": "brand hard constraint wins; the private preference is never returned",
+    "chat_citations": []
+   }
+  ],
+  "blocked": [
+   {
+    "action": "Bebas Neue",
+    "rule": "northwind.fonts.allowed = ['Inter', 'Montserrat']; Bebas Neue is not allowed",
+    "preference_id": "ben/private/font/format=9:16|section=hook/Bebas Neue#1",
+    "source_events": [
+     "proj_ben_12/op_0045",
+     "proj_ben_11/op_0130",
+     "proj_ben_10/op_0083"
+    ],
+    "note": "ben's own preference, blocked here by brand northwind"
+   }
+  ]
+ },
+ "ben_font_in_team_project": {
+  "category": "font",
+  "context": {
+   "format": "9:16",
+   "section": "hook"
+  },
+  "actor": "ben",
+  "project_owner": "team_northwind",
+  "project_scope": "team",
+  "brand_id": "northwind",
+  "action": "Inter",
+  "best_guess": "Inter",
+  "confidence": 0.685,
+  "abstain": false,
+  "why": [
+   "Exact context match [format=9:16, section=hook].",
+   "team team_northwind: Inter holds 87% of the decayed weight here (effective support 10.6 after decay, 11 supporting events, 0 rejections of it); confidence 0.69 (Wilson lower bound).",
+   "Blocked by brand: Bebas Neue (northwind.fonts.allowed = ['Inter', 'Montserrat']; Bebas Neue is not allowed).",
+   "1 conflict(s) surfaced; see conflicts[]."
+  ],
+  "source_events": [
+   "proj_team_northwind_11/op_0080",
+   "proj_team_northwind_10/op_0044",
+   "proj_team_northwind_07/op_0124",
+   "proj_team_northwind_07/op_0081",
+   "proj_team_northwind_07/op_0037",
+   "proj_team_northwind_06/op_0086",
+   "proj_team_northwind_06/op_0042",
+   "proj_team_northwind_02/op_0134"
+  ],
+  "context_used": "format=9:16|section=hook",
+  "memory_owner": "team_northwind",
+  "observed_in": "team",
+  "preference_id": "team_northwind/team/font/format=9:16|section=hook/Inter#1",
+  "conflicts": [
+   {
+    "kind": "brand_vs_private",
+    "category": "font",
+    "context": {
+     "format": "9:16",
+     "section": "hook"
+    },
+    "private": {
+     "side": "private",
+     "owner": "ben",
+     "observed_in": "private",
+     "action": "Bebas Neue",
+     "confidence": 0.695,
+     "share": 0.89,
+     "context_used": "format=9:16|section=hook",
+     "preference_id": "ben/private/font/format=9:16|section=hook/Bebas Neue#1",
+     "source_events": [
+      "proj_ben_12/op_0045",
+      "proj_ben_11/op_0130",
+      "proj_ben_10/op_0083",
+      "proj_ben_10/op_0044",
+      "proj_ben_07/op_0044",
+      "proj_ben_06/op_0137"
+     ]
+    },
+    "brand": {
+     "brand_id": "northwind",
+     "rule": "northwind.fonts.allowed = ['Inter', 'Montserrat']; Bebas Neue is not allowed"
+    },
+    "resolution": "brand hard constraint wins; the private preference is never returned",
+    "chat_citations": []
+   }
+  ],
+  "blocked": [
+   {
+    "action": "Bebas Neue",
+    "rule": "northwind.fonts.allowed = ['Inter', 'Montserrat']; Bebas Neue is not allowed",
+    "preference_id": "ben/private/font/format=9:16|section=hook/Bebas Neue#1",
+    "source_events": [
+     "proj_ben_12/op_0045",
+     "proj_ben_11/op_0130",
+     "proj_ben_10/op_0083"
+    ],
+    "note": "ben's own preference, blocked here by brand northwind"
+   }
+  ]
+ },
+ "ben_font_in_private_project (no brand)": {
+  "category": "font",
+  "context": {
+   "format": "9:16",
+   "section": "hook"
+  },
+  "actor": "ben",
+  "project_owner": "ben",
+  "project_scope": "private",
+  "brand_id": null,
+  "action": "Bebas Neue",
+  "best_guess": "Bebas Neue",
+  "confidence": 0.695,
+  "abstain": false,
+  "why": [
+   "Exact context match [format=9:16, section=hook].",
+   "ben: Bebas Neue holds 89% of the decayed weight here (effective support 9.1 after decay, 9 supporting events, 0 rejections of it); confidence 0.69 (Wilson lower bound).",
+   "Private project: ben's preference applies over team standard Inter (private > team)."
+  ],
+  "source_events": [
+   "proj_ben_12/op_0045",
+   "proj_ben_11/op_0130",
+   "proj_ben_10/op_0083",
+   "proj_ben_10/op_0044",
+   "proj_ben_07/op_0044",
+   "proj_ben_06/op_0137",
+   "proj_ben_06/op_0092",
+   "proj_ben_02/op_0131"
+  ],
+  "context_used": "format=9:16|section=hook",
+  "memory_owner": "ben",
+  "observed_in": "private",
+  "preference_id": "ben/private/font/format=9:16|section=hook/Bebas Neue#1",
+  "conflicts": [],
+  "blocked": []
+ },
+ "check_director_proposals": [
+  {
+   "category": "transition",
+   "action": "glitch",
+   "allowed": false,
+   "rule": "northwind.transitions.banned contains glitch"
+  },
+  {
+   "category": "font",
+   "action": "Comic Sans MS",
+   "allowed": false,
+   "rule": "northwind.fonts.banned contains Comic Sans MS"
+  },
+  {
+   "category": "font",
+   "action": "Bebas Neue",
+   "allowed": false,
+   "rule": "northwind.fonts.allowed = ['Inter', 'Montserrat']; Bebas Neue is not allowed"
+  },
+  {
+   "category": "music_mood",
+   "action": "dramatic_horror",
+   "allowed": false,
+   "rule": "northwind.music_mood.banned contains dramatic_horror"
+  },
+  {
+   "category": "transition",
+   "action": "whip_pan",
+   "allowed": true,
+   "rule": null
+  },
+  {
+   "category": "font",
+   "action": "Inter",
+   "allowed": true,
+   "rule": null
+  }
+ ],
+ "violating_ops_in_history": {
+  "n": 33,
+  "planted_covered": [
+   "proj_ava_04/op_0042",
+   "proj_ben_03/op_0122",
+   "proj_ben_09/op_0043",
+   "proj_team_northwind_02/op_0035",
+   "proj_team_northwind_04/op_0081",
+   "proj_team_northwind_09/op_0040"
+  ],
+  "planted_total": 6,
+  "ops": [
+   {
+    "op_id": "proj_ava_01/op_0037",
+    "author": "director",
+    "event_type": "agent_edit",
+    "category": "font",
+    "action": "Playfair Display",
+    "rule": "northwind.fonts.allowed = ['Inter', 'Montserrat']; Playfair Display is not allowed"
+   },
+   {
+    "op_id": "proj_ben_01/op_0091",
+    "author": "director",
+    "event_type": "agent_edit",
+    "category": "font",
+    "action": "Playfair Display",
+    "rule": "northwind.fonts.allowed = ['Inter', 'Montserrat']; Playfair Display is not allowed"
+   },
+   {
+    "op_id": "proj_ben_01/op_0133",
+    "author": "director",
+    "event_type": "agent_edit",
+    "category": "font",
+    "action": "Playfair Display",
+    "rule": "northwind.fonts.allowed = ['Inter', 'Montserrat']; Playfair Display is not allowed"
+   },
+   {
+    "op_id": "proj_team_northwind_01/op_0027",
+    "author": "director",
+    "event_type": "agent_edit",
+    "category": "font",
+    "action": "Roboto",
+    "rule": "northwind.fonts.allowed = ['Inter', 'Montserrat']; Roboto is not allowed"
+   },
+   {
+    "op_id": "proj_team_northwind_01/op_0072",
+    "author": "director",
+    "event_type": "agent_edit",
+    "category": "font",
+    "action": "Playfair Display",
+    "rule": "northwind.fonts.allowed = ['Inter', 'Montserrat']; Playfair Display is not allowed"
+   },
+   {
+    "op_id": "proj_ben_03/op_0037",
+    "author": "director",
+    "event_type": "agent_edit",
+    "category": "font",
+    "action": "Bebas Neue",
+    "rule": "northwind.fonts.allowed = ['Inter', 'Montserrat']; Bebas Neue is not allowed"
+   },
+   {
+    "op_id": "proj_ben_03/op_0081",
+    "author": "director",
+    "event_type": "agent_edit",
+    "category": "font",
+    "action": "Roboto",
+    "rule": "northwind.fonts.allowed = ['Inter', 'Montserrat']; Roboto is not allowed"
+   },
+   {
+    "op_id": "proj_team_northwind_02/op_0035",
+    "author": "director",
+    "event_type": "agent_edit",
+    "category": "font",
+    "action": "Comic Sans MS",
+    "rule": "northwind.fonts.banned contains Comic Sans MS"
+   },
+   {
+    "op_id": "proj_ben_03/op_0122",
+    "author": "ben",
+    "event_type": "user_override",
+    "category": "font",
+    "action": "Bebas Neue",
+    "rule": "northwind.fonts.allowed = ['Inter', 'Montserrat']; Bebas Neue is not allowed"
+   },
+   {
+    "op_id": "proj_ben_04/op_0085",
+    "author": "director",
+    "event_type": "agent_edit",
+    "category": "font",
+    "action": "Bebas Neue",
+    "rule": "northwind.fonts.allowed = ['Inter', 'Montserrat']; Bebas Neue is not allowed"
+   },
+   {
+    "op_id": "proj_ben_04/op_0091",
+    "author": "ben",
+    "event_type": "user_accept",
+    "category": "font",
+    "action": "Bebas Neue",
+    "rule": "northwind.fonts.allowed = ['Inter', 'Montserrat']; Bebas Neue is not allowed"
+   },
+   {
+    "op_id": "proj_ava_04/op_0042",
+    "author": "director",
+    "event_type": "agent_edit",
+    "category": "transition",
+    "action": "glitch",
+    "rule": "northwind.transitions.banned contains glitch"
+   },
+   {
+    "op_id": "proj_team_northwind_03/op_0120",
+    "author": "director",
+    "event_type": "agent_edit",
+    "category": "font",
+    "action": "Playfair Display",
+    "rule": "northwind.fonts.allowed = ['Inter', 'Montserrat']; Playfair Display is not allowed"
+   },
+   {
+    "op_id": "proj_ben_05/op_0138",
+    "author": "director",
+    "event_type": "agent_edit",
+    "category": "font",
+    "action": "Playfair Display",
+    "rule": "northwind.fonts.allowed = ['Inter', 'Montserrat']; Playfair Display is not allowed"
+   },
+   {
+    "op_id": "proj_ava_06/op_0046",
+    "author": "director",
+    "event_type": "agent_edit",
+    "category": "font",
+    "action": "Bebas Neue",
+    "rule": "northwind.fonts.allowed = ['Inter', 'Montserrat']; Bebas Neue is not allowed"
+   },
+   {
+    "op_id": "proj_ava_06/op_0050",
+    "author": "ava",
+    "event_type": "user_accept",
+    "category": "font",
+    "action": "Bebas Neue",
+    "rule": "northwind.fonts.allowed = ['Inter', 'Montserrat']; Bebas Neue is not allowed"
+   },
+   {
+    "op_id": "proj_ava_06/op_0075",
+    "author": "director",
+    "event_type": "agent_edit",
+    "category": "font",
+    "action": "Bebas Neue",
+    "rule": "northwind.fonts.allowed = ['Inter', 'Montserrat']; Bebas Neue is not allowed"
+   },
+   {
+    "op_id": "proj_ava_06/op_0122",
+    "author": "ava",
+    "event_type": "user_override",
+    "category": "font",
+    "action": "Bebas Neue",
+    "rule": "northwind.fonts.allowed = ['Inter', 'Montserrat']; Bebas Neue is not allowed"
+   },
+   {
+    "op_id": "proj_ava_07/op_0033",
+    "author": "director",
+    "event_type": "agent_edit",
+    "category": "font",
+    "action": "Roboto",
+    "rule": "northwind.fonts.allowed = ['Inter', 'Montserrat']; Roboto is not allowed"
+   },
+   {
+    "op_id": "proj_team_northwind_04/op_0081",
+    "author": "director",
+    "event_type": "agent_edit",
+    "category": "transition",
+    "action": "glitch",
+    "rule": "northwind.transitions.banned contains glitch"
+   },
+   {
+    "op_id": "proj_ben_09/op_0043",
+    "author": "ben",
+    "event_type": "user_override",
+    "category": "font",
+    "action": "Bebas Neue",
+    "rule": "northwind.fonts.allowed = ['Inter', 'Montserrat']; Bebas Neue is not allowed"
+   },
+   {
+    "op_id": "proj_team_northwind_07/op_0076",
+    "author": "director",
+    "event_type": "agent_edit",
+    "category": "font",
+    "action": "Bebas Neue",
+    "rule": "northwind.fonts.allowed = ['Inter', 'Montserrat']; Bebas Neue is not allowed"
+   },
+   {
+    "op_id": "proj_ben_09/op_0081",
+    "author": "director",
+    "event_type": "agent_edit",
+    "category": "font",
+    "action": "Roboto",
+    "rule": "northwind.fonts.allowed = ['Inter', 'Montserrat']; Roboto is not allowed"
+   },
+   {
+    "op_id": "proj_ben_09/op_0087",
+    "author": "ben",
+    "event_type": "user_accept",
+    "category": "font",
+    "action": "Roboto",
+    "rule": "northwind.fonts.allowed = ['Inter', 'Montserrat']; Roboto is not allowed"
+   },
+   {
+    "op_id": "proj_ben_09/op_0125",
+    "author": "director",
+    "event_type": "agent_edit",
+    "category": "font",
+    "action": "Playfair Display",
+    "rule": "northwind.fonts.allowed = ['Inter', 'Montserrat']; Playfair Display is not allowed"
+   },
+   {
+    "op_id": "proj_team_northwind_08/op_0043",
+    "author": "director",
+    "event_type": "agent_edit",
+    "category": "font",
+    "action": "Roboto",
+    "rule": "northwind.fonts.allowed = ['Inter', 'Montserrat']; Roboto is not allowed"
+   },
+   {
+    "op_id": "proj_team_northwind_09/op_0040",
+    "author": "director",
+    "event_type": "agent_edit",
+    "category": "music_mood",
+    "action": "dramatic_horror",
+    "rule": "northwind.music_mood.banned contains dramatic_horror"
+   },
+   {
+    "op_id": "proj_team_northwind_09/op_0062",
+    "author": "director",
+    "event_type": "agent_edit",
+    "category": "font",
+    "action": "Playfair Display",
+    "rule": "northwind.fonts.allowed = ['Inter', 'Montserrat']; Playfair Display is not allowed"
+   },
+   {
+    "op_id": "proj_team_northwind_10/op_0038",
+    "author": "director",
+    "event_type": "agent_edit",
+    "category": "font",
+    "action": "Roboto",
+    "rule": "northwind.fonts.allowed = ['Inter', 'Montserrat']; Roboto is not allowed"
+   },
+   {
+    "op_id": "proj_ava_12/op_0036",
+    "author": "director",
+    "event_type": "agent_edit",
+    "category": "font",
+    "action": "Roboto",
+    "rule": "northwind.fonts.allowed = ['Inter', 'Montserrat']; Roboto is not allowed"
+   },
+   {
+    "op_id": "proj_team_northwind_11/op_0073",
+    "author": "director",
+    "event_type": "agent_edit",
+    "category": "font",
+    "action": "Playfair Display",
+    "rule": "northwind.fonts.allowed = ['Inter', 'Montserrat']; Playfair Display is not allowed"
+   },
+   {
+    "op_id": "proj_ava_12/op_0075",
+    "author": "director",
+    "event_type": "agent_edit",
+    "category": "font",
+    "action": "Playfair Display",
+    "rule": "northwind.fonts.allowed = ['Inter', 'Montserrat']; Playfair Display is not allowed"
+   },
+   {
+    "op_id": "proj_ava_12/op_0111",
+    "author": "director",
+    "event_type": "agent_edit",
+    "category": "font",
+    "action": "Bebas Neue",
+    "rule": "northwind.fonts.allowed = ['Inter', 'Montserrat']; Bebas Neue is not allowed"
+   }
+  ]
+ }
+}

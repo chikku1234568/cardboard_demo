@@ -1,0 +1,18 @@
+{
+  "project_id": "proj_ben_12",
+  "note": "Branch refs. No main: every branch is a peer.",
+  "branches": {
+    "rough-cut": {
+      "head": "21c2cc00b7fda71d280f7697d713b70c9b66c680edc18c7591f0ebb2c5cd4500",
+      "created_from": null,
+      "created_by": "ben",
+      "created_at": "2026-10-12T20:35:00+05:30"
+    },
+    "ben/cut-34": {
+      "head": "43a3aa5c316a188ed167d56f546fc91dd5f5dd67c4f2785d7acbe18782cbf7fb",
+      "created_from": "21c2cc00b7fda71d280f7697d713b70c9b66c680edc18c7591f0ebb2c5cd4500",
+      "created_by": "ben",
+      "created_at": "2026-10-12T20:35:30+05:30"
+    }
+  }
+}

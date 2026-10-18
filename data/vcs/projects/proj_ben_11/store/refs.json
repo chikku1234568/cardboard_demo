@@ -1,0 +1,30 @@
+{
+  "project_id": "proj_ben_11",
+  "note": "Branch refs. No main: every branch is a peer.",
+  "branches": {
+    "rough-cut": {
+      "head": "70df9d2bbc3ed8b6183d42f76070ed9ddcbfa6b9ecfb064afc1989b0268622ce",
+      "created_from": null,
+      "created_by": "ben",
+      "created_at": "2026-10-04T16:35:00+05:30"
+    },
+    "ben/cut-31": {
+      "head": "9756f02cebf7960fe7d56d6f4cc1f10d4135894689dc2566c637dca92da5f069",
+      "created_from": "70df9d2bbc3ed8b6183d42f76070ed9ddcbfa6b9ecfb064afc1989b0268622ce",
+      "created_by": "ben",
+      "created_at": "2026-10-04T16:35:30+05:30"
+    },
+    "ben/cut-32": {
+      "head": "9ef5ca59d0ef9c9f12b1193890d6fe3a7ffdf9a6a646eea889c5401060ad54c8",
+      "created_from": "70df9d2bbc3ed8b6183d42f76070ed9ddcbfa6b9ecfb064afc1989b0268622ce",
+      "created_by": "ben",
+      "created_at": "2026-10-05T09:28:30+05:30"
+    },
+    "ben/cut-33": {
+      "head": "39d2b9dd426a29aa3b2263c5eb5b0a582ec825629af399d6c795864a74b6cc08",
+      "created_from": "70df9d2bbc3ed8b6183d42f76070ed9ddcbfa6b9ecfb064afc1989b0268622ce",
+      "created_by": "ben",
+      "created_at": "2026-10-06T19:07:30+05:30"
+    }
+  }
+}

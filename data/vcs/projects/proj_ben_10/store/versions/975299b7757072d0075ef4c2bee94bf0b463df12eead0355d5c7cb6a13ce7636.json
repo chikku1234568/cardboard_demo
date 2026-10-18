@@ -1,0 +1,20 @@
+{
+  "version_id": "975299b7757072d0075ef4c2bee94bf0b463df12eead0355d5c7cb6a13ce7636",
+  "project_id": "proj_ben_10",
+  "timeline_hash": "ac59ea25f31990466848cf80dc82ec2224d6065986236c6cd2d1d5af065b2238",
+  "parents": [
+    "276aa2392c457e19ca30308f15c3222de05ad0180aa07ac119418e25b014fd45"
+  ],
+  "branch": "ben/cut-28",
+  "author": "director",
+  "timestamp": "2026-09-09T18:49:22+05:30",
+  "message": "Director: color_grade, cut_length, music_mood, transition",
+  "op_ids": [
+    "proj_ben_10/op_0002",
+    "proj_ben_10/op_0003",
+    "proj_ben_10/op_0004",
+    "proj_ben_10/op_0005",
+    "proj_ben_10/op_0006"
+  ],
+  "session_id": "ben_s28"
+}

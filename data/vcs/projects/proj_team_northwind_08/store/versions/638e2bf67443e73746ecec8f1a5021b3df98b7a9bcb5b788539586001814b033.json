@@ -1,0 +1,18 @@
+{
+  "version_id": "638e2bf67443e73746ecec8f1a5021b3df98b7a9bcb5b788539586001814b033",
+  "project_id": "proj_team_northwind_08",
+  "timeline_hash": "24b01edfaa4a0efc62f44f7220fc05a7110ee7d42bb615cf80e6f6d9527c266c",
+  "parents": [
+    "ebdba6f9a4d5c51030bde07d4ec41acf2cbc383590b487bf67e5fe0f288c7597"
+  ],
+  "branch": "ben/cut-22",
+  "author": "director",
+  "timestamp": "2026-09-11T11:47:44+05:30",
+  "message": "Director: caption_style, color_grade, font",
+  "op_ids": [
+    "proj_team_northwind_08/op_0042",
+    "proj_team_northwind_08/op_0043",
+    "proj_team_northwind_08/op_0044"
+  ],
+  "session_id": "team_northwind_s22"
+}

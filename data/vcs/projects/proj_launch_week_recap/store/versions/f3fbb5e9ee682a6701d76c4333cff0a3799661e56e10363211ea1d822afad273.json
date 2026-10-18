@@ -1,0 +1,17 @@
+{
+  "version_id": "f3fbb5e9ee682a6701d76c4333cff0a3799661e56e10363211ea1d822afad273",
+  "project_id": "proj_launch_week_recap",
+  "timeline_hash": "780aa00d2ba52aebb9416c0df65da972479925b3dce94c6710c37e0086d04c7b",
+  "parents": [
+    "c0cf578f459fe53f970e943553b8385cb1c543665cb0044ef7c8407b1e2a422f"
+  ],
+  "branch": "cara/titles-broll",
+  "author": "cara",
+  "timestamp": "2026-10-16T11:58:00+05:30",
+  "message": "Land product b-roll on the 'ship' line; title copy",
+  "op_ids": [
+    "proj_launch_week_recap/op_0004",
+    "proj_launch_week_recap/op_0005"
+  ],
+  "session_id": "team_northwind_s34"
+}

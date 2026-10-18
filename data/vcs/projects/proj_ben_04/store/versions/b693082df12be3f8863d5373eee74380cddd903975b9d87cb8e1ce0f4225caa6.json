@@ -1,0 +1,17 @@
+{
+  "version_id": "b693082df12be3f8863d5373eee74380cddd903975b9d87cb8e1ce0f4225caa6",
+  "project_id": "proj_ben_04",
+  "timeline_hash": "f16c332c794bcf69d60728a36a6bc2279281a8ca961cf6386718d8ca9effa2f6",
+  "parents": [
+    "8f56972adeb2c58f6c1a2522b84c3d329394142466d53191d3ec11e45955e7b3"
+  ],
+  "branch": "ben/cut-12",
+  "author": "director",
+  "timestamp": "2026-07-08T11:08:39+05:30",
+  "message": "Director: caption_style, font",
+  "op_ids": [
+    "proj_ben_04/op_0137",
+    "proj_ben_04/op_0138"
+  ],
+  "session_id": "ben_s12"
+}

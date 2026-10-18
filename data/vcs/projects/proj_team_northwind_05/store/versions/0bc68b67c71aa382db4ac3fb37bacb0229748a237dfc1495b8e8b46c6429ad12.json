@@ -1,0 +1,20 @@
+{
+  "version_id": "0bc68b67c71aa382db4ac3fb37bacb0229748a237dfc1495b8e8b46c6429ad12",
+  "project_id": "proj_team_northwind_05",
+  "timeline_hash": "2d90cf56beaf71ef4b1e4cf7161b433751acfdb7cd138fc1b9a2d0de1d96a479",
+  "parents": [
+    "dbd8ddd291b937431487c5221a8dc32fe50e844ee1293ed52307513bda1094c3"
+  ],
+  "branch": "cara/cut-15",
+  "author": "director",
+  "timestamp": "2026-08-14T19:40:11+05:30",
+  "message": "Director: caption_style, cut_length, font, music_mood, transition",
+  "op_ids": [
+    "proj_team_northwind_05/op_0114",
+    "proj_team_northwind_05/op_0115",
+    "proj_team_northwind_05/op_0116",
+    "proj_team_northwind_05/op_0117",
+    "proj_team_northwind_05/op_0118"
+  ],
+  "session_id": "team_northwind_s15"
+}

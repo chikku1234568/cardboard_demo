@@ -1,0 +1,9 @@
+flowchart TB
+  base["rough-cut 80ce1c7"] --> A1["ava/tighter-cut<br/>op_0001 trim"] --> A2["op_0002 whip pan<br/>A = 9446fae"]
+  base --> B["cara/titles-broll<br/>op_0003-0005<br/>B = f3fbb5e"]
+  base --> C["ben/alt-pacing<br/>op_0006 trim, op_0007 volume<br/>C = c4bdbf6"]
+  A2 --> D["ava/alt-ending<br/>op_0008+  D = d50c24a"]
+  A2 --> AB["A + B (pull: 3 ops auto)"]
+  B -. "selective pull" .-> AB
+  AB --> ABC["A + B + C (conflict on clp_0003<br/>op_0001 vs op_0006, pick theirs)"]
+  C -. "selective pull" .-> ABC

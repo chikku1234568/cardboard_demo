@@ -1,0 +1,88 @@
+{
+  "project_id": "proj_ava_07",
+  "owner_subject": "ava",
+  "project_scope": "team",
+  "brand_id": "northwind",
+  "name": "Northwind video 07",
+  "sections": [
+    {
+      "index": 0,
+      "section": "hook",
+      "clip_id": "clp_0002",
+      "footage_type": "talking_head",
+      "prev_edit": "jump_cut",
+      "asset_id": "a_cam",
+      "start": 3.0,
+      "duration": 8.0
+    },
+    {
+      "index": 1,
+      "section": "body",
+      "clip_id": "clp_0003",
+      "footage_type": "talking_head",
+      "prev_edit": "scene_change",
+      "asset_id": "b_cam",
+      "start": 11.0,
+      "duration": 8.0
+    },
+    {
+      "index": 2,
+      "section": "body",
+      "clip_id": "clp_0004",
+      "footage_type": "broll",
+      "prev_edit": "scene_change",
+      "asset_id": "broll_desk",
+      "start": 19.0,
+      "duration": 5.0
+    },
+    {
+      "index": 3,
+      "section": "body",
+      "clip_id": "clp_0005",
+      "footage_type": "broll",
+      "prev_edit": "jump_cut",
+      "asset_id": "broll_city",
+      "start": 24.0,
+      "duration": 6.0
+    },
+    {
+      "index": 4,
+      "section": "body",
+      "clip_id": "clp_0006",
+      "footage_type": "broll",
+      "prev_edit": "scene_change",
+      "asset_id": "broll_city",
+      "start": 30.0,
+      "duration": 6.0
+    },
+    {
+      "index": 5,
+      "section": "body",
+      "clip_id": "clp_0007",
+      "footage_type": "broll",
+      "prev_edit": "broll_insert",
+      "asset_id": "broll_desk",
+      "start": 36.0,
+      "duration": 5.0
+    },
+    {
+      "index": 6,
+      "section": "outro",
+      "clip_id": "clp_0008",
+      "footage_type": "broll",
+      "prev_edit": "jump_cut",
+      "asset_id": "broll_desk",
+      "start": 41.0,
+      "duration": 5.0
+    }
+  ],
+  "flagship": false,
+  "n_versions": 27,
+  "n_ops": 115,
+  "branches": [
+    "ava/cut-19",
+    "ava/cut-20",
+    "ava/cut-21",
+    "rough-cut"
+  ]
+}

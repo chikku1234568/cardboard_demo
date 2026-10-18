@@ -1,0 +1,144 @@
+{
+ "fully_unseen_context": {
+  "category": "transition",
+  "context": {
+   "footage_type": "drone",
+   "prev_edit": "aerial_reveal",
+   "format": "4:5"
+  },
+  "actor": "ava",
+  "project_owner": "ava",
+  "project_scope": "private",
+  "brand_id": null,
+  "action": null,
+  "best_guess": "hard_cut",
+  "confidence": 0.334,
+  "abstain": true,
+  "why": [
+   "Private project: ava's preference applies over team standard crossfade (private > team).",
+   "Abstaining: unseen context: none of [footage_type=drone, prev_edit=aerial_reveal, format=4:5] was ever observed for ava / transition."
+  ],
+  "source_events": [
+   "proj_ava_11/op_0102",
+   "proj_ava_11/op_0090",
+   "proj_ava_11/op_0051",
+   "proj_ava_11/op_0028",
+   "proj_ava_11/op_0006",
+   "proj_ava_10/op_0111",
+   "proj_ava_10/op_0102",
+   "proj_ava_10/op_0073"
+  ],
+  "context_used": "*",
+  "memory_owner": "ava",
+  "observed_in": "private",
+  "preference_id": "ava/private/transition/*/hard_cut#1",
+  "conflicts": [],
+  "blocked": []
+ },
+ "partly_unseen_context (only section=hook known)": {
+  "category": "transition",
+  "context": {
+   "footage_type": "drone",
+   "prev_edit": "aerial_reveal",
+   "format": "4:5",
+   "section": "hook"
+  },
+  "actor": "ava",
+  "project_owner": "ava",
+  "project_scope": "private",
+  "brand_id": null,
+  "action": null,
+  "best_guess": "hard_cut",
+  "confidence": 0.334,
+  "abstain": true,
+  "why": [
+   "Fell back from [footage_type=drone, prev_edit=aerial_reveal, format=4:5, section=hook] to the most reliable broader context [any context].",
+   "ava: hard_cut holds 44% of the decayed weight here (effective support 35.7 after decay, 51 supporting events, 15 rejections of it); confidence 0.33 (Wilson lower bound).",
+   "Active since ava_s29: superseded slide (hard_cut led the recent window (61% of fast-decayed weight) in 2 consecutive sessions with new evidence).",
+   "Private project: ava's preference applies over team standard crossfade (private > team).",
+   "Abstaining: confidence 0.33 < threshold 0.5."
+  ],
+  "source_events": [
+   "proj_ava_11/op_0102",
+   "proj_ava_11/op_0090",
+   "proj_ava_11/op_0051",
+   "proj_ava_11/op_0028",
+   "proj_ava_11/op_0006",
+   "proj_ava_10/op_0111",
+   "proj_ava_10/op_0102",
+   "proj_ava_10/op_0073"
+  ],
+  "context_used": "*",
+  "memory_owner": "ava",
+  "observed_in": "private",
+  "preference_id": "ava/private/transition/*/hard_cut#1",
+  "conflicts": [],
+  "blocked": []
+ },
+ "sparse_context_ava_product_9x16_outro_caption": {
+  "category": "caption_style",
+  "context": {
+   "footage_type": "product",
+   "format": "1:1",
+   "section": "outro"
+  },
+  "actor": "ava",
+  "project_owner": "ava",
+  "project_scope": "private",
+  "brand_id": null,
+  "action": null,
+  "best_guess": "minimal_modern",
+  "confidence": 0.394,
+  "abstain": true,
+  "why": [
+   "Fell back from [footage_type=product, format=1:1, section=outro] to the most reliable broader context [any context].",
+   "ava: minimal_modern holds 74% of the decayed weight here (effective support 3.4 after decay, 15 supporting events, 10 rejections of it); confidence 0.39 (Wilson lower bound).",
+   "Active since ava_s36: superseded word_pop (minimal_modern led the recent window (74% of fast-decayed weight) in 2 consecutive sessions with new evidence).",
+   "1 narrower context(s) skipped as stale, e.g. skipped [any context] (private): its word_pop was superseded by minimal_modern in [any context] (any) at ava_s36 and not re-confirmed since.",
+   "Abstaining: confidence 0.39 < threshold 0.5."
+  ],
+  "source_events": [
+   "proj_ava_12/op_0116",
+   "proj_ava_12/op_0078",
+   "proj_ava_11/op_0120",
+   "proj_ava_11/op_0083",
+   "proj_ava_11/op_0045",
+   "proj_ava_10/op_0043",
+   "proj_ava_09/op_0128",
+   "proj_ava_06/op_0123"
+  ],
+  "context_used": "*",
+  "memory_owner": "ava",
+  "observed_in": "any",
+  "preference_id": "ava/any/caption_style/*/minimal_modern#2",
+  "conflicts": [],
+  "blocked": []
+ },
+ "cara_private_no_memory": {
+  "category": "transition",
+  "context": {
+   "footage_type": "talking_head",
+   "prev_edit": "jump_cut",
+   "format": "16:9",
+   "section": "body"
+  },
+  "actor": "cara",
+  "project_owner": "cara",
+  "project_scope": "private",
+  "brand_id": null,
+  "action": null,
+  "best_guess": null,
+  "confidence": 0.0,
+  "abstain": true,
+  "why": [
+   "Abstaining: no reliable memory for this context."
+  ],
+  "source_events": [],
+  "context_used": null,
+  "memory_owner": null,
+  "observed_in": null,
+  "preference_id": null,
+  "conflicts": [],
+  "blocked": []
+ }
+}

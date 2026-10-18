@@ -1,0 +1,16 @@
+flowchart TB
+  Ops["ops.jsonl\nevery project"] --> Derive["derive_events.py\nfixed lookup, no model"]
+  Chat["chat.jsonl"] --> Derive
+  Derive --> Events["events.jsonl\nagent_edit, user_accept,\nuser_override, undo, user_edit,\nexplicit_statement"]
+
+  Events --> Engine["MemoryEngine\none slot per owner, scope,\ncategory, context"]
+  Lex["chat extractor\nLLM, or the labelled lexicon"] --> Engine
+  Brand["brand guidelines\nhard constraints"] --> Engine
+
+  Engine --> Graph[("Neo4j\nPreference, Context, Op,\nChatStatement, Creator, Team, Brand")]
+
+  Graph --> Suggest["suggest()\nbackoff, scope, brand filter, abstain"]
+  Brand --> Suggest
+  Suggest --> Http["FastAPI :8808\n/suggest /check /preferences/history"]
+  Http --> Agent["LangGraph agent\nplan slots, query memory,\nbrand gate, compose ops"]
+  Agent --> Out["proposed ops\nVCS vocabulary, plus why"]

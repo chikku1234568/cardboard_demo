@@ -1,0 +1,2055 @@
+{
+ "cut": {
+  "project_id": "proj_team_northwind_11",
+  "actor": "ben",
+  "project_scope": "team",
+  "project_owner": "team_northwind",
+  "brand_id": "northwind",
+  "format": "9:16",
+  "title": "Demo cut",
+  "clips": [
+   {
+    "clip_id": "clp_0002",
+    "section": "hook",
+    "footage_type": "talking_head",
+    "prev_edit": "scene_change"
+   },
+   {
+    "clip_id": "clp_0003",
+    "section": "body",
+    "footage_type": "broll",
+    "prev_edit": "scene_change"
+   },
+   {
+    "clip_id": "clp_0004",
+    "section": "body",
+    "footage_type": "talking_head",
+    "prev_edit": "scene_change"
+   },
+   {
+    "clip_id": "clp_0005",
+    "section": "body",
+    "footage_type": "talking_head",
+    "prev_edit": "jump_cut"
+   },
+   {
+    "clip_id": "clp_0006",
+    "section": "body",
+    "footage_type": "talking_head",
+    "prev_edit": "jump_cut"
+   },
+   {
+    "clip_id": "clp_0007",
+    "section": "body",
+    "footage_type": "broll",
+    "prev_edit": "scene_change"
+   },
+   {
+    "clip_id": "clp_0008",
+    "section": "outro",
+    "footage_type": "screen_recording",
+    "prev_edit": "jump_cut"
+   }
+  ]
+ },
+ "ops": [
+  {
+   "type": "add_effect",
+   "author": "director",
+   "on_behalf_of": "ben",
+   "category": "color_grade",
+   "context": {
+    "footage_type": "talking_head",
+    "prev_edit": "scene_change",
+    "format": "9:16",
+    "section": "hook"
+   },
+   "payload": {
+    "effect": {
+     "id": "fx_new_01",
+     "target_id": "clp_0002",
+     "type": "color_grade",
+     "params": {
+      "look": "neutral_clean",
+      "intensity": 0.6
+     }
+    }
+   },
+   "memory": {
+    "action": "neutral_clean",
+    "confidence": 0.647,
+    "why": [
+     "Fell back from [footage_type=talking_head, prev_edit=scene_change, format=9:16, section=hook] to the most reliable broader context [footage_type=talking_head, format=9:16, section=hook].",
+     "team team_northwind: neutral_clean holds 100% of the decayed weight here (effective support 3.0 after decay, 3 supporting events, 0 rejections of it); confidence 0.65 (Wilson lower bound).",
+     "1 conflict(s) surfaced; see conflicts[]."
+    ],
+    "source_events": [
+     "proj_team_northwind_11/op_0048",
+     "proj_team_northwind_10/op_0011",
+     "proj_team_northwind_04/op_0121"
+    ],
+    "preference_id": "team_northwind/team/color_grade/footage_type=talking_head|format=9:16|section=hook/neutral_clean#1",
+    "conflicts": [
+     {
+      "kind": "team_vs_private",
+      "category": "color_grade",
+      "context": {
+       "footage_type": "talking_head",
+       "prev_edit": "scene_change",
+       "format": "9:16",
+       "section": "hook"
+      },
+      "private": {
+       "side": "private",
+       "owner": "ben",
+       "observed_in": "private",
+       "action": "high_contrast",
+       "confidence": 0.742,
+       "share": 1.0,
+       "context_used": "footage_type=talking_head|format=9:16|section=hook",
+       "preference_id": "ben/private/color_grade/footage_type=talking_head|format=9:16|section=hook/high_contrast#1",
+       "source_events": [
+        "proj_ben_10/op_0010",
+        "proj_ben_07/op_0096",
+        "proj_ben_07/op_0011",
+        "proj_ben_02/op_0097",
+        "proj_ben_02/op_0009"
+       ]
+      },
+      "team": {
+       "side": "team",
+       "owner": "team_northwind",
+       "observed_in": "team",
+       "action": "neutral_clean",
+       "confidence": 0.647,
+       "share": 1.0,
+       "context_used": "footage_type=talking_head|format=9:16|section=hook",
+       "preference_id": "team_northwind/team/color_grade/footage_type=talking_head|format=9:16|section=hook/neutral_clean#1",
+       "source_events": [
+        "proj_team_northwind_11/op_0048",
+        "proj_team_northwind_10/op_0011",
+        "proj_team_northwind_04/op_0121"
+       ]
+      },
+      "resolution": "team project: team standard applies; the private preference is surfaced, not applied",
+      "chat_citations": []
+     }
+    ],
+    "blocked": []
+   }
+  },
+  {
+   "type": "trim_clip",
+   "author": "director",
+   "on_behalf_of": "ben",
+   "category": "cut_length",
+   "context": {
+    "footage_type": "talking_head",
+    "prev_edit": "scene_change",
+    "format": "9:16",
+    "section": "hook"
+   },
+   "payload": {
+    "clip_id": "clp_0002",
+    "edge": "out",
+    "after": {
+     "duration": 2.8
+    },
+    "bucket": "medium"
+   },
+   "memory": {
+    "action": "medium",
+    "confidence": 0.577,
+    "why": [
+     "Fell back from [footage_type=talking_head, prev_edit=scene_change, format=9:16, section=hook] to the most reliable broader context [footage_type=talking_head, prev_edit=scene_change].",
+     "team team_northwind: medium holds 74% of the decayed weight here (effective support 15.3 after decay, 17 supporting events, 3 rejections of it); confidence 0.58 (Wilson lower bound).",
+     "1 conflict(s) surfaced; see conflicts[]."
+    ],
+    "source_events": [
+     "proj_team_northwind_11/op_0045",
+     "proj_team_northwind_11/op_0017",
+     "proj_team_northwind_10/op_0102",
+     "proj_team_northwind_10/op_0093",
+     "proj_team_northwind_10/op_0055",
+     "proj_team_northwind_10/op_0018",
+     "proj_team_northwind_09/op_0099",
+     "proj_team_northwind_09/op_0065"
+    ],
+    "preference_id": "team_northwind/team/cut_length/footage_type=talking_head|prev_edit=scene_change/medium#1",
+    "conflicts": [
+     {
+      "kind": "team_vs_private",
+      "category": "cut_length",
+      "context": {
+       "footage_type": "talking_head",
+       "prev_edit": "scene_change",
+       "format": "9:16",
+       "section": "hook"
+      },
+      "private": {
+       "side": "private",
+       "owner": "ben",
+       "observed_in": "any",
+       "action": "short",
+       "confidence": 0.756,
+       "share": 0.894,
+       "context_used": "footage_type=talking_head|section=hook",
+       "preference_id": "ben/any/cut_length/footage_type=talking_head|section=hook/short#1",
+       "source_events": [
+        "proj_ben_10/op_0091",
+        "proj_ben_10/op_0008",
+        "proj_ben_09/op_0097",
+        "proj_ben_09/op_0008",
+        "proj_ben_08/op_0099",
+        "proj_ben_08/op_0009"
+       ]
+      },
+      "team": {
+       "side": "team",
+       "owner": "team_northwind",
+       "observed_in": "team",
+       "action": "medium",
+       "confidence": 0.577,
+       "share": 0.739,
+       "context_used": "footage_type=talking_head|prev_edit=scene_change",
+       "preference_id": "team_northwind/team/cut_length/footage_type=talking_head|prev_edit=scene_change/medium#1",
+       "source_events": [
+        "proj_team_northwind_11/op_0045",
+        "proj_team_northwind_11/op_0017",
+        "proj_team_northwind_10/op_0102",
+        "proj_team_northwind_10/op_0093",
+        "proj_team_northwind_10/op_0055",
+        "proj_team_northwind_10/op_0018"
+       ]
+      },
+      "resolution": "team project: team standard applies; the private preference is surfaced, not applied",
+      "chat_citations": []
+     }
+    ],
+    "blocked": []
+   }
+  },
+  {
+   "type": "add_transition",
+   "author": "director",
+   "on_behalf_of": "ben",
+   "category": "transition",
+   "context": {
+    "footage_type": "broll",
+    "prev_edit": "scene_change",
+    "format": "9:16",
+    "section": "body"
+   },
+   "payload": {
+    "transition": {
+     "id": "tr_new_03",
+     "track_id": "V1",
+     "from_clip": "clp_0002",
+     "to_clip": "clp_0003",
+     "type": "crossfade",
+     "duration": 0.4
+    }
+   },
+   "memory": {
+    "action": "crossfade",
+    "confidence": 0.665,
+    "why": [
+     "Exact context match [footage_type=broll, prev_edit=scene_change, format=9:16, section=body].",
+     "team team_northwind: crossfade holds 90% of the decayed weight here (effective support 6.8 after decay, 7 supporting events, 0 rejections of it); confidence 0.67 (Wilson lower bound).",
+     "1 conflict(s) surfaced; see conflicts[]."
+    ],
+    "source_events": [
+     "proj_team_northwind_11/op_0049",
+     "proj_team_northwind_06/op_0065",
+     "proj_team_northwind_06/op_0061",
+     "proj_team_northwind_06/op_0030",
+     "proj_team_northwind_06/op_0017",
+     "proj_team_northwind_02/op_0106",
+     "proj_team_northwind_02/op_0019"
+    ],
+    "preference_id": "team_northwind/team/transition/footage_type=broll|prev_edit=scene_change|format=9:16|section=body/crossfade#1",
+    "conflicts": [
+     {
+      "kind": "team_vs_private",
+      "category": "transition",
+      "context": {
+       "footage_type": "broll",
+       "prev_edit": "scene_change",
+       "format": "9:16",
+       "section": "body"
+      },
+      "private": {
+       "side": "private",
+       "owner": "ben",
+       "observed_in": "any",
+       "action": "hard_cut",
+       "confidence": 0.647,
+       "share": 1.0,
+       "context_used": "footage_type=broll|prev_edit=scene_change|format=9:16|section=body",
+       "preference_id": "ben/any/transition/footage_type=broll|prev_edit=scene_change|format=9:16|section=body/hard_cut#1",
+       "source_events": [
+        "proj_ben_11/op_0100",
+        "proj_ben_09/op_0108",
+        "proj_ben_09/op_0020"
+       ]
+      },
+      "team": {
+       "side": "team",
+       "owner": "team_northwind",
+       "observed_in": "team",
+       "action": "crossfade",
+       "confidence": 0.665,
+       "share": 0.897,
+       "context_used": "footage_type=broll|prev_edit=scene_change|format=9:16|section=body",
+       "preference_id": "team_northwind/team/transition/footage_type=broll|prev_edit=scene_change|format=9:16|section=body/crossfade#1",
+       "source_events": [
+        "proj_team_northwind_11/op_0049",
+        "proj_team_northwind_06/op_0065",
+        "proj_team_northwind_06/op_0061",
+        "proj_team_northwind_06/op_0030",
+        "proj_team_northwind_06/op_0017",
+        "proj_team_northwind_02/op_0106"
+       ]
+      },
+      "resolution": "team project: team standard applies; the private preference is surfaced, not applied",
+      "chat_citations": []
+     }
+    ],
+    "blocked": []
+   }
+  },
+  {
+   "type": "add_effect",
+   "author": "director",
+   "on_behalf_of": "ben",
+   "category": "color_grade",
+   "context": {
+    "footage_type": "broll",
+    "prev_edit": "scene_change",
+    "format": "9:16",
+    "section": "body"
+   },
+   "payload": {
+    "effect": {
+     "id": "fx_new_04",
+     "target_id": "clp_0003",
+     "type": "color_grade",
+     "params": {
+      "look": "neutral_clean",
+      "intensity": 0.6
+     }
+    }
+   },
+   "memory": {
+    "action": "neutral_clean",
+    "confidence": 0.639,
+    "why": [
+     "Fell back from [footage_type=broll, prev_edit=scene_change, format=9:16, section=body] to the most reliable broader context [footage_type=broll, format=9:16, section=body].",
+     "team team_northwind: neutral_clean holds 100% of the decayed weight here (effective support 2.9 after decay, 4 supporting events, 1 rejections of it); confidence 0.64 (Wilson lower bound).",
+     "1 conflict(s) surfaced; see conflicts[]."
+    ],
+    "source_events": [
+     "proj_team_northwind_11/op_0069",
+     "proj_team_northwind_07/op_0103",
+     "proj_team_northwind_02/op_0109",
+     "proj_team_northwind_01/op_0109"
+    ],
+    "preference_id": "team_northwind/team/color_grade/footage_type=broll|format=9:16|section=body/neutral_clean#1",
+    "conflicts": [
+     {
+      "kind": "team_vs_private",
+      "category": "color_grade",
+      "context": {
+       "footage_type": "broll",
+       "prev_edit": "scene_change",
+       "format": "9:16",
+       "section": "body"
+      },
+      "private": {
+       "side": "private",
+       "owner": "ben",
+       "observed_in": "any",
+       "action": "high_contrast",
+       "confidence": 0.75,
+       "share": 0.969,
+       "context_used": "footage_type=broll|format=9:16",
+       "preference_id": "ben/any/color_grade/footage_type=broll|format=9:16/high_contrast#1",
+       "source_events": [
+        "proj_ben_12/op_0009",
+        "proj_ben_11/op_0107",
+        "proj_ben_09/op_0109",
+        "proj_ben_09/op_0042",
+        "proj_ben_05/op_0024",
+        "proj_ben_04/op_0045"
+       ]
+      },
+      "team": {
+       "side": "team",
+       "owner": "team_northwind",
+       "observed_in": "team",
+       "action": "neutral_clean",
+       "confidence": 0.639,
+       "share": 1.0,
+       "context_used": "footage_type=broll|format=9:16|section=body",
+       "preference_id": "team_northwind/team/color_grade/footage_type=broll|format=9:16|section=body/neutral_clean#1",
+       "source_events": [
+        "proj_team_northwind_11/op_0069",
+        "proj_team_northwind_07/op_0103",
+        "proj_team_northwind_02/op_0109",
+        "proj_team_northwind_01/op_0109"
+       ]
+      },
+      "resolution": "team project: team standard applies; the private preference is surfaced, not applied",
+      "chat_citations": []
+     }
+    ],
+    "blocked": []
+   }
+  },
+  {
+   "type": "trim_clip",
+   "author": "director",
+   "on_behalf_of": "ben",
+   "category": "cut_length",
+   "context": {
+    "footage_type": "broll",
+    "prev_edit": "scene_change",
+    "format": "9:16",
+    "section": "body"
+   },
+   "payload": {
+    "clip_id": "clp_0003",
+    "edge": "out",
+    "after": {
+     "duration": 2.8
+    },
+    "bucket": "medium"
+   },
+   "memory": {
+    "action": "medium",
+    "confidence": 0.654,
+    "why": [
+     "Exact context match [footage_type=broll, prev_edit=scene_change, format=9:16, section=body].",
+     "team team_northwind: medium holds 100% of the decayed weight here (effective support 3.1 after decay, 4 supporting events, 0 rejections of it); confidence 0.65 (Wilson lower bound).",
+     "1 conflict(s) surfaced; see conflicts[]."
+    ],
+    "source_events": [
+     "proj_team_northwind_11/op_0055",
+     "proj_team_northwind_06/op_0062",
+     "proj_team_northwind_06/op_0018",
+     "proj_team_northwind_02/op_0107"
+    ],
+    "preference_id": "team_northwind/team/cut_length/footage_type=broll|prev_edit=scene_change|format=9:16|section=body/medium#1",
+    "conflicts": [
+     {
+      "kind": "team_vs_private",
+      "category": "cut_length",
+      "context": {
+       "footage_type": "broll",
+       "prev_edit": "scene_change",
+       "format": "9:16",
+       "section": "body"
+      },
+      "private": {
+       "side": "private",
+       "owner": "ben",
+       "observed_in": "any",
+       "action": "short",
+       "confidence": 0.654,
+       "share": 1.0,
+       "context_used": "footage_type=broll|prev_edit=scene_change|section=body",
+       "preference_id": "ben/any/cut_length/footage_type=broll|prev_edit=scene_change|section=body/short#1",
+       "source_events": [
+        "proj_ben_11/op_0101",
+        "proj_ben_11/op_0057",
+        "proj_ben_09/op_0063",
+        "proj_ben_09/op_0021"
+       ]
+      },
+      "team": {
+       "side": "team",
+       "owner": "team_northwind",
+       "observed_in": "team",
+       "action": "medium",
+       "confidence": 0.654,
+       "share": 1.0,
+       "context_used": "footage_type=broll|prev_edit=scene_change|format=9:16|section=body",
+       "preference_id": "team_northwind/team/cut_length/footage_type=broll|prev_edit=scene_change|format=9:16|section=body/medium#1",
+       "source_events": [
+        "proj_team_northwind_11/op_0055",
+        "proj_team_northwind_06/op_0062",
+        "proj_team_northwind_06/op_0018",
+        "proj_team_northwind_02/op_0107"
+       ]
+      },
+      "resolution": "team project: team standard applies; the private preference is surfaced, not applied",
+      "chat_citations": []
+     }
+    ],
+    "blocked": []
+   }
+  },
+  {
+   "type": "add_transition",
+   "author": "director",
+   "on_behalf_of": "ben",
+   "category": "transition",
+   "context": {
+    "footage_type": "talking_head",
+    "prev_edit": "scene_change",
+    "format": "9:16",
+    "section": "body"
+   },
+   "payload": {
+    "transition": {
+     "id": "tr_new_06",
+     "track_id": "V1",
+     "from_clip": "clp_0003",
+     "to_clip": "clp_0004",
+     "type": "crossfade",
+     "duration": 0.4
+    }
+   },
+   "memory": {
+    "action": "crossfade",
+    "confidence": 0.508,
+    "why": [
+     "Fell back from [footage_type=talking_head, prev_edit=scene_change, format=9:16, section=body] to the most reliable broader context [footage_type=talking_head, prev_edit=scene_change, format=9:16].",
+     "team team_northwind: crossfade holds 72% of the decayed weight here (effective support 9.5 after decay, 8 supporting events, 1 rejections of it); confidence 0.51 (Wilson lower bound).",
+     "1 conflict(s) surfaced; see conflicts[]."
+    ],
+    "source_events": [
+     "proj_team_northwind_11/op_0044",
+     "proj_team_northwind_10/op_0012",
+     "proj_team_northwind_10/op_0007",
+     "proj_team_northwind_06/op_0010",
+     "proj_team_northwind_03/op_0022",
+     "proj_team_northwind_01/op_0118",
+     "proj_team_northwind_01/op_0112",
+     "proj_team_northwind_01/op_0030"
+    ],
+    "preference_id": "team_northwind/team/transition/footage_type=talking_head|prev_edit=scene_change|format=9:16/crossfade#1",
+    "conflicts": [
+     {
+      "kind": "team_vs_private",
+      "category": "transition",
+      "context": {
+       "footage_type": "talking_head",
+       "prev_edit": "scene_change",
+       "format": "9:16",
+       "section": "body"
+      },
+      "private": {
+       "side": "private",
+       "owner": "ben",
+       "observed_in": "any",
+       "action": "hard_cut",
+       "confidence": 0.757,
+       "share": 0.902,
+       "context_used": "footage_type=talking_head|prev_edit=scene_change|format=9:16|section=body",
+       "preference_id": "ben/any/transition/footage_type=talking_head|prev_edit=scene_change|format=9:16|section=body/hard_cut#1",
+       "source_events": [
+        "proj_ben_12/op_0031",
+        "proj_ben_10/op_0066",
+        "proj_ben_10/op_0064",
+        "proj_ben_10/op_0031",
+        "proj_ben_10/op_0021",
+        "proj_ben_09/op_0110"
+       ]
+      },
+      "team": {
+       "side": "team",
+       "owner": "team_northwind",
+       "observed_in": "team",
+       "action": "crossfade",
+       "confidence": 0.508,
+       "share": 0.716,
+       "context_used": "footage_type=talking_head|prev_edit=scene_change|format=9:16",
+       "preference_id": "team_northwind/team/transition/footage_type=talking_head|prev_edit=scene_change|format=9:16/crossfade#1",
+       "source_events": [
+        "proj_team_northwind_11/op_0044",
+        "proj_team_northwind_10/op_0012",
+        "proj_team_northwind_10/op_0007",
+        "proj_team_northwind_06/op_0010",
+        "proj_team_northwind_03/op_0022",
+        "proj_team_northwind_01/op_0118"
+       ]
+      },
+      "resolution": "team project: team standard applies; the private preference is surfaced, not applied",
+      "chat_citations": []
+     }
+    ],
+    "blocked": []
+   }
+  },
+  {
+   "type": "add_effect",
+   "author": "director",
+   "on_behalf_of": "ben",
+   "category": "color_grade",
+   "context": {
+    "footage_type": "talking_head",
+    "prev_edit": "scene_change",
+    "format": "9:16",
+    "section": "body"
+   },
+   "payload": {
+    "effect": {
+     "id": "fx_new_07",
+     "target_id": "clp_0004",
+     "type": "color_grade",
+     "params": {
+      "look": "neutral_clean",
+      "intensity": 0.6
+     }
+    }
+   },
+   "memory": {
+    "action": "neutral_clean",
+    "confidence": 0.799,
+    "why": [
+     "Fell back from [footage_type=talking_head, prev_edit=scene_change, format=9:16, section=body] to the most reliable broader context [footage_type=talking_head, format=9:16, section=body].",
+     "team team_northwind: neutral_clean holds 100% of the decayed weight here (effective support 6.5 after decay, 8 supporting events, 0 rejections of it); confidence 0.80 (Wilson lower bound).",
+     "1 conflict(s) surfaced; see conflicts[]."
+    ],
+    "source_events": [
+     "proj_team_northwind_10/op_0019",
+     "proj_team_northwind_06/op_0076",
+     "proj_team_northwind_06/op_0055",
+     "proj_team_northwind_03/op_0033",
+     "proj_team_northwind_03/op_0011",
+     "proj_team_northwind_01/op_0100",
+     "proj_team_northwind_01/op_0097",
+     "proj_team_northwind_01/op_0037"
+    ],
+    "preference_id": "team_northwind/team/color_grade/footage_type=talking_head|format=9:16|section=body/neutral_clean#1",
+    "conflicts": [
+     {
+      "kind": "team_vs_private",
+      "category": "color_grade",
+      "context": {
+       "footage_type": "talking_head",
+       "prev_edit": "scene_change",
+       "format": "9:16",
+       "section": "body"
+      },
+      "private": {
+       "side": "private",
+       "owner": "ben",
+       "observed_in": "private",
+       "action": "high_contrast",
+       "confidence": 0.806,
+       "share": 1.0,
+       "context_used": "footage_type=talking_head|format=9:16|section=body",
+       "preference_id": "ben/private/color_grade/footage_type=talking_head|format=9:16|section=body/high_contrast#1",
+       "source_events": [
+        "proj_ben_12/op_0011",
+        "proj_ben_11/op_0109",
+        "proj_ben_10/op_0065",
+        "proj_ben_10/op_0034",
+        "proj_ben_06/op_0115",
+        "proj_ben_06/op_0106"
+       ]
+      },
+      "team": {
+       "side": "team",
+       "owner": "team_northwind",
+       "observed_in": "team",
+       "action": "neutral_clean",
+       "confidence": 0.799,
+       "share": 1.0,
+       "context_used": "footage_type=talking_head|format=9:16|section=body",
+       "preference_id": "team_northwind/team/color_grade/footage_type=talking_head|format=9:16|section=body/neutral_clean#1",
+       "source_events": [
+        "proj_team_northwind_10/op_0019",
+        "proj_team_northwind_06/op_0076",
+        "proj_team_northwind_06/op_0055",
+        "proj_team_northwind_03/op_0033",
+        "proj_team_northwind_03/op_0011",
+        "proj_team_northwind_01/op_0100"
+       ]
+      },
+      "resolution": "team project: team standard applies; the private preference is surfaced, not applied",
+      "chat_citations": []
+     }
+    ],
+    "blocked": []
+   }
+  },
+  {
+   "type": "trim_clip",
+   "author": "director",
+   "on_behalf_of": "ben",
+   "category": "cut_length",
+   "context": {
+    "footage_type": "talking_head",
+    "prev_edit": "scene_change",
+    "format": "9:16",
+    "section": "body"
+   },
+   "payload": {
+    "clip_id": "clp_0004",
+    "edge": "out",
+    "after": {
+     "duration": 2.8
+    },
+    "bucket": "medium"
+   },
+   "memory": {
+    "action": "medium",
+    "confidence": 0.635,
+    "why": [
+     "Fell back from [footage_type=talking_head, prev_edit=scene_change, format=9:16, section=body] to the most reliable broader context [footage_type=talking_head, prev_edit=scene_change, section=body].",
+     "team team_northwind: medium holds 100% of the decayed weight here (effective support 2.9 after decay, 10 supporting events, 1 rejections of it); confidence 0.63 (Wilson lower bound).",
+     "Active since team_northwind_s30: superseded long (medium led the recent window (100% of fast-decayed weight) in 2 consecutive sessions with new evidence)."
+    ],
+    "source_events": [
+     "proj_team_northwind_11/op_0017",
+     "proj_team_northwind_10/op_0102",
+     "proj_team_northwind_10/op_0055",
+     "proj_team_northwind_10/op_0018",
+     "proj_team_northwind_08/op_0059",
+     "proj_team_northwind_06/op_0104",
+     "proj_team_northwind_06/op_0054",
+     "proj_team_northwind_03/op_0112"
+    ],
+    "preference_id": "team_northwind/team/cut_length/footage_type=talking_head|prev_edit=scene_change|section=body/medium#1",
+    "conflicts": [],
+    "blocked": []
+   }
+  },
+  {
+   "type": "add_transition",
+   "author": "director",
+   "on_behalf_of": "ben",
+   "category": "transition",
+   "context": {
+    "footage_type": "talking_head",
+    "prev_edit": "jump_cut",
+    "format": "9:16",
+    "section": "body"
+   },
+   "payload": {
+    "transition": {
+     "id": "tr_new_09",
+     "track_id": "V1",
+     "from_clip": "clp_0004",
+     "to_clip": "clp_0005",
+     "type": "hard_cut",
+     "duration": 0.4
+    }
+   },
+   "memory": {
+    "action": "hard_cut",
+    "confidence": 0.76,
+    "why": [
+     "Exact context match [footage_type=talking_head, prev_edit=jump_cut, format=9:16, section=body].",
+     "team team_northwind: hard_cut holds 92% of the decayed weight here (effective support 12.1 after decay, 14 supporting events, 1 rejections of it); confidence 0.76 (Wilson lower bound).",
+     "1 conflict(s) surfaced; see conflicts[]."
+    ],
+    "source_events": [
+     "proj_team_northwind_11/op_0066",
+     "proj_team_northwind_11/op_0059",
+     "proj_team_northwind_10/op_0033",
+     "proj_team_northwind_07/op_0104",
+     "proj_team_northwind_07/op_0092",
+     "proj_team_northwind_07/op_0069",
+     "proj_team_northwind_07/op_0048",
+     "proj_team_northwind_07/op_0022"
+    ],
+    "preference_id": "team_northwind/team/transition/footage_type=talking_head|prev_edit=jump_cut|format=9:16|section=body/hard_cut#1",
+    "conflicts": [
+     {
+      "kind": "team_vs_private",
+      "category": "transition",
+      "context": {
+       "footage_type": "talking_head",
+       "prev_edit": "jump_cut",
+       "format": "9:16",
+       "section": "body"
+      },
+      "private": {
+       "side": "private",
+       "owner": "ben",
+       "observed_in": "any",
+       "action": "zoom_punch",
+       "confidence": 0.879,
+       "share": 0.968,
+       "context_used": "footage_type=talking_head|prev_edit=jump_cut|format=9:16|section=body",
+       "preference_id": "ben/any/transition/footage_type=talking_head|prev_edit=jump_cut|format=9:16|section=body/zoom_punch#1",
+       "source_events": [
+        "proj_ben_12/op_0020",
+        "proj_ben_11/op_0117",
+        "proj_ben_11/op_0108",
+        "proj_ben_10/op_0074",
+        "proj_ben_10/op_0040",
+        "proj_ben_09/op_0118"
+       ]
+      },
+      "team": {
+       "side": "team",
+       "owner": "team_northwind",
+       "observed_in": "team",
+       "action": "hard_cut",
+       "confidence": 0.76,
+       "share": 0.917,
+       "context_used": "footage_type=talking_head|prev_edit=jump_cut|format=9:16|section=body",
+       "preference_id": "team_northwind/team/transition/footage_type=talking_head|prev_edit=jump_cut|format=9:16|section=body/hard_cut#1",
+       "source_events": [
+        "proj_team_northwind_11/op_0066",
+        "proj_team_northwind_11/op_0059",
+        "proj_team_northwind_10/op_0033",
+        "proj_team_northwind_07/op_0104",
+        "proj_team_northwind_07/op_0092",
+        "proj_team_northwind_07/op_0069"
+       ]
+      },
+      "resolution": "team project: team standard applies; the private preference is surfaced, not applied",
+      "chat_citations": []
+     }
+    ],
+    "blocked": []
+   }
+  },
+  {
+   "type": "add_effect",
+   "author": "director",
+   "on_behalf_of": "ben",
+   "category": "color_grade",
+   "context": {
+    "footage_type": "talking_head",
+    "prev_edit": "jump_cut",
+    "format": "9:16",
+    "section": "body"
+   },
+   "payload": {
+    "effect": {
+     "id": "fx_new_10",
+     "target_id": "clp_0005",
+     "type": "color_grade",
+     "params": {
+      "look": "neutral_clean",
+      "intensity": 0.6
+     }
+    }
+   },
+   "memory": {
+    "action": "neutral_clean",
+    "confidence": 0.799,
+    "why": [
+     "Fell back from [footage_type=talking_head, prev_edit=jump_cut, format=9:16, section=body] to the most reliable broader context [footage_type=talking_head, format=9:16, section=body].",
+     "team team_northwind: neutral_clean holds 100% of the decayed weight here (effective support 6.5 after decay, 8 supporting events, 0 rejections of it); confidence 0.80 (Wilson lower bound).",
+     "1 conflict(s) surfaced; see conflicts[]."
+    ],
+    "source_events": [
+     "proj_team_northwind_10/op_0019",
+     "proj_team_northwind_06/op_0076",
+     "proj_team_northwind_06/op_0055",
+     "proj_team_northwind_03/op_0033",
+     "proj_team_northwind_03/op_0011",
+     "proj_team_northwind_01/op_0100",
+     "proj_team_northwind_01/op_0097",
+     "proj_team_northwind_01/op_0037"
+    ],
+    "preference_id": "team_northwind/team/color_grade/footage_type=talking_head|format=9:16|section=body/neutral_clean#1",
+    "conflicts": [
+     {
+      "kind": "team_vs_private",
+      "category": "color_grade",
+      "context": {
+       "footage_type": "talking_head",
+       "prev_edit": "jump_cut",
+       "format": "9:16",
+       "section": "body"
+      },
+      "private": {
+       "side": "private",
+       "owner": "ben",
+       "observed_in": "private",
+       "action": "high_contrast",
+       "confidence": 0.806,
+       "share": 1.0,
+       "context_used": "footage_type=talking_head|format=9:16|section=body",
+       "preference_id": "ben/private/color_grade/footage_type=talking_head|format=9:16|section=body/high_contrast#1",
+       "source_events": [
+        "proj_ben_12/op_0011",
+        "proj_ben_11/op_0109",
+        "proj_ben_10/op_0065",
+        "proj_ben_10/op_0034",
+        "proj_ben_06/op_0115",
+        "proj_ben_06/op_0106"
+       ]
+      },
+      "team": {
+       "side": "team",
+       "owner": "team_northwind",
+       "observed_in": "team",
+       "action": "neutral_clean",
+       "confidence": 0.799,
+       "share": 1.0,
+       "context_used": "footage_type=talking_head|format=9:16|section=body",
+       "preference_id": "team_northwind/team/color_grade/footage_type=talking_head|format=9:16|section=body/neutral_clean#1",
+       "source_events": [
+        "proj_team_northwind_10/op_0019",
+        "proj_team_northwind_06/op_0076",
+        "proj_team_northwind_06/op_0055",
+        "proj_team_northwind_03/op_0033",
+        "proj_team_northwind_03/op_0011",
+        "proj_team_northwind_01/op_0100"
+       ]
+      },
+      "resolution": "team project: team standard applies; the private preference is surfaced, not applied",
+      "chat_citations": []
+     }
+    ],
+    "blocked": []
+   }
+  },
+  {
+   "type": "trim_clip",
+   "author": "director",
+   "on_behalf_of": "ben",
+   "category": "cut_length",
+   "context": {
+    "footage_type": "talking_head",
+    "prev_edit": "jump_cut",
+    "format": "9:16",
+    "section": "body"
+   },
+   "payload": {
+    "clip_id": "clp_0005",
+    "edge": "out",
+    "after": {
+     "duration": 2.8
+    },
+    "bucket": "medium"
+   },
+   "memory": {
+    "action": "medium",
+    "confidence": 0.501,
+    "why": [
+     "Exact context match [footage_type=talking_head, prev_edit=jump_cut, format=9:16, section=body].",
+     "team team_northwind: medium holds 76% of the decayed weight here (effective support 6.2 after decay, 8 supporting events, 3 rejections of it); confidence 0.50 (Wilson lower bound)."
+    ],
+    "source_events": [
+     "proj_team_northwind_11/op_0065",
+     "proj_team_northwind_07/op_0110",
+     "proj_team_northwind_07/op_0093",
+     "proj_team_northwind_07/op_0049",
+     "proj_team_northwind_07/op_0028",
+     "proj_team_northwind_06/op_0073",
+     "proj_team_northwind_04/op_0091",
+     "proj_team_northwind_01/op_0012"
+    ],
+    "preference_id": "team_northwind/team/cut_length/footage_type=talking_head|prev_edit=jump_cut|format=9:16|section=body/medium#1",
+    "conflicts": [],
+    "blocked": []
+   }
+  },
+  {
+   "type": "add_transition",
+   "author": "director",
+   "on_behalf_of": "ben",
+   "category": "transition",
+   "context": {
+    "footage_type": "talking_head",
+    "prev_edit": "jump_cut",
+    "format": "9:16",
+    "section": "body"
+   },
+   "payload": {
+    "transition": {
+     "id": "tr_new_12",
+     "track_id": "V1",
+     "from_clip": "clp_0005",
+     "to_clip": "clp_0006",
+     "type": "hard_cut",
+     "duration": 0.4
+    }
+   },
+   "memory": {
+    "action": "hard_cut",
+    "confidence": 0.76,
+    "why": [
+     "Exact context match [footage_type=talking_head, prev_edit=jump_cut, format=9:16, section=body].",
+     "team team_northwind: hard_cut holds 92% of the decayed weight here (effective support 12.1 after decay, 14 supporting events, 1 rejections of it); confidence 0.76 (Wilson lower bound).",
+     "1 conflict(s) surfaced; see conflicts[]."
+    ],
+    "source_events": [
+     "proj_team_northwind_11/op_0066",
+     "proj_team_northwind_11/op_0059",
+     "proj_team_northwind_10/op_0033",
+     "proj_team_northwind_07/op_0104",
+     "proj_team_northwind_07/op_0092",
+     "proj_team_northwind_07/op_0069",
+     "proj_team_northwind_07/op_0048",
+     "proj_team_northwind_07/op_0022"
+    ],
+    "preference_id": "team_northwind/team/transition/footage_type=talking_head|prev_edit=jump_cut|format=9:16|section=body/hard_cut#1",
+    "conflicts": [
+     {
+      "kind": "team_vs_private",
+      "category": "transition",
+      "context": {
+       "footage_type": "talking_head",
+       "prev_edit": "jump_cut",
+       "format": "9:16",
+       "section": "body"
+      },
+      "private": {
+       "side": "private",
+       "owner": "ben",
+       "observed_in": "any",
+       "action": "zoom_punch",
+       "confidence": 0.879,
+       "share": 0.968,
+       "context_used": "footage_type=talking_head|prev_edit=jump_cut|format=9:16|section=body",
+       "preference_id": "ben/any/transition/footage_type=talking_head|prev_edit=jump_cut|format=9:16|section=body/zoom_punch#1",
+       "source_events": [
+        "proj_ben_12/op_0020",
+        "proj_ben_11/op_0117",
+        "proj_ben_11/op_0108",
+        "proj_ben_10/op_0074",
+        "proj_ben_10/op_0040",
+        "proj_ben_09/op_0118"
+       ]
+      },
+      "team": {
+       "side": "team",
+       "owner": "team_northwind",
+       "observed_in": "team",
+       "action": "hard_cut",
+       "confidence": 0.76,
+       "share": 0.917,
+       "context_used": "footage_type=talking_head|prev_edit=jump_cut|format=9:16|section=body",
+       "preference_id": "team_northwind/team/transition/footage_type=talking_head|prev_edit=jump_cut|format=9:16|section=body/hard_cut#1",
+       "source_events": [
+        "proj_team_northwind_11/op_0066",
+        "proj_team_northwind_11/op_0059",
+        "proj_team_northwind_10/op_0033",
+        "proj_team_northwind_07/op_0104",
+        "proj_team_northwind_07/op_0092",
+        "proj_team_northwind_07/op_0069"
+       ]
+      },
+      "resolution": "team project: team standard applies; the private preference is surfaced, not applied",
+      "chat_citations": []
+     }
+    ],
+    "blocked": []
+   }
+  },
+  {
+   "type": "add_effect",
+   "author": "director",
+   "on_behalf_of": "ben",
+   "category": "color_grade",
+   "context": {
+    "footage_type": "talking_head",
+    "prev_edit": "jump_cut",
+    "format": "9:16",
+    "section": "body"
+   },
+   "payload": {
+    "effect": {
+     "id": "fx_new_13",
+     "target_id": "clp_0006",
+     "type": "color_grade",
+     "params": {
+      "look": "neutral_clean",
+      "intensity": 0.6
+     }
+    }
+   },
+   "memory": {
+    "action": "neutral_clean",
+    "confidence": 0.799,
+    "why": [
+     "Fell back from [footage_type=talking_head, prev_edit=jump_cut, format=9:16, section=body] to the most reliable broader context [footage_type=talking_head, format=9:16, section=body].",
+     "team team_northwind: neutral_clean holds 100% of the decayed weight here (effective support 6.5 after decay, 8 supporting events, 0 rejections of it); confidence 0.80 (Wilson lower bound).",
+     "1 conflict(s) surfaced; see conflicts[]."
+    ],
+    "source_events": [
+     "proj_team_northwind_10/op_0019",
+     "proj_team_northwind_06/op_0076",
+     "proj_team_northwind_06/op_0055",
+     "proj_team_northwind_03/op_0033",
+     "proj_team_northwind_03/op_0011",
+     "proj_team_northwind_01/op_0100",
+     "proj_team_northwind_01/op_0097",
+     "proj_team_northwind_01/op_0037"
+    ],
+    "preference_id": "team_northwind/team/color_grade/footage_type=talking_head|format=9:16|section=body/neutral_clean#1",
+    "conflicts": [
+     {
+      "kind": "team_vs_private",
+      "category": "color_grade",
+      "context": {
+       "footage_type": "talking_head",
+       "prev_edit": "jump_cut",
+       "format": "9:16",
+       "section": "body"
+      },
+      "private": {
+       "side": "private",
+       "owner": "ben",
+       "observed_in": "private",
+       "action": "high_contrast",
+       "confidence": 0.806,
+       "share": 1.0,
+       "context_used": "footage_type=talking_head|format=9:16|section=body",
+       "preference_id": "ben/private/color_grade/footage_type=talking_head|format=9:16|section=body/high_contrast#1",
+       "source_events": [
+        "proj_ben_12/op_0011",
+        "proj_ben_11/op_0109",
+        "proj_ben_10/op_0065",
+        "proj_ben_10/op_0034",
+        "proj_ben_06/op_0115",
+        "proj_ben_06/op_0106"
+       ]
+      },
+      "team": {
+       "side": "team",
+       "owner": "team_northwind",
+       "observed_in": "team",
+       "action": "neutral_clean",
+       "confidence": 0.799,
+       "share": 1.0,
+       "context_used": "footage_type=talking_head|format=9:16|section=body",
+       "preference_id": "team_northwind/team/color_grade/footage_type=talking_head|format=9:16|section=body/neutral_clean#1",
+       "source_events": [
+        "proj_team_northwind_10/op_0019",
+        "proj_team_northwind_06/op_0076",
+        "proj_team_northwind_06/op_0055",
+        "proj_team_northwind_03/op_0033",
+        "proj_team_northwind_03/op_0011",
+        "proj_team_northwind_01/op_0100"
+       ]
+      },
+      "resolution": "team project: team standard applies; the private preference is surfaced, not applied",
+      "chat_citations": []
+     }
+    ],
+    "blocked": []
+   }
+  },
+  {
+   "type": "trim_clip",
+   "author": "director",
+   "on_behalf_of": "ben",
+   "category": "cut_length",
+   "context": {
+    "footage_type": "talking_head",
+    "prev_edit": "jump_cut",
+    "format": "9:16",
+    "section": "body"
+   },
+   "payload": {
+    "clip_id": "clp_0006",
+    "edge": "out",
+    "after": {
+     "duration": 2.8
+    },
+    "bucket": "medium"
+   },
+   "memory": {
+    "action": "medium",
+    "confidence": 0.501,
+    "why": [
+     "Exact context match [footage_type=talking_head, prev_edit=jump_cut, format=9:16, section=body].",
+     "team team_northwind: medium holds 76% of the decayed weight here (effective support 6.2 after decay, 8 supporting events, 3 rejections of it); confidence 0.50 (Wilson lower bound)."
+    ],
+    "source_events": [
+     "proj_team_northwind_11/op_0065",
+     "proj_team_northwind_07/op_0110",
+     "proj_team_northwind_07/op_0093",
+     "proj_team_northwind_07/op_0049",
+     "proj_team_northwind_07/op_0028",
+     "proj_team_northwind_06/op_0073",
+     "proj_team_northwind_04/op_0091",
+     "proj_team_northwind_01/op_0012"
+    ],
+    "preference_id": "team_northwind/team/cut_length/footage_type=talking_head|prev_edit=jump_cut|format=9:16|section=body/medium#1",
+    "conflicts": [],
+    "blocked": []
+   }
+  },
+  {
+   "type": "add_transition",
+   "author": "director",
+   "on_behalf_of": "ben",
+   "category": "transition",
+   "context": {
+    "footage_type": "broll",
+    "prev_edit": "scene_change",
+    "format": "9:16",
+    "section": "body"
+   },
+   "payload": {
+    "transition": {
+     "id": "tr_new_15",
+     "track_id": "V1",
+     "from_clip": "clp_0006",
+     "to_clip": "clp_0007",
+     "type": "crossfade",
+     "duration": 0.4
+    }
+   },
+   "memory": {
+    "action": "crossfade",
+    "confidence": 0.665,
+    "why": [
+     "Exact context match [footage_type=broll, prev_edit=scene_change, format=9:16, section=body].",
+     "team team_northwind: crossfade holds 90% of the decayed weight here (effective support 6.8 after decay, 7 supporting events, 0 rejections of it); confidence 0.67 (Wilson lower bound).",
+     "1 conflict(s) surfaced; see conflicts[]."
+    ],
+    "source_events": [
+     "proj_team_northwind_11/op_0049",
+     "proj_team_northwind_06/op_0065",
+     "proj_team_northwind_06/op_0061",
+     "proj_team_northwind_06/op_0030",
+     "proj_team_northwind_06/op_0017",
+     "proj_team_northwind_02/op_0106",
+     "proj_team_northwind_02/op_0019"
+    ],
+    "preference_id": "team_northwind/team/transition/footage_type=broll|prev_edit=scene_change|format=9:16|section=body/crossfade#1",
+    "conflicts": [
+     {
+      "kind": "team_vs_private",
+      "category": "transition",
+      "context": {
+       "footage_type": "broll",
+       "prev_edit": "scene_change",
+       "format": "9:16",
+       "section": "body"
+      },
+      "private": {
+       "side": "private",
+       "owner": "ben",
+       "observed_in": "any",
+       "action": "hard_cut",
+       "confidence": 0.647,
+       "share": 1.0,
+       "context_used": "footage_type=broll|prev_edit=scene_change|format=9:16|section=body",
+       "preference_id": "ben/any/transition/footage_type=broll|prev_edit=scene_change|format=9:16|section=body/hard_cut#1",
+       "source_events": [
+        "proj_ben_11/op_0100",
+        "proj_ben_09/op_0108",
+        "proj_ben_09/op_0020"
+       ]
+      },
+      "team": {
+       "side": "team",
+       "owner": "team_northwind",
+       "observed_in": "team",
+       "action": "crossfade",
+       "confidence": 0.665,
+       "share": 0.897,
+       "context_used": "footage_type=broll|prev_edit=scene_change|format=9:16|section=body",
+       "preference_id": "team_northwind/team/transition/footage_type=broll|prev_edit=scene_change|format=9:16|section=body/crossfade#1",
+       "source_events": [
+        "proj_team_northwind_11/op_0049",
+        "proj_team_northwind_06/op_0065",
+        "proj_team_northwind_06/op_0061",
+        "proj_team_northwind_06/op_0030",
+        "proj_team_northwind_06/op_0017",
+        "proj_team_northwind_02/op_0106"
+       ]
+      },
+      "resolution": "team project: team standard applies; the private preference is surfaced, not applied",
+      "chat_citations": []
+     }
+    ],
+    "blocked": []
+   }
+  },
+  {
+   "type": "add_effect",
+   "author": "director",
+   "on_behalf_of": "ben",
+   "category": "color_grade",
+   "context": {
+    "footage_type": "broll",
+    "prev_edit": "scene_change",
+    "format": "9:16",
+    "section": "body"
+   },
+   "payload": {
+    "effect": {
+     "id": "fx_new_16",
+     "target_id": "clp_0007",
+     "type": "color_grade",
+     "params": {
+      "look": "neutral_clean",
+      "intensity": 0.6
+     }
+    }
+   },
+   "memory": {
+    "action": "neutral_clean",
+    "confidence": 0.639,
+    "why": [
+     "Fell back from [footage_type=broll, prev_edit=scene_change, format=9:16, section=body] to the most reliable broader context [footage_type=broll, format=9:16, section=body].",
+     "team team_northwind: neutral_clean holds 100% of the decayed weight here (effective support 2.9 after decay, 4 supporting events, 1 rejections of it); confidence 0.64 (Wilson lower bound).",
+     "1 conflict(s) surfaced; see conflicts[]."
+    ],
+    "source_events": [
+     "proj_team_northwind_11/op_0069",
+     "proj_team_northwind_07/op_0103",
+     "proj_team_northwind_02/op_0109",
+     "proj_team_northwind_01/op_0109"
+    ],
+    "preference_id": "team_northwind/team/color_grade/footage_type=broll|format=9:16|section=body/neutral_clean#1",
+    "conflicts": [
+     {
+      "kind": "team_vs_private",
+      "category": "color_grade",
+      "context": {
+       "footage_type": "broll",
+       "prev_edit": "scene_change",
+       "format": "9:16",
+       "section": "body"
+      },
+      "private": {
+       "side": "private",
+       "owner": "ben",
+       "observed_in": "any",
+       "action": "high_contrast",
+       "confidence": 0.75,
+       "share": 0.969,
+       "context_used": "footage_type=broll|format=9:16",
+       "preference_id": "ben/any/color_grade/footage_type=broll|format=9:16/high_contrast#1",
+       "source_events": [
+        "proj_ben_12/op_0009",
+        "proj_ben_11/op_0107",
+        "proj_ben_09/op_0109",
+        "proj_ben_09/op_0042",
+        "proj_ben_05/op_0024",
+        "proj_ben_04/op_0045"
+       ]
+      },
+      "team": {
+       "side": "team",
+       "owner": "team_northwind",
+       "observed_in": "team",
+       "action": "neutral_clean",
+       "confidence": 0.639,
+       "share": 1.0,
+       "context_used": "footage_type=broll|format=9:16|section=body",
+       "preference_id": "team_northwind/team/color_grade/footage_type=broll|format=9:16|section=body/neutral_clean#1",
+       "source_events": [
+        "proj_team_northwind_11/op_0069",
+        "proj_team_northwind_07/op_0103",
+        "proj_team_northwind_02/op_0109",
+        "proj_team_northwind_01/op_0109"
+       ]
+      },
+      "resolution": "team project: team standard applies; the private preference is surfaced, not applied",
+      "chat_citations": []
+     }
+    ],
+    "blocked": []
+   }
+  },
+  {
+   "type": "trim_clip",
+   "author": "director",
+   "on_behalf_of": "ben",
+   "category": "cut_length",
+   "context": {
+    "footage_type": "broll",
+    "prev_edit": "scene_change",
+    "format": "9:16",
+    "section": "body"
+   },
+   "payload": {
+    "clip_id": "clp_0007",
+    "edge": "out",
+    "after": {
+     "duration": 2.8
+    },
+    "bucket": "medium"
+   },
+   "memory": {
+    "action": "medium",
+    "confidence": 0.654,
+    "why": [
+     "Exact context match [footage_type=broll, prev_edit=scene_change, format=9:16, section=body].",
+     "team team_northwind: medium holds 100% of the decayed weight here (effective support 3.1 after decay, 4 supporting events, 0 rejections of it); confidence 0.65 (Wilson lower bound).",
+     "1 conflict(s) surfaced; see conflicts[]."
+    ],
+    "source_events": [
+     "proj_team_northwind_11/op_0055",
+     "proj_team_northwind_06/op_0062",
+     "proj_team_northwind_06/op_0018",
+     "proj_team_northwind_02/op_0107"
+    ],
+    "preference_id": "team_northwind/team/cut_length/footage_type=broll|prev_edit=scene_change|format=9:16|section=body/medium#1",
+    "conflicts": [
+     {
+      "kind": "team_vs_private",
+      "category": "cut_length",
+      "context": {
+       "footage_type": "broll",
+       "prev_edit": "scene_change",
+       "format": "9:16",
+       "section": "body"
+      },
+      "private": {
+       "side": "private",
+       "owner": "ben",
+       "observed_in": "any",
+       "action": "short",
+       "confidence": 0.654,
+       "share": 1.0,
+       "context_used": "footage_type=broll|prev_edit=scene_change|section=body",
+       "preference_id": "ben/any/cut_length/footage_type=broll|prev_edit=scene_change|section=body/short#1",
+       "source_events": [
+        "proj_ben_11/op_0101",
+        "proj_ben_11/op_0057",
+        "proj_ben_09/op_0063",
+        "proj_ben_09/op_0021"
+       ]
+      },
+      "team": {
+       "side": "team",
+       "owner": "team_northwind",
+       "observed_in": "team",
+       "action": "medium",
+       "confidence": 0.654,
+       "share": 1.0,
+       "context_used": "footage_type=broll|prev_edit=scene_change|format=9:16|section=body",
+       "preference_id": "team_northwind/team/cut_length/footage_type=broll|prev_edit=scene_change|format=9:16|section=body/medium#1",
+       "source_events": [
+        "proj_team_northwind_11/op_0055",
+        "proj_team_northwind_06/op_0062",
+        "proj_team_northwind_06/op_0018",
+        "proj_team_northwind_02/op_0107"
+       ]
+      },
+      "resolution": "team project: team standard applies; the private preference is surfaced, not applied",
+      "chat_citations": []
+     }
+    ],
+    "blocked": []
+   }
+  },
+  {
+   "type": "add_transition",
+   "author": "director",
+   "on_behalf_of": "ben",
+   "category": "transition",
+   "context": {
+    "footage_type": "screen_recording",
+    "prev_edit": "jump_cut",
+    "format": "9:16",
+    "section": "outro"
+   },
+   "payload": {
+    "transition": {
+     "id": "tr_new_18",
+     "track_id": "V1",
+     "from_clip": "clp_0007",
+     "to_clip": "clp_0008",
+     "type": "hard_cut",
+     "duration": 0.4
+    }
+   },
+   "memory": {
+    "action": "hard_cut",
+    "confidence": 0.571,
+    "why": [
+     "Fell back from [footage_type=screen_recording, prev_edit=jump_cut, format=9:16, section=outro] to the most reliable broader context [prev_edit=jump_cut].",
+     "team team_northwind: hard_cut holds 66% of the decayed weight here (effective support 52.8 after decay, 49 supporting events, 14 rejections of it); confidence 0.57 (Wilson lower bound).",
+     "Active since team_northwind_s08: superseded crossfade (explicit statement chat_0013).",
+     "Explicit statement(s): 'Hard cuts on jump cuts for team videos, no fancy transitions.' (chat_0013)"
+    ],
+    "source_events": [
+     "proj_team_northwind_11/op_0066",
+     "proj_team_northwind_11/op_0059",
+     "proj_team_northwind_11/op_0020",
+     "proj_team_northwind_11/op_0018",
+     "proj_team_northwind_10/op_0123",
+     "proj_team_northwind_10/op_0116",
+     "proj_team_northwind_10/op_0077",
+     "proj_team_northwind_10/op_0075",
+     "chat_0013"
+    ],
+    "preference_id": "team_northwind/team/transition/prev_edit=jump_cut/hard_cut#2",
+    "conflicts": [],
+    "blocked": []
+   }
+  },
+  {
+   "type": "add_effect",
+   "author": "director",
+   "on_behalf_of": "ben",
+   "category": "color_grade",
+   "context": {
+    "footage_type": "screen_recording",
+    "prev_edit": "jump_cut",
+    "format": "9:16",
+    "section": "outro"
+   },
+   "payload": {
+    "effect": {
+     "id": "fx_new_19",
+     "target_id": "clp_0008",
+     "type": "color_grade",
+     "params": {
+      "look": "neutral_clean",
+      "intensity": 0.6
+     }
+    }
+   },
+   "memory": {
+    "action": "neutral_clean",
+    "confidence": 0.667,
+    "why": [
+     "Fell back from [footage_type=screen_recording, prev_edit=jump_cut, format=9:16, section=outro] to the most reliable broader context [footage_type=screen_recording].",
+     "team team_northwind: neutral_clean holds 86% of the decayed weight here (effective support 9.9 after decay, 10 supporting events, 0 rejections of it); confidence 0.67 (Wilson lower bound).",
+     "1 conflict(s) surfaced; see conflicts[]."
+    ],
+    "source_events": [
+     "proj_team_northwind_11/op_0033",
+     "proj_team_northwind_09/op_0020",
+     "proj_team_northwind_08/op_0087",
+     "proj_team_northwind_08/op_0079",
+     "proj_team_northwind_07/op_0114",
+     "proj_team_northwind_07/op_0030",
+     "proj_team_northwind_04/op_0040",
+     "proj_team_northwind_02/op_0105"
+    ],
+    "preference_id": "team_northwind/team/color_grade/footage_type=screen_recording/neutral_clean#1",
+    "conflicts": [
+     {
+      "kind": "team_vs_private",
+      "category": "color_grade",
+      "context": {
+       "footage_type": "screen_recording",
+       "prev_edit": "jump_cut",
+       "format": "9:16",
+       "section": "outro"
+      },
+      "private": {
+       "side": "private",
+       "owner": "ben",
+       "observed_in": "any",
+       "action": "high_contrast",
+       "confidence": 0.55,
+       "share": 1.0,
+       "context_used": "footage_type=screen_recording|format=9:16",
+       "preference_id": "ben/any/color_grade/footage_type=screen_recording|format=9:16/high_contrast#1",
+       "source_events": [
+        "proj_ben_09/op_0121",
+        "proj_ben_06/op_0070"
+       ]
+      },
+      "team": {
+       "side": "team",
+       "owner": "team_northwind",
+       "observed_in": "team",
+       "action": "neutral_clean",
+       "confidence": 0.667,
+       "share": 0.859,
+       "context_used": "footage_type=screen_recording",
+       "preference_id": "team_northwind/team/color_grade/footage_type=screen_recording/neutral_clean#1",
+       "source_events": [
+        "proj_team_northwind_11/op_0033",
+        "proj_team_northwind_09/op_0020",
+        "proj_team_northwind_08/op_0087",
+        "proj_team_northwind_08/op_0079",
+        "proj_team_northwind_07/op_0114",
+        "proj_team_northwind_07/op_0030"
+       ]
+      },
+      "resolution": "team project: team standard applies; the private preference is surfaced, not applied",
+      "chat_citations": []
+     }
+    ],
+    "blocked": []
+   }
+  },
+  {
+   "type": "trim_clip",
+   "author": "director",
+   "on_behalf_of": "ben",
+   "category": "cut_length",
+   "context": {
+    "footage_type": "screen_recording",
+    "prev_edit": "jump_cut",
+    "format": "9:16",
+    "section": "outro"
+   },
+   "payload": {
+    "clip_id": "clp_0008",
+    "edge": "out",
+    "after": {
+     "duration": 2.8
+    },
+    "bucket": "medium"
+   },
+   "memory": {
+    "action": "medium",
+    "confidence": 0.509,
+    "why": [
+     "Fell back from [footage_type=screen_recording, prev_edit=jump_cut, format=9:16, section=outro] to the most reliable broader context [footage_type=screen_recording, prev_edit=jump_cut, section=outro].",
+     "team team_northwind: medium holds 100% of the decayed weight here (effective support 1.7 after decay, 2 supporting events, 0 rejections of it); confidence 0.51 (Wilson lower bound).",
+     "1 conflict(s) surfaced; see conflicts[]."
+    ],
+    "source_events": [
+     "proj_team_northwind_11/op_0077",
+     "proj_team_northwind_04/op_0038"
+    ],
+    "preference_id": "team_northwind/team/cut_length/footage_type=screen_recording|prev_edit=jump_cut|section=outro/medium#1",
+    "conflicts": [
+     {
+      "kind": "team_vs_private",
+      "category": "cut_length",
+      "context": {
+       "footage_type": "screen_recording",
+       "prev_edit": "jump_cut",
+       "format": "9:16",
+       "section": "outro"
+      },
+      "private": {
+       "side": "private",
+       "owner": "ben",
+       "observed_in": "any",
+       "action": "short",
+       "confidence": 0.594,
+       "share": 1.0,
+       "context_used": "footage_type=screen_recording",
+       "preference_id": "ben/any/cut_length/footage_type=screen_recording/short#1",
+       "source_events": [
+        "proj_ben_09/op_0075",
+        "proj_ben_06/op_0117",
+        "proj_ben_06/op_0062"
+       ]
+      },
+      "team": {
+       "side": "team",
+       "owner": "team_northwind",
+       "observed_in": "team",
+       "action": "medium",
+       "confidence": 0.509,
+       "share": 1.0,
+       "context_used": "footage_type=screen_recording|prev_edit=jump_cut|section=outro",
+       "preference_id": "team_northwind/team/cut_length/footage_type=screen_recording|prev_edit=jump_cut|section=outro/medium#1",
+       "source_events": [
+        "proj_team_northwind_11/op_0077",
+        "proj_team_northwind_04/op_0038"
+       ]
+      },
+      "resolution": "team project: team standard applies; the private preference is surfaced, not applied",
+      "chat_citations": []
+     }
+    ],
+    "blocked": []
+   }
+  },
+  {
+   "type": "add_clip",
+   "author": "director",
+   "on_behalf_of": "ben",
+   "category": "music_mood",
+   "context": {
+    "footage_type": "talking_head",
+    "format": "9:16",
+    "section": "hook"
+   },
+   "payload": {
+    "track_id": "A1",
+    "clip": {
+     "id": "clp_music_21",
+     "music_mood": "corporate",
+     "asset_label": "music_upbeat",
+     "section": "hook"
+    }
+   },
+   "memory": {
+    "action": "corporate",
+    "confidence": 0.572,
+    "why": [
+     "Exact context match [footage_type=talking_head, format=9:16, section=hook].",
+     "team team_northwind: corporate holds 82% of the decayed weight here (effective support 6.6 after decay, 6 supporting events, 0 rejections of it); confidence 0.57 (Wilson lower bound).",
+     "1 conflict(s) surfaced; see conflicts[]."
+    ],
+    "source_events": [
+     "proj_team_northwind_10/op_0009",
+     "proj_team_northwind_07/op_0091",
+     "proj_team_northwind_07/op_0009",
+     "proj_team_northwind_06/op_0051",
+     "proj_team_northwind_06/op_0009",
+     "proj_team_northwind_04/op_0089"
+    ],
+    "preference_id": "team_northwind/team/music_mood/footage_type=talking_head|format=9:16|section=hook/corporate#1",
+    "conflicts": [
+     {
+      "kind": "team_vs_private",
+      "category": "music_mood",
+      "context": {
+       "footage_type": "talking_head",
+       "format": "9:16",
+       "section": "hook"
+      },
+      "private": {
+       "side": "private",
+       "owner": "ben",
+       "observed_in": "any",
+       "action": "upbeat",
+       "confidence": 0.875,
+       "share": 0.986,
+       "context_used": "footage_type=talking_head|format=9:16|section=hook",
+       "preference_id": "ben/any/music_mood/footage_type=talking_head|format=9:16|section=hook/upbeat#1",
+       "source_events": [
+        "proj_ben_10/op_0054",
+        "proj_ben_10/op_0009",
+        "proj_ben_09/op_0009",
+        "proj_ben_08/op_0010",
+        "proj_ben_07/op_0095",
+        "proj_ben_07/op_0010"
+       ]
+      },
+      "team": {
+       "side": "team",
+       "owner": "team_northwind",
+       "observed_in": "team",
+       "action": "corporate",
+       "confidence": 0.572,
+       "share": 0.818,
+       "context_used": "footage_type=talking_head|format=9:16|section=hook",
+       "preference_id": "team_northwind/team/music_mood/footage_type=talking_head|format=9:16|section=hook/corporate#1",
+       "source_events": [
+        "proj_team_northwind_10/op_0009",
+        "proj_team_northwind_07/op_0091",
+        "proj_team_northwind_07/op_0009",
+        "proj_team_northwind_06/op_0051",
+        "proj_team_northwind_06/op_0009",
+        "proj_team_northwind_04/op_0089"
+       ]
+      },
+      "resolution": "team project: team standard applies; the private preference is surfaced, not applied",
+      "chat_citations": []
+     }
+    ],
+    "blocked": []
+   }
+  },
+  {
+   "type": "add_clip",
+   "author": "director",
+   "on_behalf_of": "ben",
+   "category": "music_mood",
+   "context": {
+    "footage_type": "broll",
+    "format": "9:16",
+    "section": "body"
+   },
+   "payload": {
+    "track_id": "A1",
+    "clip": {
+     "id": "clp_music_22",
+     "music_mood": "corporate",
+     "asset_label": "music_upbeat",
+     "section": "body"
+    }
+   },
+   "memory": {
+    "action": "corporate",
+    "confidence": 0.819,
+    "why": [
+     "Exact context match [footage_type=broll, format=9:16, section=body].",
+     "team team_northwind: corporate holds 100% of the decayed weight here (effective support 7.4 after decay, 8 supporting events, 0 rejections of it); confidence 0.82 (Wilson lower bound).",
+     "1 conflict(s) surfaced; see conflicts[]."
+    ],
+    "source_events": [
+     "proj_team_northwind_11/op_0068",
+     "proj_team_northwind_11/op_0056",
+     "proj_team_northwind_10/op_0031",
+     "proj_team_northwind_07/op_0060",
+     "proj_team_northwind_07/op_0021",
+     "proj_team_northwind_06/op_0071",
+     "proj_team_northwind_02/op_0108",
+     "proj_team_northwind_01/op_0108"
+    ],
+    "preference_id": "team_northwind/team/music_mood/footage_type=broll|format=9:16|section=body/corporate#1",
+    "conflicts": [
+     {
+      "kind": "team_vs_private",
+      "category": "music_mood",
+      "context": {
+       "footage_type": "broll",
+       "format": "9:16",
+       "section": "body"
+      },
+      "private": {
+       "side": "private",
+       "owner": "ben",
+       "observed_in": "any",
+       "action": "upbeat",
+       "confidence": 0.562,
+       "share": 1.0,
+       "context_used": "footage_type=broll|format=9:16|section=body",
+       "preference_id": "ben/any/music_mood/footage_type=broll|format=9:16|section=body/upbeat#1",
+       "source_events": [
+        "proj_ben_08/op_0035",
+        "proj_ben_04/op_0033",
+        "proj_ben_04/op_0030"
+       ]
+      },
+      "team": {
+       "side": "team",
+       "owner": "team_northwind",
+       "observed_in": "team",
+       "action": "corporate",
+       "confidence": 0.819,
+       "share": 1.0,
+       "context_used": "footage_type=broll|format=9:16|section=body",
+       "preference_id": "team_northwind/team/music_mood/footage_type=broll|format=9:16|section=body/corporate#1",
+       "source_events": [
+        "proj_team_northwind_11/op_0068",
+        "proj_team_northwind_11/op_0056",
+        "proj_team_northwind_10/op_0031",
+        "proj_team_northwind_07/op_0060",
+        "proj_team_northwind_07/op_0021",
+        "proj_team_northwind_06/op_0071"
+       ]
+      },
+      "resolution": "team project: team standard applies; the private preference is surfaced, not applied",
+      "chat_citations": []
+     }
+    ],
+    "blocked": []
+   }
+  },
+  {
+   "type": "add_clip",
+   "author": "director",
+   "on_behalf_of": "ben",
+   "category": "music_mood",
+   "context": {
+    "footage_type": "screen_recording",
+    "format": "9:16",
+    "section": "outro"
+   },
+   "payload": {
+    "track_id": "A1",
+    "clip": {
+     "id": "clp_music_23",
+     "music_mood": "upbeat",
+     "asset_label": "music_upbeat",
+     "section": "outro"
+    }
+   },
+   "memory": {
+    "action": "upbeat",
+    "confidence": 0.699,
+    "why": [
+     "Fell back from [footage_type=screen_recording, format=9:16, section=outro] to the most reliable broader context [footage_type=screen_recording, section=outro].",
+     "team team_northwind: upbeat holds 100% of the decayed weight here (effective support 3.8 after decay, 5 supporting events, 0 rejections of it); confidence 0.70 (Wilson lower bound)."
+    ],
+    "source_events": [
+     "proj_team_northwind_11/op_0078",
+     "proj_team_northwind_11/op_0032",
+     "proj_team_northwind_04/op_0113",
+     "proj_team_northwind_04/op_0075",
+     "proj_team_northwind_04/op_0039"
+    ],
+    "preference_id": "team_northwind/team/music_mood/footage_type=screen_recording|section=outro/upbeat#1",
+    "conflicts": [],
+    "blocked": []
+   }
+  },
+  {
+   "type": "add_text",
+   "author": "director",
+   "on_behalf_of": "ben",
+   "category": "font",
+   "context": {
+    "format": "9:16",
+    "section": "hook"
+   },
+   "payload": {
+    "text_layer": {
+     "id": "txt_title_24",
+     "track_id": "T1",
+     "role": "title",
+     "text": "Demo cut",
+     "style": {
+      "font": "Inter"
+     }
+    }
+   },
+   "memory": {
+    "action": "Inter",
+    "confidence": 0.685,
+    "why": [
+     "Exact context match [format=9:16, section=hook].",
+     "team team_northwind: Inter holds 87% of the decayed weight here (effective support 10.6 after decay, 11 supporting events, 0 rejections of it); confidence 0.69 (Wilson lower bound).",
+     "Blocked by brand: Bebas Neue (northwind.fonts.allowed = ['Inter', 'Montserrat']; Bebas Neue is not allowed).",
+     "1 conflict(s) surfaced; see conflicts[]."
+    ],
+    "source_events": [
+     "proj_team_northwind_11/op_0080",
+     "proj_team_northwind_10/op_0044",
+     "proj_team_northwind_07/op_0124",
+     "proj_team_northwind_07/op_0081",
+     "proj_team_northwind_07/op_0037",
+     "proj_team_northwind_06/op_0086",
+     "proj_team_northwind_06/op_0042",
+     "proj_team_northwind_02/op_0134"
+    ],
+    "preference_id": "team_northwind/team/font/format=9:16|section=hook/Inter#1",
+    "conflicts": [
+     {
+      "kind": "brand_vs_private",
+      "category": "font",
+      "context": {
+       "format": "9:16",
+       "section": "hook"
+      },
+      "private": {
+       "side": "private",
+       "owner": "ben",
+       "observed_in": "private",
+       "action": "Bebas Neue",
+       "confidence": 0.695,
+       "share": 0.89,
+       "context_used": "format=9:16|section=hook",
+       "preference_id": "ben/private/font/format=9:16|section=hook/Bebas Neue#1",
+       "source_events": [
+        "proj_ben_12/op_0045",
+        "proj_ben_11/op_0130",
+        "proj_ben_10/op_0083",
+        "proj_ben_10/op_0044",
+        "proj_ben_07/op_0044",
+        "proj_ben_06/op_0137"
+       ]
+      },
+      "brand": {
+       "brand_id": "northwind",
+       "rule": "northwind.fonts.allowed = ['Inter', 'Montserrat']; Bebas Neue is not allowed"
+      },
+      "resolution": "brand hard constraint wins; the private preference is never returned",
+      "chat_citations": []
+     }
+    ],
+    "blocked": [
+     {
+      "action": "Bebas Neue",
+      "rule": "northwind.fonts.allowed = ['Inter', 'Montserrat']; Bebas Neue is not allowed",
+      "preference_id": "ben/private/font/format=9:16|section=hook/Bebas Neue#1",
+      "source_events": [
+       "proj_ben_12/op_0045",
+       "proj_ben_11/op_0130",
+       "proj_ben_10/op_0083"
+      ],
+      "note": "ben's own preference, blocked here by brand northwind"
+     }
+    ]
+   }
+  },
+  {
+   "type": "add_text",
+   "author": "director",
+   "on_behalf_of": "ben",
+   "category": "caption_style",
+   "context": {
+    "format": "9:16",
+    "footage_type": "talking_head",
+    "section": "hook"
+   },
+   "payload": {
+    "text_layer": {
+     "id": "txt_cap_25",
+     "track_id": "T1",
+     "role": "captions",
+     "style": {
+      "preset": "stacked"
+     }
+    }
+   },
+   "memory": {
+    "action": "stacked",
+    "confidence": 0.783,
+    "why": [
+     "Fell back from [footage_type=talking_head, format=9:16, section=hook] to the most reliable broader context [footage_type=talking_head, format=9:16].",
+     "team team_northwind: stacked holds 100% of the decayed weight here (effective support 5.9 after decay, 7 supporting events, 1 rejections of it); confidence 0.78 (Wilson lower bound).",
+     "1 conflict(s) surfaced; see conflicts[]."
+    ],
+    "source_events": [
+     "proj_team_northwind_11/op_0081",
+     "proj_team_northwind_07/op_0082",
+     "proj_team_northwind_07/op_0038",
+     "proj_team_northwind_06/op_0088",
+     "proj_team_northwind_04/op_0119",
+     "proj_team_northwind_01/op_0122",
+     "proj_team_northwind_01/op_0036"
+    ],
+    "preference_id": "team_northwind/team/caption_style/footage_type=talking_head|format=9:16/stacked#1",
+    "conflicts": [
+     {
+      "kind": "team_vs_private",
+      "category": "caption_style",
+      "context": {
+       "footage_type": "talking_head",
+       "format": "9:16",
+       "section": "hook"
+      },
+      "private": {
+       "side": "private",
+       "owner": "ben",
+       "observed_in": "private",
+       "action": "beast_mode",
+       "confidence": 0.622,
+       "share": 1.0,
+       "context_used": "footage_type=talking_head|format=9:16",
+       "preference_id": "ben/private/caption_style/footage_type=talking_head|format=9:16/beast_mode#1",
+       "source_events": [
+        "proj_ben_06/op_0138",
+        "proj_ben_02/op_0133",
+        "proj_ben_02/op_0044"
+       ]
+      },
+      "team": {
+       "side": "team",
+       "owner": "team_northwind",
+       "observed_in": "team",
+       "action": "stacked",
+       "confidence": 0.783,
+       "share": 1.0,
+       "context_used": "footage_type=talking_head|format=9:16",
+       "preference_id": "team_northwind/team/caption_style/footage_type=talking_head|format=9:16/stacked#1",
+       "source_events": [
+        "proj_team_northwind_11/op_0081",
+        "proj_team_northwind_07/op_0082",
+        "proj_team_northwind_07/op_0038",
+        "proj_team_northwind_06/op_0088",
+        "proj_team_northwind_04/op_0119",
+        "proj_team_northwind_01/op_0122"
+       ]
+      },
+      "resolution": "team project: team standard applies; the private preference is surfaced, not applied",
+      "chat_citations": [
+       {
+        "chat_id": "chat_0014",
+        "actor": "ben",
+        "text": "Honestly beast mode captions would do better on our shorts.",
+        "session_id": "team_northwind_s19"
+       }
+      ]
+     }
+    ],
+    "blocked": []
+   }
+  }
+ ],
+ "ask_user": [],
+ "notes": [
+  "planned 25 memory lookups for 7 clips",
+  "captions required on 9:16 (northwind.captions.required_on_formats)",
+  "logo northwind_logo.png required in outro at bottom_right"
+ ],
+ "llm_note": "(no LLM key in env: deterministic agent, no LLM note)"
+}

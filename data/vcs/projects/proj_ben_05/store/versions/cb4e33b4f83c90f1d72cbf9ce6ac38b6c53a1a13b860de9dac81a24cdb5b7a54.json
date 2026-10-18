@@ -1,0 +1,20 @@
+{
+  "version_id": "cb4e33b4f83c90f1d72cbf9ce6ac38b6c53a1a13b860de9dac81a24cdb5b7a54",
+  "project_id": "proj_ben_05",
+  "timeline_hash": "0522fb053c941a6573c2269859a478496691caf4800552482317fcc2183bdeca",
+  "parents": [
+    "eb7a87b643c536a13700e492864c74b2757a9b0abb99b17883fd7cb614c137ed"
+  ],
+  "branch": "ben/cut-14",
+  "author": "director",
+  "timestamp": "2026-07-19T14:26:02+05:30",
+  "message": "Director: color_grade, cut_length, transition",
+  "op_ids": [
+    "proj_ben_05/op_0063",
+    "proj_ben_05/op_0064",
+    "proj_ben_05/op_0065",
+    "proj_ben_05/op_0066",
+    "proj_ben_05/op_0067"
+  ],
+  "session_id": "ben_s14"
+}

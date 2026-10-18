@@ -1,0 +1,26 @@
+flowchart TB
+  Person["person in the session"]
+  Director["Director\nasks memory, then proposes ops"]
+
+  subgraph vcs [version control, one project]
+    Log["ops.jsonl"]
+    Hist["peer branches and versions"]
+    Pull["selective pull"]
+    Play["render any version"]
+    Log --> Hist
+    Hist --> Pull
+    Pull --> Hist
+    Hist --> Play
+  end
+
+  Person -->|"own edits, and accept / override / undo"| Log
+  Director -->|"proposed ops on a director branch"| Hist
+
+  Log --> Derive["derive events"]
+  Chat["chat statements"] --> Derive
+  Derive --> Graph[("style graph")]
+  Brand["brand rules"] --> Graph
+  Graph --> Suggest["suggest for this situation"]
+  Suggest --> Director
+
+  Hist -.->|"editor pulls the proposals\nand resolves conflicts"| Pull

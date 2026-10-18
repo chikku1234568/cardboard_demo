@@ -1,0 +1,88 @@
+{
+  "project_id": "proj_ava_10",
+  "owner_subject": "ava",
+  "project_scope": "private",
+  "brand_id": null,
+  "name": "Ava video 10",
+  "sections": [
+    {
+      "index": 0,
+      "section": "hook",
+      "clip_id": "clp_0002",
+      "footage_type": "talking_head",
+      "prev_edit": "scene_change",
+      "asset_id": "b_cam",
+      "start": 3.0,
+      "duration": 8.0
+    },
+    {
+      "index": 1,
+      "section": "body",
+      "clip_id": "clp_0003",
+      "footage_type": "talking_head",
+      "prev_edit": "jump_cut",
+      "asset_id": "a_cam",
+      "start": 11.0,
+      "duration": 8.0
+    },
+    {
+      "index": 2,
+      "section": "body",
+      "clip_id": "clp_0004",
+      "footage_type": "talking_head",
+      "prev_edit": "none",
+      "asset_id": "b_cam",
+      "start": 19.0,
+      "duration": 8.0
+    },
+    {
+      "index": 3,
+      "section": "body",
+      "clip_id": "clp_0005",
+      "footage_type": "broll",
+      "prev_edit": "jump_cut",
+      "asset_id": "broll_desk",
+      "start": 27.0,
+      "duration": 5.0
+    },
+    {
+      "index": 4,
+      "section": "body",
+      "clip_id": "clp_0006",
+      "footage_type": "talking_head",
+      "prev_edit": "none",
+      "asset_id": "a_cam",
+      "start": 32.0,
+      "duration": 8.0
+    },
+    {
+      "index": 5,
+      "section": "body",
+      "clip_id": "clp_0007",
+      "footage_type": "product",
+      "prev_edit": "scene_change",
+      "asset_id": "broll_product",
+      "start": 40.0,
+      "duration": 6.0
+    },
+    {
+      "index": 6,
+      "section": "outro",
+      "clip_id": "clp_0008",
+      "footage_type": "talking_head",
+      "prev_edit": "jump_cut",
+      "asset_id": "a_cam",
+      "start": 46.0,
+      "duration": 8.0
+    }
+  ],
+  "flagship": false,
+  "n_versions": 26,
+  "n_ops": 123,
+  "branches": [
+    "ava/cut-28",
+    "ava/cut-29",
+    "ava/cut-30",
+    "rough-cut"
+  ]
+}

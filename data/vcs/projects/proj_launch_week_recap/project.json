@@ -1,0 +1,18 @@
+{
+  "project_id": "proj_launch_week_recap",
+  "owner_subject": "team_northwind",
+  "project_scope": "team",
+  "brand_id": "northwind",
+  "name": "Launch Week Recap (60s cut)",
+  "sections": null,
+  "flagship": true,
+  "n_versions": 8,
+  "n_ops": 13,
+  "branches": [
+    "ava/alt-ending",
+    "ava/tighter-cut",
+    "ben/alt-pacing",
+    "cara/titles-broll",
+    "rough-cut"
+  ]
+}

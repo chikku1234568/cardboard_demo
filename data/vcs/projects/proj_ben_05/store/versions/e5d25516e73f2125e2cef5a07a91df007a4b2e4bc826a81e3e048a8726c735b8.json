@@ -1,0 +1,18 @@
+{
+  "version_id": "e5d25516e73f2125e2cef5a07a91df007a4b2e4bc826a81e3e048a8726c735b8",
+  "project_id": "proj_ben_05",
+  "timeline_hash": "6b917bdcacc5fdb7724a70084d68b66b664f2991fc1b82cdd74e7965fd2e534a",
+  "parents": [
+    "c44dd40a7d3981deeaf540187e152b21586d9765c738b9d107f61a35e78dce13"
+  ],
+  "branch": "ben/cut-15",
+  "author": "director",
+  "timestamp": "2026-07-24T10:05:05+05:30",
+  "message": "Director: caption_style, font, music_mood",
+  "op_ids": [
+    "proj_ben_05/op_0137",
+    "proj_ben_05/op_0138",
+    "proj_ben_05/op_0139"
+  ],
+  "session_id": "ben_s15"
+}

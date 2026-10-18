@@ -1,0 +1,60 @@
+{
+  "brand_id": "northwind",
+  "team_id": "team_northwind",
+  "name": "Northwind (synthetic brand)",
+  "applies_to": "Any project with brand_id == 'northwind' (all team projects, plus members' brand work). Hard constraints: a suggestion that violates them must never be returned.",
+  "version": "2026-05-15",
+  "hard_constraints": {
+    "fonts": {
+      "allowed": [
+        "Inter",
+        "Montserrat"
+      ],
+      "banned": [
+        "Comic Sans MS",
+        "Papyrus"
+      ]
+    },
+    "transitions": {
+      "banned": [
+        "glitch",
+        "star_wipe"
+      ]
+    },
+    "effects": {
+      "banned": [
+        "vhs",
+        "glitch",
+        "chromatic_aberration"
+      ]
+    },
+    "music_mood": {
+      "banned": [
+        "dramatic_horror"
+      ]
+    },
+    "captions": {
+      "required_on_formats": [
+        "9:16"
+      ],
+      "keep_out_of_safe_zone_bottom_pct": 15
+    },
+    "logo": {
+      "asset": "northwind_logo.png",
+      "position": "bottom_right",
+      "required_in_sections": [
+        "outro"
+      ]
+    }
+  },
+  "palette": {
+    "primary": "#0B3D2E",
+    "secondary": "#F4E9D8",
+    "accent": "#E07A2F",
+    "text": "#FFFFFF"
+  },
+  "soft_defaults": {
+    "color_grade": "neutral_clean",
+    "font": "Inter"
+  }
+}

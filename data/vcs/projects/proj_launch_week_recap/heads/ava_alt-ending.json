@@ -1,0 +1,286 @@
+{
+  "schema_version": "1.0",
+  "project_id": "proj_launch_week_recap",
+  "name": "Launch Week Recap (60s cut)",
+  "settings": {
+    "fps": 30,
+    "width": 640,
+    "height": 360,
+    "sample_rate": 48000,
+    "time_unit": "seconds",
+    "aspect": "16:9"
+  },
+  "tracks": [
+    {
+      "id": "V1",
+      "kind": "video",
+      "name": "Main (A/B cam)",
+      "clips": [
+        {
+          "id": "clp_0001",
+          "asset_hash": "sha256:9ac0f3ffbaf97826fd95eb81d6e32742db79a7912a38dfaa4efebd9553c2f1fb",
+          "asset_label": "title_card",
+          "src_in": 0.0,
+          "src_out": 3.0,
+          "timeline_start": 0.0,
+          "speed": 1.0,
+          "volume": 1.0,
+          "lineage": {
+            "origin": "clp_0001",
+            "parent": null,
+            "created_by_op": "import"
+          }
+        },
+        {
+          "id": "clp_0002",
+          "asset_hash": "sha256:4676d6d1855befc6582063ba3d0f648b03cbead2b9b5bce56e90d80d021f4d7d",
+          "asset_label": "a_cam",
+          "src_in": 0.5,
+          "src_out": 6.5,
+          "timeline_start": 3.0,
+          "speed": 1.0,
+          "volume": 1.0,
+          "lineage": {
+            "origin": "clp_0002",
+            "parent": null,
+            "created_by_op": "import"
+          }
+        },
+        {
+          "id": "clp_0003",
+          "asset_hash": "sha256:6d5820b65526066a7a76f70f46d40942bcbbf5b0e7c469cc015356ef1b80b20c",
+          "asset_label": "b_cam",
+          "src_in": 2.0,
+          "src_out": 5.8,
+          "timeline_start": 9.0,
+          "speed": 1.0,
+          "volume": 1.0,
+          "lineage": {
+            "origin": "clp_0003",
+            "parent": null,
+            "created_by_op": "import"
+          }
+        },
+        {
+          "id": "clp_0004",
+          "asset_hash": "sha256:4676d6d1855befc6582063ba3d0f648b03cbead2b9b5bce56e90d80d021f4d7d",
+          "asset_label": "a_cam",
+          "src_in": 6.5,
+          "src_out": 11.5,
+          "timeline_start": 14.0,
+          "speed": 1.0,
+          "volume": 1.0,
+          "lineage": {
+            "origin": "clp_0004",
+            "parent": null,
+            "created_by_op": "import"
+          }
+        },
+        {
+          "id": "clp_0005",
+          "asset_hash": "sha256:cc376dd251bd8849e47dbd1e156b4284783ad1deea30ae162b8f2d1e4a283a74",
+          "asset_label": "broll_screen",
+          "src_in": 0.0,
+          "src_out": 6.0,
+          "timeline_start": 19.0,
+          "speed": 1.0,
+          "volume": 1.0,
+          "lineage": {
+            "origin": "clp_0005",
+            "parent": null,
+            "created_by_op": "import"
+          }
+        },
+        {
+          "id": "clp_0011",
+          "asset_hash": "sha256:6d5820b65526066a7a76f70f46d40942bcbbf5b0e7c469cc015356ef1b80b20c",
+          "asset_label": "b_cam",
+          "src_in": 7.0,
+          "src_out": 9.0,
+          "timeline_start": 25.0,
+          "speed": 1.0,
+          "volume": 1.0,
+          "lineage": {
+            "origin": "clp_0006",
+            "parent": "clp_0006",
+            "created_by_op": "proj_launch_week_recap/op_0008"
+          }
+        }
+      ]
+    },
+    {
+      "id": "V2",
+      "kind": "video",
+      "name": "B-roll overlay",
+      "clips": [
+        {
+          "id": "clp_0007",
+          "asset_hash": "sha256:3ecd59cb633cee77dbf6dae6aacc8f74314e0d7d3933b6182eba3d55075f718d",
+          "asset_label": "broll_city",
+          "src_in": 0.5,
+          "src_out": 3.5,
+          "timeline_start": 5.0,
+          "speed": 1.0,
+          "volume": 1.0,
+          "lineage": {
+            "origin": "clp_0007",
+            "parent": null,
+            "created_by_op": "import"
+          }
+        },
+        {
+          "id": "clp_0008",
+          "asset_hash": "sha256:7bbe70d12acba848fd1e81af7d45087c2067de2cf3be62db4289b47b41cad1ec",
+          "asset_label": "broll_product",
+          "src_in": 1.0,
+          "src_out": 4.0,
+          "timeline_start": 15.5,
+          "speed": 1.0,
+          "volume": 1.0,
+          "lineage": {
+            "origin": "clp_0008",
+            "parent": null,
+            "created_by_op": "import"
+          }
+        },
+        {
+          "id": "clp_0013",
+          "asset_hash": "sha256:28b8b42a229badabc420aac4b0c6cb7ff3fb28789df79ce9d1f80a70221c2630",
+          "asset_label": "broll_desk",
+          "src_in": 0.0,
+          "src_out": 3.0,
+          "timeline_start": 22.0,
+          "speed": 1.0,
+          "volume": 1.0,
+          "lineage": {
+            "origin": "clp_0013",
+            "parent": null,
+            "created_by_op": "proj_launch_week_recap/op_0010"
+          }
+        }
+      ]
+    },
+    {
+      "id": "T1",
+      "kind": "text",
+      "name": "Titles & captions",
+      "clips": []
+    },
+    {
+      "id": "A1",
+      "kind": "audio",
+      "name": "Music",
+      "clips": [
+        {
+          "id": "clp_0009",
+          "asset_hash": "sha256:a2c1983fa681a1b104bae27f8e9ec019be8d8f69c09350444ccfd0c8f4017b2e",
+          "asset_label": "music_upbeat",
+          "src_in": 0.0,
+          "src_out": 29.0,
+          "timeline_start": 0.0,
+          "speed": 1.0,
+          "volume": 0.8,
+          "lineage": {
+            "origin": "clp_0009",
+            "parent": null,
+            "created_by_op": "import"
+          },
+          "music_mood": "upbeat"
+        }
+      ]
+    },
+    {
+      "id": "A2",
+      "kind": "audio",
+      "name": "SFX",
+      "clips": [
+        {
+          "id": "clp_0010",
+          "asset_hash": "sha256:3e0f27d5f3fd44646119325f18c15096eb49d81582be0f97561715e925557086",
+          "asset_label": "sfx_whoosh",
+          "src_in": 0.0,
+          "src_out": 0.8,
+          "timeline_start": 2.6,
+          "speed": 1.0,
+          "volume": 1.0,
+          "lineage": {
+            "origin": "clp_0010",
+            "parent": null,
+            "created_by_op": "import"
+          }
+        }
+      ]
+    }
+  ],
+  "transitions": [
+    {
+      "id": "tr_01",
+      "track_id": "V1",
+      "from_clip": "clp_0001",
+      "to_clip": "clp_0002",
+      "type": "whip_pan",
+      "duration": 0.3
+    },
+    {
+      "id": "tr_02",
+      "track_id": "V1",
+      "from_clip": "clp_0003",
+      "to_clip": "clp_0004",
+      "type": "crossfade",
+      "duration": 0.4
+    },
+    {
+      "id": "tr_03",
+      "track_id": "V1",
+      "from_clip": "clp_0005",
+      "to_clip": "clp_0011",
+      "type": "dip_to_black",
+      "duration": 0.5
+    },
+    {
+      "id": "tr_04",
+      "track_id": "V1",
+      "from_clip": "clp_0004",
+      "to_clip": "clp_0005",
+      "type": "slide",
+      "duration": 0.4
+    }
+  ],
+  "text_layers": [
+    {
+      "id": "txt_01",
+      "track_id": "T1",
+      "role": "title",
+      "text": "Launch Week Recap",
+      "start": 0.3,
+      "duration": 2.4,
+      "style": {
+        "font": "Inter",
+        "size": 48,
+        "color": "#FFFFFF",
+        "position": "center",
+        "animation": "fade_up"
+      }
+    }
+  ],
+  "effects": [
+    {
+      "id": "fx_01",
+      "target_id": "clp_0002",
+      "type": "color_grade",
+      "params": {
+        "look": "warm_film",
+        "intensity": 0.8
+      }
+    },
+    {
+      "id": "fx_02",
+      "target_id": "clp_0013",
+      "type": "color_grade",
+      "params": {
+        "look": "teal_orange",
+        "intensity": 0.5
+      }
+    }
+  ]
+}

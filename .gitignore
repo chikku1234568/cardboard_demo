@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+.venv/
+renders/
+*.tmp
+.DS_Store
+
+# Local only. Regenerated checks and the private write-up stay off main.
+docs/WALKTHROUGH.docx
+docs/build_docx.sh
+memory/=1.11
+memory/docs/eval_accuracy.png
+memory/docs/results/eval.json
+memory/docs/results/eval_rows_static.jsonl
+memory/docs/results/drift_trace.json

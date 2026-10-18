@@ -1,0 +1,88 @@
+{
+  "project_id": "proj_ben_05",
+  "owner_subject": "ben",
+  "project_scope": "team",
+  "brand_id": "northwind",
+  "name": "Northwind video 05",
+  "sections": [
+    {
+      "index": 0,
+      "section": "hook",
+      "clip_id": "clp_0002",
+      "footage_type": "product",
+      "prev_edit": "scene_change",
+      "asset_id": "broll_product",
+      "start": 3.0,
+      "duration": 6.0
+    },
+    {
+      "index": 1,
+      "section": "body",
+      "clip_id": "clp_0003",
+      "footage_type": "product",
+      "prev_edit": "jump_cut",
+      "asset_id": "broll_product",
+      "start": 9.0,
+      "duration": 6.0
+    },
+    {
+      "index": 2,
+      "section": "body",
+      "clip_id": "clp_0004",
+      "footage_type": "broll",
+      "prev_edit": "jump_cut",
+      "asset_id": "broll_desk",
+      "start": 15.0,
+      "duration": 5.0
+    },
+    {
+      "index": 3,
+      "section": "body",
+      "clip_id": "clp_0005",
+      "footage_type": "product",
+      "prev_edit": "jump_cut",
+      "asset_id": "broll_product",
+      "start": 20.0,
+      "duration": 6.0
+    },
+    {
+      "index": 4,
+      "section": "body",
+      "clip_id": "clp_0006",
+      "footage_type": "product",
+      "prev_edit": "jump_cut",
+      "asset_id": "broll_product",
+      "start": 26.0,
+      "duration": 6.0
+    },
+    {
+      "index": 5,
+      "section": "body",
+      "clip_id": "clp_0007",
+      "footage_type": "talking_head",
+      "prev_edit": "broll_insert",
+      "asset_id": "a_cam",
+      "start": 32.0,
+      "duration": 8.0
+    },
+    {
+      "index": 6,
+      "section": "outro",
+      "clip_id": "clp_0008",
+      "footage_type": "talking_head",
+      "prev_edit": "scene_change",
+      "asset_id": "b_cam",
+      "start": 40.0,
+      "duration": 8.0
+    }
+  ],
+  "flagship": false,
+  "n_versions": 31,
+  "n_ops": 142,
+  "branches": [
+    "ben/cut-13",
+    "ben/cut-14",
+    "ben/cut-15",
+    "rough-cut"
+  ]
+}

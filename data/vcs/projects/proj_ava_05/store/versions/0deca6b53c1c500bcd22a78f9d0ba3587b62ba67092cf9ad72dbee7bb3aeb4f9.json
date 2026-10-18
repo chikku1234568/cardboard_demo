@@ -1,0 +1,19 @@
+{
+  "version_id": "0deca6b53c1c500bcd22a78f9d0ba3587b62ba67092cf9ad72dbee7bb3aeb4f9",
+  "project_id": "proj_ava_05",
+  "timeline_hash": "e2cf98b51c9eddaaf16fc91a938a4cb1846a92614fc9c114848ec90d9a44fc1e",
+  "parents": [
+    "5aaa938aba38b2e1d2d11589ca9a056e4f7101ec3826341d6c3df08fde59ee8a"
+  ],
+  "branch": "ava/cut-13",
+  "author": "director",
+  "timestamp": "2026-07-22T18:55:09+05:30",
+  "message": "Director: caption_style, cut_length, font, music_mood",
+  "op_ids": [
+    "proj_ava_05/op_0034",
+    "proj_ava_05/op_0035",
+    "proj_ava_05/op_0036",
+    "proj_ava_05/op_0037"
+  ],
+  "session_id": "ava_s13"
+}

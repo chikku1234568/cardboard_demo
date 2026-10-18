@@ -1,0 +1,50 @@
+{
+  "project_id": "proj_launch_week_recap",
+  "renders": [
+    {
+      "label": "base (rough-cut)",
+      "file": "renders/demo/01_base.mp4",
+      "branch": "rough-cut",
+      "version_id": "80ce1c7636bd5d6b7b494ad0aa089473d7883a9040f08b8819c621116ddfa63c",
+      "timeline_hash": "2a02d1d57e2a10882ab1d832803c07a768cdf528640f6df8adc2de23ce2c6933",
+      "duration_s": 29,
+      "bytes": 802240
+    },
+    {
+      "label": "A ava/tighter-cut",
+      "file": "renders/demo/02_A_tighter-cut.mp4",
+      "branch": "ava/tighter-cut",
+      "version_id": "9446faed921b7653cd3dd39c5fea5652e0abe13ce157e9842611e81f506b4a06",
+      "timeline_hash": "a11f7b87f8d0f881280febe38c73a3e802c8c02bac4c667af23ef46f014054ad",
+      "duration_s": 29,
+      "bytes": 771298
+    },
+    {
+      "label": "B cara/titles-broll",
+      "file": "renders/demo/03_B_titles-broll.mp4",
+      "branch": "cara/titles-broll",
+      "version_id": "f3fbb5e9ee682a6701d76c4333cff0a3799661e56e10363211ea1d822afad273",
+      "timeline_hash": "780aa00d2ba52aebb9416c0df65da972479925b3dce94c6710c37e0086d04c7b",
+      "duration_s": 29,
+      "bytes": 822471
+    },
+    {
+      "label": "A + B (selective pull)",
+      "file": "renders/demo/04_A+B_pulled.mp4",
+      "branch": "ava/tighter-cut",
+      "version_id": "4eeb378b89188154e82316f00e6131ac412c066115548501293c4906b19f188a",
+      "timeline_hash": "ac299656013d62180fb15cfaedf88d908349618797e130b6c3a4d96f8ff6dc34",
+      "duration_s": 29,
+      "bytes": 775535
+    },
+    {
+      "label": "A + B + C (conflict resolved)",
+      "file": "renders/demo/05_A+B+C_resolved.mp4",
+      "branch": "ava/tighter-cut",
+      "version_id": "c16073071c4ec1e454d24d71244a19bee0b87fad8d9da708da2ae90aedc4c09b",
+      "timeline_hash": "69f5b305bf83b8447675faa041b19de2993c6c9bd9abd4f7a00415a8d4f84b8c",
+      "duration_s": 29,
+      "bytes": 777644
+    }
+  ]
+}

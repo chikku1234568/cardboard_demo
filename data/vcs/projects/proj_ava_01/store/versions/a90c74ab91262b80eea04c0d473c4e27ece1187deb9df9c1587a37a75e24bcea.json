@@ -1,0 +1,16 @@
+{
+  "version_id": "a90c74ab91262b80eea04c0d473c4e27ece1187deb9df9c1587a37a75e24bcea",
+  "project_id": "proj_ava_01",
+  "timeline_hash": "6a6248a73974e3f12b94e7908216a1016e74987f5b2c6498d399c1b609558806",
+  "parents": [
+    "b39aeabfbd5401f24df35a06e661c335e39c03eb51d65fd097673a3e8e6414b6"
+  ],
+  "branch": "ava/cut-03",
+  "author": "director",
+  "timestamp": "2026-06-12T11:16:30+05:30",
+  "message": "Director: caption_style",
+  "op_ids": [
+    "proj_ava_01/op_0121"
+  ],
+  "session_id": "ava_s03"
+}

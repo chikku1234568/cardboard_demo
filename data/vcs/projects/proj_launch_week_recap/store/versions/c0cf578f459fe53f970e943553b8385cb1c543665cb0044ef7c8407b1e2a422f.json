@@ -1,0 +1,16 @@
+{
+  "version_id": "c0cf578f459fe53f970e943553b8385cb1c543665cb0044ef7c8407b1e2a422f",
+  "project_id": "proj_launch_week_recap",
+  "timeline_hash": "59fa00248d68e9304bc76407dc49d2995adc062a8538c2bbbf0aa27363c06ee3",
+  "parents": [
+    "80ce1c7636bd5d6b7b494ad0aa089473d7883a9040f08b8819c621116ddfa63c"
+  ],
+  "branch": "cara/titles-broll",
+  "author": "cara",
+  "timestamp": "2026-10-16T11:45:00+05:30",
+  "message": "Lower-third for the shipping beat",
+  "op_ids": [
+    "proj_launch_week_recap/op_0003"
+  ],
+  "session_id": "team_northwind_s34"
+}

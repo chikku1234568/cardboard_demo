@@ -1,0 +1,22 @@
+{
+  "version_id": "014168adde4b74d60cc68b7af6a1c20bf757a5ee5b2e1456038201883da923be",
+  "project_id": "proj_team_northwind_07",
+  "timeline_hash": "a43bdcb40178da56d1c0ae0f4271c9767e55d1f33b0db49b4156b50028a40550",
+  "parents": [
+    "4ba2153c32610c87b4824e69a192374f657a9aed0b8cbbaf642f3024ffc87447"
+  ],
+  "branch": "ben/cut-20",
+  "author": "ben",
+  "timestamp": "2026-09-05T20:49:18+05:30",
+  "message": "Review Director edits",
+  "op_ids": [
+    "proj_team_northwind_07/op_0066",
+    "proj_team_northwind_07/op_0067",
+    "proj_team_northwind_07/op_0068",
+    "proj_team_northwind_07/op_0069",
+    "proj_team_northwind_07/op_0070",
+    "proj_team_northwind_07/op_0071",
+    "proj_team_northwind_07/op_0072"
+  ],
+  "session_id": "team_northwind_s20"
+}

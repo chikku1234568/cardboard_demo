@@ -1,0 +1,20 @@
+{
+  "version_id": "4c23b13f67bcd520bf60fdbea82f9ba63c8e1e3d2470c0f78cf6d28544de2cef",
+  "project_id": "proj_ben_03",
+  "timeline_hash": "94b39852ddabd59f72f99fbdb90f0696aaf20b7c53e338cefb74638824cb693c",
+  "parents": [
+    "b0fd577e17f68d8b7566e02fd42f1de6ddd59b1eccb57870cdc9459391474333"
+  ],
+  "branch": "ben/cut-08",
+  "author": "director",
+  "timestamp": "2026-06-20T12:47:04+05:30",
+  "message": "Director: cut_length, transition",
+  "op_ids": [
+    "proj_ben_03/op_0057",
+    "proj_ben_03/op_0058",
+    "proj_ben_03/op_0059",
+    "proj_ben_03/op_0060",
+    "proj_ben_03/op_0061"
+  ],
+  "session_id": "ben_s08"
+}

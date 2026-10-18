@@ -1,0 +1,14 @@
+flowchart TB
+  E["Editor or Director agent<br/>makes an edit"] -->|"1. op (before/after, touches)"| S
+  subgraph VCS["#10 VCS: one store per project"]
+    S["ops.jsonl<br/>(op log)"] --> V["versions/ + refs.json<br/>(commits, branches, no main)"]
+    V --> O["objects/<br/>(timeline snapshots, sha256)"]
+  end
+  O -->|"7. render any version"| R["ffmpeg renderer"] --> M["mp4 in vcs/renders/"]
+  S -->|"2. derive_events.py"| EV["memory event stream<br/>data/memory/events.jsonl"]
+  C["chat.jsonl<br/>(15 statements)"] -->|"2."| EV
+  EV -->|"3. ingest, session by session"| G[("Neo4j temporal<br/>preference graph")]
+  G -->|"4. profile"| API["suggest API :8808"]
+  API -->|"5. suggest()"| AG["LangGraph agent"]
+  AG -->|"6. proposed ops (VCS vocabulary)<br/>NOT wired yet: written to JSON"| B["new VCS branch"]
+  B -.-> S

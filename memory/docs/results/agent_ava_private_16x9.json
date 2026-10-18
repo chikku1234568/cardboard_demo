@@ -1,0 +1,2077 @@
+{
+ "cut": {
+  "project_id": "proj_ava_12",
+  "actor": "ava",
+  "project_scope": "team",
+  "project_owner": "ava",
+  "brand_id": "northwind",
+  "format": "16:9",
+  "title": "Demo cut",
+  "clips": [
+   {
+    "clip_id": "clp_0002",
+    "section": "hook",
+    "footage_type": "screen_recording",
+    "prev_edit": "scene_change"
+   },
+   {
+    "clip_id": "clp_0003",
+    "section": "body",
+    "footage_type": "screen_recording",
+    "prev_edit": "jump_cut"
+   },
+   {
+    "clip_id": "clp_0004",
+    "section": "body",
+    "footage_type": "broll",
+    "prev_edit": "scene_change"
+   },
+   {
+    "clip_id": "clp_0005",
+    "section": "body",
+    "footage_type": "screen_recording",
+    "prev_edit": "scene_change"
+   },
+   {
+    "clip_id": "clp_0006",
+    "section": "body",
+    "footage_type": "talking_head",
+    "prev_edit": "jump_cut"
+   },
+   {
+    "clip_id": "clp_0007",
+    "section": "body",
+    "footage_type": "product",
+    "prev_edit": "jump_cut"
+   },
+   {
+    "clip_id": "clp_0008",
+    "section": "outro",
+    "footage_type": "broll",
+    "prev_edit": "scene_change"
+   }
+  ]
+ },
+ "ops": [
+  {
+   "type": "add_effect",
+   "author": "director",
+   "on_behalf_of": "ava",
+   "category": "color_grade",
+   "context": {
+    "footage_type": "screen_recording",
+    "prev_edit": "scene_change",
+    "format": "16:9",
+    "section": "hook"
+   },
+   "payload": {
+    "effect": {
+     "id": "fx_new_01",
+     "target_id": "clp_0002",
+     "type": "color_grade",
+     "params": {
+      "look": "warm_film",
+      "intensity": 0.6
+     }
+    }
+   },
+   "memory": {
+    "action": "warm_film",
+    "confidence": 0.705,
+    "why": [
+     "Fell back from [footage_type=screen_recording, prev_edit=scene_change, format=16:9, section=hook] to the most reliable broader context [any context].",
+     "ava: warm_film holds 78% of the decayed weight here (effective support 58.9 after decay, 53 supporting events, 2 rejections of it); confidence 0.70 (Wilson lower bound).",
+     "1 conflict(s) surfaced; see conflicts[]."
+    ],
+    "source_events": [
+     "proj_ava_12/op_0104",
+     "proj_ava_12/op_0062",
+     "proj_ava_12/op_0031",
+     "proj_ava_11/op_0081",
+     "proj_ava_11/op_0065",
+     "proj_ava_11/op_0041",
+     "proj_ava_11/op_0010",
+     "proj_ava_10/op_0089"
+    ],
+    "preference_id": "ava/any/color_grade/*/warm_film#1",
+    "conflicts": [
+     {
+      "kind": "team_vs_private",
+      "category": "color_grade",
+      "context": {
+       "footage_type": "screen_recording",
+       "prev_edit": "scene_change",
+       "format": "16:9",
+       "section": "hook"
+      },
+      "private": {
+       "side": "private",
+       "owner": "ava",
+       "observed_in": "any",
+       "action": "warm_film",
+       "confidence": 0.705,
+       "share": 0.781,
+       "context_used": "*",
+       "preference_id": "ava/any/color_grade/*/warm_film#1",
+       "source_events": [
+        "proj_ava_12/op_0104",
+        "proj_ava_12/op_0062",
+        "proj_ava_12/op_0031",
+        "proj_ava_11/op_0081",
+        "proj_ava_11/op_0065",
+        "proj_ava_11/op_0041"
+       ]
+      },
+      "team": {
+       "side": "team",
+       "owner": "team_northwind",
+       "observed_in": "team",
+       "action": "neutral_clean",
+       "confidence": 0.601,
+       "share": 0.87,
+       "context_used": "footage_type=screen_recording|format=16:9",
+       "preference_id": "team_northwind/team/color_grade/footage_type=screen_recording|format=16:9/neutral_clean#1",
+       "source_events": [
+        "proj_team_northwind_09/op_0020",
+        "proj_team_northwind_08/op_0087",
+        "proj_team_northwind_08/op_0079",
+        "proj_team_northwind_04/op_0040",
+        "proj_team_northwind_02/op_0051"
+       ]
+      },
+      "resolution": "ava's own project under team scope: ava's team-scope behaviour applies; the team standard is surfaced",
+      "chat_citations": []
+     }
+    ],
+    "blocked": []
+   }
+  },
+  {
+   "type": "trim_clip",
+   "author": "director",
+   "on_behalf_of": "ava",
+   "category": "cut_length",
+   "context": {
+    "footage_type": "screen_recording",
+    "prev_edit": "scene_change",
+    "format": "16:9",
+    "section": "hook"
+   },
+   "payload": {
+    "clip_id": "clp_0002",
+    "edge": "out",
+    "after": {
+     "duration": 1.2
+    },
+    "bucket": "short"
+   },
+   "memory": {
+    "action": "short",
+    "confidence": 0.509,
+    "why": [
+     "Fell back from [footage_type=screen_recording, prev_edit=scene_change, format=16:9, section=hook] to the most reliable broader context [prev_edit=scene_change, format=16:9, section=hook].",
+     "ava: short holds 100% of the decayed weight here (effective support 1.7 after decay, 2 supporting events, 0 rejections of it); confidence 0.51 (Wilson lower bound).",
+     "1 conflict(s) surfaced; see conflicts[]."
+    ],
+    "source_events": [
+     "proj_ava_12/op_0085",
+     "proj_ava_05/op_0088"
+    ],
+    "preference_id": "ava/team/cut_length/prev_edit=scene_change|format=16:9|section=hook/short#1",
+    "conflicts": [
+     {
+      "kind": "team_vs_private",
+      "category": "cut_length",
+      "context": {
+       "footage_type": "screen_recording",
+       "prev_edit": "scene_change",
+       "format": "16:9",
+       "section": "hook"
+      },
+      "private": {
+       "side": "private",
+       "owner": "ava",
+       "observed_in": "team",
+       "action": "short",
+       "confidence": 0.509,
+       "share": 1.0,
+       "context_used": "prev_edit=scene_change|format=16:9|section=hook",
+       "preference_id": "ava/team/cut_length/prev_edit=scene_change|format=16:9|section=hook/short#1",
+       "source_events": [
+        "proj_ava_12/op_0085",
+        "proj_ava_05/op_0088"
+       ]
+      },
+      "team": {
+       "side": "team",
+       "owner": "team_northwind",
+       "observed_in": "team",
+       "action": "medium",
+       "confidence": 0.803,
+       "share": 0.955,
+       "context_used": "footage_type=screen_recording",
+       "preference_id": "team_northwind/team/cut_length/footage_type=screen_recording/medium#1",
+       "source_events": [
+        "proj_team_northwind_11/op_0077",
+        "proj_team_northwind_09/op_0019",
+        "proj_team_northwind_08/op_0122",
+        "proj_team_northwind_08/op_0086",
+        "proj_team_northwind_08/op_0076",
+        "proj_team_northwind_08/op_0036"
+       ]
+      },
+      "resolution": "ava's own project under team scope: ava's team-scope behaviour applies; the team standard is surfaced",
+      "chat_citations": []
+     }
+    ],
+    "blocked": []
+   }
+  },
+  {
+   "type": "add_transition",
+   "author": "director",
+   "on_behalf_of": "ava",
+   "category": "transition",
+   "context": {
+    "footage_type": "screen_recording",
+    "prev_edit": "jump_cut",
+    "format": "16:9",
+    "section": "body"
+   },
+   "payload": {
+    "transition": {
+     "id": "tr_new_03",
+     "track_id": "V1",
+     "from_clip": "clp_0002",
+     "to_clip": "clp_0003",
+     "type": "hard_cut",
+     "duration": 0.4
+    }
+   },
+   "memory": {
+    "action": "hard_cut",
+    "confidence": 0.562,
+    "why": [
+     "Fell back from [footage_type=screen_recording, prev_edit=jump_cut, format=16:9, section=body] to the most reliable broader context [footage_type=screen_recording, prev_edit=jump_cut, section=body].",
+     "ava: hard_cut holds 100% of the decayed weight here (effective support 2.1 after decay, 3 supporting events, 0 rejections of it); confidence 0.56 (Wilson lower bound).",
+     "2 conflict(s) surfaced; see conflicts[]."
+    ],
+    "source_events": [
+     "proj_ava_12/op_0087",
+     "proj_ava_12/op_0052",
+     "proj_ava_12/op_0012"
+    ],
+    "preference_id": "ava/team/transition/footage_type=screen_recording|prev_edit=jump_cut|section=body/hard_cut#1",
+    "conflicts": [
+     {
+      "kind": "team_vs_private",
+      "category": "transition",
+      "context": {
+       "footage_type": "screen_recording",
+       "prev_edit": "jump_cut",
+       "format": "16:9",
+       "section": "body"
+      },
+      "private": {
+       "side": "private",
+       "owner": "ava",
+       "observed_in": "team",
+       "action": "hard_cut",
+       "confidence": 0.562,
+       "share": 1.0,
+       "context_used": "footage_type=screen_recording|prev_edit=jump_cut|section=body",
+       "preference_id": "ava/team/transition/footage_type=screen_recording|prev_edit=jump_cut|section=body/hard_cut#1",
+       "source_events": [
+        "proj_ava_12/op_0087",
+        "proj_ava_12/op_0052",
+        "proj_ava_12/op_0012"
+       ]
+      },
+      "team": {
+       "side": "team",
+       "owner": "team_northwind",
+       "observed_in": "team",
+       "action": "crossfade",
+       "confidence": 0.654,
+       "share": 1.0,
+       "context_used": "footage_type=screen_recording|prev_edit=jump_cut|format=16:9",
+       "preference_id": "team_northwind/team/transition/footage_type=screen_recording|prev_edit=jump_cut|format=16:9/crossfade#1",
+       "source_events": [
+        "proj_team_northwind_08/op_0080",
+        "proj_team_northwind_08/op_0030",
+        "proj_team_northwind_04/op_0074",
+        "proj_team_northwind_04/op_0032"
+       ]
+      },
+      "resolution": "ava's own project under team scope: ava's team-scope behaviour applies; the team standard is surfaced",
+      "chat_citations": []
+     },
+     {
+      "kind": "team_vs_private",
+      "category": "transition",
+      "context": {
+       "footage_type": "screen_recording",
+       "prev_edit": "jump_cut",
+       "format": "16:9",
+       "section": "body"
+      },
+      "private": {
+       "side": "private",
+       "owner": "ava",
+       "observed_in": "private",
+       "action": "whip_pan",
+       "confidence": 0.484,
+       "share": 0.617,
+       "context_used": "prev_edit=jump_cut",
+       "preference_id": "ava/private/transition/prev_edit=jump_cut/whip_pan#1",
+       "source_events": [
+        "proj_ava_11/op_0114",
+        "proj_ava_11/op_0107",
+        "proj_ava_11/op_0075",
+        "proj_ava_11/op_0064",
+        "proj_ava_11/op_0038",
+        "proj_ava_10/op_0113"
+       ]
+      },
+      "team": {
+       "side": "team_scope_behaviour",
+       "owner": "ava",
+       "observed_in": "team",
+       "action": "hard_cut",
+       "confidence": 0.562,
+       "share": 1.0,
+       "context_used": "footage_type=screen_recording|prev_edit=jump_cut|section=body",
+       "preference_id": "ava/team/transition/footage_type=screen_recording|prev_edit=jump_cut|section=body/hard_cut#1",
+       "source_events": [
+        "proj_ava_12/op_0087",
+        "proj_ava_12/op_0052",
+        "proj_ava_12/op_0012"
+       ]
+      },
+      "resolution": "team-scope project: ava's private-project preference is surfaced, not applied",
+      "chat_citations": []
+     }
+    ],
+    "blocked": []
+   }
+  },
+  {
+   "type": "add_effect",
+   "author": "director",
+   "on_behalf_of": "ava",
+   "category": "color_grade",
+   "context": {
+    "footage_type": "screen_recording",
+    "prev_edit": "jump_cut",
+    "format": "16:9",
+    "section": "body"
+   },
+   "payload": {
+    "effect": {
+     "id": "fx_new_04",
+     "target_id": "clp_0003",
+     "type": "color_grade",
+     "params": {
+      "look": "warm_film",
+      "intensity": 0.6
+     }
+    }
+   },
+   "memory": {
+    "action": "warm_film",
+    "confidence": 0.705,
+    "why": [
+     "Fell back from [footage_type=screen_recording, prev_edit=jump_cut, format=16:9, section=body] to the most reliable broader context [any context].",
+     "ava: warm_film holds 78% of the decayed weight here (effective support 58.9 after decay, 53 supporting events, 2 rejections of it); confidence 0.70 (Wilson lower bound).",
+     "1 conflict(s) surfaced; see conflicts[]."
+    ],
+    "source_events": [
+     "proj_ava_12/op_0104",
+     "proj_ava_12/op_0062",
+     "proj_ava_12/op_0031",
+     "proj_ava_11/op_0081",
+     "proj_ava_11/op_0065",
+     "proj_ava_11/op_0041",
+     "proj_ava_11/op_0010",
+     "proj_ava_10/op_0089"
+    ],
+    "preference_id": "ava/any/color_grade/*/warm_film#1",
+    "conflicts": [
+     {
+      "kind": "team_vs_private",
+      "category": "color_grade",
+      "context": {
+       "footage_type": "screen_recording",
+       "prev_edit": "jump_cut",
+       "format": "16:9",
+       "section": "body"
+      },
+      "private": {
+       "side": "private",
+       "owner": "ava",
+       "observed_in": "any",
+       "action": "warm_film",
+       "confidence": 0.705,
+       "share": 0.781,
+       "context_used": "*",
+       "preference_id": "ava/any/color_grade/*/warm_film#1",
+       "source_events": [
+        "proj_ava_12/op_0104",
+        "proj_ava_12/op_0062",
+        "proj_ava_12/op_0031",
+        "proj_ava_11/op_0081",
+        "proj_ava_11/op_0065",
+        "proj_ava_11/op_0041"
+       ]
+      },
+      "team": {
+       "side": "team",
+       "owner": "team_northwind",
+       "observed_in": "team",
+       "action": "neutral_clean",
+       "confidence": 0.601,
+       "share": 0.87,
+       "context_used": "footage_type=screen_recording|format=16:9",
+       "preference_id": "team_northwind/team/color_grade/footage_type=screen_recording|format=16:9/neutral_clean#1",
+       "source_events": [
+        "proj_team_northwind_09/op_0020",
+        "proj_team_northwind_08/op_0087",
+        "proj_team_northwind_08/op_0079",
+        "proj_team_northwind_04/op_0040",
+        "proj_team_northwind_02/op_0051"
+       ]
+      },
+      "resolution": "ava's own project under team scope: ava's team-scope behaviour applies; the team standard is surfaced",
+      "chat_citations": []
+     }
+    ],
+    "blocked": []
+   }
+  },
+  {
+   "type": "trim_clip",
+   "author": "director",
+   "on_behalf_of": "ava",
+   "category": "cut_length",
+   "context": {
+    "footage_type": "screen_recording",
+    "prev_edit": "jump_cut",
+    "format": "16:9",
+    "section": "body"
+   },
+   "payload": {
+    "clip_id": "clp_0003",
+    "edge": "out",
+    "after": {
+     "duration": 2.8
+    },
+    "bucket": "medium"
+   },
+   "memory": {
+    "action": "medium",
+    "confidence": 0.815,
+    "why": [
+     "Fell back from [footage_type=screen_recording, prev_edit=jump_cut, format=16:9, section=body] to the most reliable broader context [prev_edit=jump_cut, format=16:9, section=body].",
+     "ava: medium holds 100% of the decayed weight here (effective support 7.2 after decay, 9 supporting events, 0 rejections of it); confidence 0.81 (Wilson lower bound)."
+    ],
+    "source_events": [
+     "proj_ava_12/op_0106",
+     "proj_ava_07/op_0063",
+     "proj_ava_06/op_0112",
+     "proj_ava_06/op_0069",
+     "proj_ava_06/op_0043",
+     "proj_ava_06/op_0034",
+     "proj_ava_06/op_0030",
+     "proj_ava_04/op_0079"
+    ],
+    "preference_id": "ava/team/cut_length/prev_edit=jump_cut|format=16:9|section=body/medium#1",
+    "conflicts": [],
+    "blocked": []
+   }
+  },
+  {
+   "type": "add_transition",
+   "author": "director",
+   "on_behalf_of": "ava",
+   "category": "transition",
+   "context": {
+    "footage_type": "broll",
+    "prev_edit": "scene_change",
+    "format": "16:9",
+    "section": "body"
+   },
+   "payload": {
+    "transition": {
+     "id": "tr_new_06",
+     "track_id": "V1",
+     "from_clip": "clp_0003",
+     "to_clip": "clp_0004",
+     "type": "crossfade",
+     "duration": 0.4
+    }
+   },
+   "memory": {
+    "action": "crossfade",
+    "confidence": 0.675,
+    "why": [
+     "Exact context match [footage_type=broll, prev_edit=scene_change, format=16:9, section=body].",
+     "ava: crossfade holds 100% of the decayed weight here (effective support 3.4 after decay, 4 supporting events, 0 rejections of it); confidence 0.67 (Wilson lower bound)."
+    ],
+    "source_events": [
+     "proj_ava_12/op_0088",
+     "proj_ava_07/op_0064",
+     "proj_ava_07/op_0053",
+     "proj_ava_05/op_0099"
+    ],
+    "preference_id": "ava/team/transition/footage_type=broll|prev_edit=scene_change|format=16:9|section=body/crossfade#1",
+    "conflicts": [],
+    "blocked": []
+   }
+  },
+  {
+   "type": "add_effect",
+   "author": "director",
+   "on_behalf_of": "ava",
+   "category": "color_grade",
+   "context": {
+    "footage_type": "broll",
+    "prev_edit": "scene_change",
+    "format": "16:9",
+    "section": "body"
+   },
+   "payload": {
+    "effect": {
+     "id": "fx_new_07",
+     "target_id": "clp_0004",
+     "type": "color_grade",
+     "params": {
+      "look": "teal_orange",
+      "intensity": 0.6
+     }
+    }
+   },
+   "memory": {
+    "action": "teal_orange",
+    "confidence": 0.699,
+    "why": [
+     "Fell back from [footage_type=broll, prev_edit=scene_change, format=16:9, section=body] to the most reliable broader context [footage_type=broll, format=16:9, section=body].",
+     "ava: teal_orange holds 100% of the decayed weight here (effective support 3.8 after decay, 5 supporting events, 0 rejections of it); confidence 0.70 (Wilson lower bound).",
+     "2 conflict(s) surfaced; see conflicts[]."
+    ],
+    "source_events": [
+     "proj_ava_12/op_0094",
+     "proj_ava_07/op_0065",
+     "proj_ava_06/op_0110",
+     "proj_ava_06/op_0041",
+     "proj_ava_05/op_0100"
+    ],
+    "preference_id": "ava/team/color_grade/footage_type=broll|format=16:9|section=body/teal_orange#1",
+    "conflicts": [
+     {
+      "kind": "team_vs_private",
+      "category": "color_grade",
+      "context": {
+       "footage_type": "broll",
+       "prev_edit": "scene_change",
+       "format": "16:9",
+       "section": "body"
+      },
+      "private": {
+       "side": "private",
+       "owner": "ava",
+       "observed_in": "team",
+       "action": "teal_orange",
+       "confidence": 0.699,
+       "share": 1.0,
+       "context_used": "footage_type=broll|format=16:9|section=body",
+       "preference_id": "ava/team/color_grade/footage_type=broll|format=16:9|section=body/teal_orange#1",
+       "source_events": [
+        "proj_ava_12/op_0094",
+        "proj_ava_07/op_0065",
+        "proj_ava_06/op_0110",
+        "proj_ava_06/op_0041",
+        "proj_ava_05/op_0100"
+       ]
+      },
+      "team": {
+       "side": "team",
+       "owner": "team_northwind",
+       "observed_in": "team",
+       "action": "neutral_clean",
+       "confidence": 0.629,
+       "share": 0.827,
+       "context_used": "footage_type=broll",
+       "preference_id": "team_northwind/team/color_grade/footage_type=broll/neutral_clean#1",
+       "source_events": [
+        "proj_team_northwind_11/op_0069",
+        "proj_team_northwind_10/op_0112",
+        "proj_team_northwind_08/op_0133",
+        "proj_team_northwind_08/op_0045",
+        "proj_team_northwind_07/op_0103",
+        "proj_team_northwind_06/op_0107"
+       ]
+      },
+      "resolution": "ava's own project under team scope: ava's team-scope behaviour applies; the team standard is surfaced",
+      "chat_citations": []
+     },
+     {
+      "kind": "team_vs_private",
+      "category": "color_grade",
+      "context": {
+       "footage_type": "broll",
+       "prev_edit": "scene_change",
+       "format": "16:9",
+       "section": "body"
+      },
+      "private": {
+       "side": "private",
+       "owner": "ava",
+       "observed_in": "private",
+       "action": "warm_film",
+       "confidence": 0.732,
+       "share": 0.84,
+       "context_used": "*",
+       "preference_id": "ava/private/color_grade/*/warm_film#1",
+       "source_events": [
+        "proj_ava_11/op_0081",
+        "proj_ava_11/op_0065",
+        "proj_ava_11/op_0041",
+        "proj_ava_11/op_0010",
+        "proj_ava_10/op_0089",
+        "proj_ava_10/op_0039"
+       ]
+      },
+      "team": {
+       "side": "team_scope_behaviour",
+       "owner": "ava",
+       "observed_in": "team",
+       "action": "teal_orange",
+       "confidence": 0.699,
+       "share": 1.0,
+       "context_used": "footage_type=broll|format=16:9|section=body",
+       "preference_id": "ava/team/color_grade/footage_type=broll|format=16:9|section=body/teal_orange#1",
+       "source_events": [
+        "proj_ava_12/op_0094",
+        "proj_ava_07/op_0065",
+        "proj_ava_06/op_0110",
+        "proj_ava_06/op_0041",
+        "proj_ava_05/op_0100"
+       ]
+      },
+      "resolution": "team-scope project: ava's private-project preference is surfaced, not applied",
+      "chat_citations": []
+     }
+    ],
+    "blocked": []
+   }
+  },
+  {
+   "type": "trim_clip",
+   "author": "director",
+   "on_behalf_of": "ava",
+   "category": "cut_length",
+   "context": {
+    "footage_type": "broll",
+    "prev_edit": "scene_change",
+    "format": "16:9",
+    "section": "body"
+   },
+   "payload": {
+    "clip_id": "clp_0004",
+    "edge": "out",
+    "after": {
+     "duration": 2.8
+    },
+    "bucket": "medium"
+   },
+   "memory": {
+    "action": "medium",
+    "confidence": 0.631,
+    "why": [
+     "Exact context match [footage_type=broll, prev_edit=scene_change, format=16:9, section=body].",
+     "ava: medium holds 100% of the decayed weight here (effective support 2.8 after decay, 4 supporting events, 0 rejections of it); confidence 0.63 (Wilson lower bound)."
+    ],
+    "source_events": [
+     "proj_ava_11/op_0021",
+     "proj_ava_08/op_0095",
+     "proj_ava_07/op_0054",
+     "proj_ava_02/op_0027"
+    ],
+    "preference_id": "ava/any/cut_length/footage_type=broll|prev_edit=scene_change|format=16:9|section=body/medium#1",
+    "conflicts": [],
+    "blocked": []
+   }
+  },
+  {
+   "type": "add_transition",
+   "author": "director",
+   "on_behalf_of": "ava",
+   "category": "transition",
+   "context": {
+    "footage_type": "screen_recording",
+    "prev_edit": "scene_change",
+    "format": "16:9",
+    "section": "body"
+   },
+   "payload": {
+    "transition": {
+     "id": "tr_new_09",
+     "track_id": "V1",
+     "from_clip": "clp_0004",
+     "to_clip": "clp_0005",
+     "type": "hard_cut",
+     "duration": 0.4
+    }
+   },
+   "memory": {
+    "action": "hard_cut",
+    "confidence": 0.733,
+    "why": [
+     "Fell back from [footage_type=screen_recording, prev_edit=scene_change, format=16:9, section=body] to the most reliable broader context [footage_type=screen_recording, prev_edit=scene_change, section=body].",
+     "ava: hard_cut holds 100% of the decayed weight here (effective support 4.5 after decay, 6 supporting events, 0 rejections of it); confidence 0.73 (Wilson lower bound).",
+     "1 conflict(s) surfaced; see conflicts[]."
+    ],
+    "source_events": [
+     "proj_ava_12/op_0095",
+     "proj_ava_12/op_0061",
+     "proj_ava_12/op_0022",
+     "proj_ava_02/op_0087",
+     "proj_ava_02/op_0045",
+     "proj_ava_02/op_0016"
+    ],
+    "preference_id": "ava/any/transition/footage_type=screen_recording|prev_edit=scene_change|section=body/hard_cut#1",
+    "conflicts": [
+     {
+      "kind": "team_vs_private",
+      "category": "transition",
+      "context": {
+       "footage_type": "screen_recording",
+       "prev_edit": "scene_change",
+       "format": "16:9",
+       "section": "body"
+      },
+      "private": {
+       "side": "private",
+       "owner": "ava",
+       "observed_in": "any",
+       "action": "hard_cut",
+       "confidence": 0.733,
+       "share": 1.0,
+       "context_used": "footage_type=screen_recording|prev_edit=scene_change|section=body",
+       "preference_id": "ava/any/transition/footage_type=screen_recording|prev_edit=scene_change|section=body/hard_cut#1",
+       "source_events": [
+        "proj_ava_12/op_0095",
+        "proj_ava_12/op_0061",
+        "proj_ava_12/op_0022",
+        "proj_ava_02/op_0087",
+        "proj_ava_02/op_0045",
+        "proj_ava_02/op_0016"
+       ]
+      },
+      "team": {
+       "side": "team",
+       "owner": "team_northwind",
+       "observed_in": "team",
+       "action": "crossfade",
+       "confidence": 0.546,
+       "share": 0.818,
+       "context_used": "footage_type=screen_recording|prev_edit=scene_change",
+       "preference_id": "team_northwind/team/transition/footage_type=screen_recording|prev_edit=scene_change/crossfade#1",
+       "source_events": [
+        "proj_team_northwind_07/op_0111",
+        "proj_team_northwind_07/op_0070",
+        "proj_team_northwind_07/op_0029",
+        "proj_team_northwind_02/op_0094",
+        "proj_team_northwind_02/op_0048",
+        "proj_team_northwind_02/op_0007"
+       ]
+      },
+      "resolution": "ava's own project under team scope: ava's team-scope behaviour applies; the team standard is surfaced",
+      "chat_citations": []
+     }
+    ],
+    "blocked": []
+   }
+  },
+  {
+   "type": "add_effect",
+   "author": "director",
+   "on_behalf_of": "ava",
+   "category": "color_grade",
+   "context": {
+    "footage_type": "screen_recording",
+    "prev_edit": "scene_change",
+    "format": "16:9",
+    "section": "body"
+   },
+   "payload": {
+    "effect": {
+     "id": "fx_new_10",
+     "target_id": "clp_0005",
+     "type": "color_grade",
+     "params": {
+      "look": "warm_film",
+      "intensity": 0.6
+     }
+    }
+   },
+   "memory": {
+    "action": "warm_film",
+    "confidence": 0.705,
+    "why": [
+     "Fell back from [footage_type=screen_recording, prev_edit=scene_change, format=16:9, section=body] to the most reliable broader context [any context].",
+     "ava: warm_film holds 78% of the decayed weight here (effective support 58.9 after decay, 53 supporting events, 2 rejections of it); confidence 0.70 (Wilson lower bound).",
+     "1 conflict(s) surfaced; see conflicts[]."
+    ],
+    "source_events": [
+     "proj_ava_12/op_0104",
+     "proj_ava_12/op_0062",
+     "proj_ava_12/op_0031",
+     "proj_ava_11/op_0081",
+     "proj_ava_11/op_0065",
+     "proj_ava_11/op_0041",
+     "proj_ava_11/op_0010",
+     "proj_ava_10/op_0089"
+    ],
+    "preference_id": "ava/any/color_grade/*/warm_film#1",
+    "conflicts": [
+     {
+      "kind": "team_vs_private",
+      "category": "color_grade",
+      "context": {
+       "footage_type": "screen_recording",
+       "prev_edit": "scene_change",
+       "format": "16:9",
+       "section": "body"
+      },
+      "private": {
+       "side": "private",
+       "owner": "ava",
+       "observed_in": "any",
+       "action": "warm_film",
+       "confidence": 0.705,
+       "share": 0.781,
+       "context_used": "*",
+       "preference_id": "ava/any/color_grade/*/warm_film#1",
+       "source_events": [
+        "proj_ava_12/op_0104",
+        "proj_ava_12/op_0062",
+        "proj_ava_12/op_0031",
+        "proj_ava_11/op_0081",
+        "proj_ava_11/op_0065",
+        "proj_ava_11/op_0041"
+       ]
+      },
+      "team": {
+       "side": "team",
+       "owner": "team_northwind",
+       "observed_in": "team",
+       "action": "neutral_clean",
+       "confidence": 0.601,
+       "share": 0.87,
+       "context_used": "footage_type=screen_recording|format=16:9",
+       "preference_id": "team_northwind/team/color_grade/footage_type=screen_recording|format=16:9/neutral_clean#1",
+       "source_events": [
+        "proj_team_northwind_09/op_0020",
+        "proj_team_northwind_08/op_0087",
+        "proj_team_northwind_08/op_0079",
+        "proj_team_northwind_04/op_0040",
+        "proj_team_northwind_02/op_0051"
+       ]
+      },
+      "resolution": "ava's own project under team scope: ava's team-scope behaviour applies; the team standard is surfaced",
+      "chat_citations": []
+     }
+    ],
+    "blocked": []
+   }
+  },
+  {
+   "type": "trim_clip",
+   "author": "director",
+   "on_behalf_of": "ava",
+   "category": "cut_length",
+   "context": {
+    "footage_type": "screen_recording",
+    "prev_edit": "scene_change",
+    "format": "16:9",
+    "section": "body"
+   },
+   "payload": {
+    "clip_id": "clp_0005",
+    "edge": "out",
+    "after": {
+     "duration": 2.8
+    },
+    "bucket": "medium"
+   },
+   "memory": {
+    "action": "medium",
+    "confidence": 0.749,
+    "why": [
+     "Fell back from [footage_type=screen_recording, prev_edit=scene_change, format=16:9, section=body] to the most reliable broader context [prev_edit=scene_change, format=16:9, section=body].",
+     "ava: medium holds 100% of the decayed weight here (effective support 4.9 after decay, 7 supporting events, 0 rejections of it); confidence 0.75 (Wilson lower bound)."
+    ],
+    "source_events": [
+     "proj_ava_12/op_0096",
+     "proj_ava_07/op_0054",
+     "proj_ava_04/op_0070",
+     "proj_ava_04/op_0068",
+     "proj_ava_04/op_0029",
+     "proj_ava_04/op_0020",
+     "proj_ava_04/op_0011"
+    ],
+    "preference_id": "ava/team/cut_length/prev_edit=scene_change|format=16:9|section=body/medium#1",
+    "conflicts": [],
+    "blocked": []
+   }
+  },
+  {
+   "type": "add_transition",
+   "author": "director",
+   "on_behalf_of": "ava",
+   "category": "transition",
+   "context": {
+    "footage_type": "talking_head",
+    "prev_edit": "jump_cut",
+    "format": "16:9",
+    "section": "body"
+   },
+   "payload": {
+    "transition": {
+     "id": "tr_new_12",
+     "track_id": "V1",
+     "from_clip": "clp_0005",
+     "to_clip": "clp_0006",
+     "type": "whip_pan",
+     "duration": 0.4
+    }
+   },
+   "memory": {
+    "action": "whip_pan",
+    "confidence": 0.648,
+    "why": [
+     "Fell back from [footage_type=talking_head, prev_edit=jump_cut, format=16:9, section=body] to the most reliable broader context [footage_type=talking_head, prev_edit=jump_cut, section=body].",
+     "ava: whip_pan holds 86% of the decayed weight here (effective support 8.5 after decay, 10 supporting events, 2 rejections of it); confidence 0.65 (Wilson lower bound).",
+     "Active since ava_s28: superseded crossfade (whip_pan led the recent window (83% of fast-decayed weight) in 2 consecutive sessions with new evidence).",
+     "2 narrower context(s) skipped as stale, e.g. skipped [footage_type=talking_head, prev_edit=jump_cut, format=16:9, section=body] (team): its crossfade was superseded by whip_pan in [footage_type=talking_head, prev_edit=jump_cut, section=body] (team) at ava_s36 and not re-confirmed since.",
+     "1 conflict(s) surfaced; see conflicts[]."
+    ],
+    "source_events": [
+     "proj_ava_12/op_0098",
+     "proj_ava_12/op_0063",
+     "proj_ava_12/op_0029",
+     "proj_ava_11/op_0064",
+     "proj_ava_10/op_0090",
+     "proj_ava_10/op_0054",
+     "proj_ava_10/op_0010",
+     "proj_ava_08/op_0105"
+    ],
+    "preference_id": "ava/any/transition/footage_type=talking_head|prev_edit=jump_cut|section=body/whip_pan#1",
+    "conflicts": [
+     {
+      "kind": "team_vs_private",
+      "category": "transition",
+      "context": {
+       "footage_type": "talking_head",
+       "prev_edit": "jump_cut",
+       "format": "16:9",
+       "section": "body"
+      },
+      "private": {
+       "side": "private",
+       "owner": "ava",
+       "observed_in": "any",
+       "action": "whip_pan",
+       "confidence": 0.648,
+       "share": 0.858,
+       "context_used": "footage_type=talking_head|prev_edit=jump_cut|section=body",
+       "preference_id": "ava/any/transition/footage_type=talking_head|prev_edit=jump_cut|section=body/whip_pan#1",
+       "source_events": [
+        "proj_ava_12/op_0098",
+        "proj_ava_12/op_0063",
+        "proj_ava_12/op_0029",
+        "proj_ava_11/op_0064",
+        "proj_ava_10/op_0090",
+        "proj_ava_10/op_0054"
+       ]
+      },
+      "team": {
+       "side": "team",
+       "owner": "team_northwind",
+       "observed_in": "team",
+       "action": "hard_cut",
+       "confidence": 0.738,
+       "share": 0.88,
+       "context_used": "footage_type=talking_head|prev_edit=jump_cut|format=16:9|section=body",
+       "preference_id": "team_northwind/team/transition/footage_type=talking_head|prev_edit=jump_cut|format=16:9|section=body/hard_cut#1",
+       "source_events": [
+        "proj_team_northwind_10/op_0116",
+        "proj_team_northwind_10/op_0075",
+        "proj_team_northwind_09/op_0078",
+        "proj_team_northwind_09/op_0027",
+        "proj_team_northwind_09/op_0009",
+        "proj_team_northwind_08/op_0065"
+       ]
+      },
+      "resolution": "ava's own project under team scope: ava's team-scope behaviour applies; the team standard is surfaced",
+      "chat_citations": []
+     }
+    ],
+    "blocked": []
+   }
+  },
+  {
+   "type": "add_effect",
+   "author": "director",
+   "on_behalf_of": "ava",
+   "category": "color_grade",
+   "context": {
+    "footage_type": "talking_head",
+    "prev_edit": "jump_cut",
+    "format": "16:9",
+    "section": "body"
+   },
+   "payload": {
+    "effect": {
+     "id": "fx_new_13",
+     "target_id": "clp_0006",
+     "type": "color_grade",
+     "params": {
+      "look": "warm_film",
+      "intensity": 0.6
+     }
+    }
+   },
+   "memory": {
+    "action": "warm_film",
+    "confidence": 0.817,
+    "why": [
+     "Fell back from [footage_type=talking_head, prev_edit=jump_cut, format=16:9, section=body] to the most reliable broader context [footage_type=talking_head, format=16:9, section=body].",
+     "ava: warm_film holds 98% of the decayed weight here (effective support 9.4 after decay, 11 supporting events, 0 rejections of it); confidence 0.82 (Wilson lower bound).",
+     "1 conflict(s) surfaced; see conflicts[]."
+    ],
+    "source_events": [
+     "proj_ava_12/op_0104",
+     "proj_ava_07/op_0052",
+     "proj_ava_06/op_0113",
+     "proj_ava_06/op_0102",
+     "proj_ava_06/op_0100",
+     "proj_ava_06/op_0023",
+     "proj_ava_06/op_0018",
+     "proj_ava_04/op_0080"
+    ],
+    "preference_id": "ava/team/color_grade/footage_type=talking_head|format=16:9|section=body/warm_film#1",
+    "conflicts": [
+     {
+      "kind": "team_vs_private",
+      "category": "color_grade",
+      "context": {
+       "footage_type": "talking_head",
+       "prev_edit": "jump_cut",
+       "format": "16:9",
+       "section": "body"
+      },
+      "private": {
+       "side": "private",
+       "owner": "ava",
+       "observed_in": "team",
+       "action": "warm_film",
+       "confidence": 0.817,
+       "share": 0.979,
+       "context_used": "footage_type=talking_head|format=16:9|section=body",
+       "preference_id": "ava/team/color_grade/footage_type=talking_head|format=16:9|section=body/warm_film#1",
+       "source_events": [
+        "proj_ava_12/op_0104",
+        "proj_ava_07/op_0052",
+        "proj_ava_06/op_0113",
+        "proj_ava_06/op_0102",
+        "proj_ava_06/op_0100",
+        "proj_ava_06/op_0023"
+       ]
+      },
+      "team": {
+       "side": "team",
+       "owner": "team_northwind",
+       "observed_in": "team",
+       "action": "neutral_clean",
+       "confidence": 0.67,
+       "share": 0.84,
+       "context_used": "footage_type=talking_head|format=16:9|section=body",
+       "preference_id": "team_northwind/team/color_grade/footage_type=talking_head|format=16:9|section=body/neutral_clean#1",
+       "source_events": [
+        "proj_team_northwind_09/op_0087",
+        "proj_team_northwind_09/op_0085",
+        "proj_team_northwind_08/op_0016",
+        "proj_team_northwind_06/op_0116",
+        "proj_team_northwind_06/op_0105",
+        "proj_team_northwind_05/op_0111"
+       ]
+      },
+      "resolution": "ava's own project under team scope: ava's team-scope behaviour applies; the team standard is surfaced",
+      "chat_citations": []
+     }
+    ],
+    "blocked": []
+   }
+  },
+  {
+   "type": "trim_clip",
+   "author": "director",
+   "on_behalf_of": "ava",
+   "category": "cut_length",
+   "context": {
+    "footage_type": "talking_head",
+    "prev_edit": "jump_cut",
+    "format": "16:9",
+    "section": "body"
+   },
+   "payload": {
+    "clip_id": "clp_0006",
+    "edge": "out",
+    "after": {
+     "duration": 2.8
+    },
+    "bucket": "medium"
+   },
+   "memory": {
+    "action": "medium",
+    "confidence": 0.823,
+    "why": [
+     "Exact context match [footage_type=talking_head, prev_edit=jump_cut, format=16:9, section=body].",
+     "ava: medium holds 100% of the decayed weight here (effective support 7.6 after decay, 10 supporting events, 0 rejections of it); confidence 0.82 (Wilson lower bound)."
+    ],
+    "source_events": [
+     "proj_ava_11/op_0029",
+     "proj_ava_10/op_0091",
+     "proj_ava_08/op_0106",
+     "proj_ava_06/op_0112",
+     "proj_ava_06/op_0069",
+     "proj_ava_06/op_0043",
+     "proj_ava_06/op_0030",
+     "proj_ava_04/op_0079"
+    ],
+    "preference_id": "ava/any/cut_length/footage_type=talking_head|prev_edit=jump_cut|format=16:9|section=body/medium#1",
+    "conflicts": [],
+    "blocked": []
+   }
+  },
+  {
+   "type": "add_transition",
+   "author": "director",
+   "on_behalf_of": "ava",
+   "category": "transition",
+   "context": {
+    "footage_type": "product",
+    "prev_edit": "jump_cut",
+    "format": "16:9",
+    "section": "body"
+   },
+   "payload": {
+    "transition": {
+     "id": "tr_new_15",
+     "track_id": "V1",
+     "from_clip": "clp_0006",
+     "to_clip": "clp_0007",
+     "type": "hard_cut",
+     "duration": 0.4
+    }
+   },
+   "memory": {
+    "action": "hard_cut",
+    "confidence": 0.509,
+    "why": [
+     "Exact context match [footage_type=product, prev_edit=jump_cut, format=16:9, section=body].",
+     "ava: hard_cut holds 100% of the decayed weight here (effective support 1.7 after decay, 2 supporting events, 0 rejections of it); confidence 0.51 (Wilson lower bound).",
+     "2 conflict(s) surfaced; see conflicts[]."
+    ],
+    "source_events": [
+     "proj_ava_12/op_0105",
+     "proj_ava_03/op_0049"
+    ],
+    "preference_id": "ava/any/transition/footage_type=product|prev_edit=jump_cut|format=16:9|section=body/hard_cut#1",
+    "conflicts": [
+     {
+      "kind": "team_vs_private",
+      "category": "transition",
+      "context": {
+       "footage_type": "product",
+       "prev_edit": "jump_cut",
+       "format": "16:9",
+       "section": "body"
+      },
+      "private": {
+       "side": "private",
+       "owner": "ava",
+       "observed_in": "any",
+       "action": "hard_cut",
+       "confidence": 0.509,
+       "share": 1.0,
+       "context_used": "footage_type=product|prev_edit=jump_cut|format=16:9|section=body",
+       "preference_id": "ava/any/transition/footage_type=product|prev_edit=jump_cut|format=16:9|section=body/hard_cut#1",
+       "source_events": [
+        "proj_ava_12/op_0105",
+        "proj_ava_03/op_0049"
+       ]
+      },
+      "team": {
+       "side": "team",
+       "owner": "team_northwind",
+       "observed_in": "team",
+       "action": "crossfade",
+       "confidence": 0.509,
+       "share": 1.0,
+       "context_used": "footage_type=product|prev_edit=jump_cut|format=16:9|section=body",
+       "preference_id": "team_northwind/team/transition/footage_type=product|prev_edit=jump_cut|format=16:9|section=body/crossfade#1",
+       "source_events": [
+        "proj_team_northwind_02/op_0072",
+        "proj_team_northwind_02/op_0071"
+       ]
+      },
+      "resolution": "ava's own project under team scope: ava's team-scope behaviour applies; the team standard is surfaced",
+      "chat_citations": []
+     },
+     {
+      "kind": "team_vs_private",
+      "category": "transition",
+      "context": {
+       "footage_type": "product",
+       "prev_edit": "jump_cut",
+       "format": "16:9",
+       "section": "body"
+      },
+      "private": {
+       "side": "private",
+       "owner": "ava",
+       "observed_in": "private",
+       "action": "whip_pan",
+       "confidence": 0.484,
+       "share": 0.617,
+       "context_used": "prev_edit=jump_cut",
+       "preference_id": "ava/private/transition/prev_edit=jump_cut/whip_pan#1",
+       "source_events": [
+        "proj_ava_11/op_0114",
+        "proj_ava_11/op_0107",
+        "proj_ava_11/op_0075",
+        "proj_ava_11/op_0064",
+        "proj_ava_11/op_0038",
+        "proj_ava_10/op_0113"
+       ]
+      },
+      "team": {
+       "side": "team_scope_behaviour",
+       "owner": "ava",
+       "observed_in": "any",
+       "action": "hard_cut",
+       "confidence": 0.509,
+       "share": 1.0,
+       "context_used": "footage_type=product|prev_edit=jump_cut|format=16:9|section=body",
+       "preference_id": "ava/any/transition/footage_type=product|prev_edit=jump_cut|format=16:9|section=body/hard_cut#1",
+       "source_events": [
+        "proj_ava_12/op_0105",
+        "proj_ava_03/op_0049"
+       ]
+      },
+      "resolution": "team-scope project: ava's private-project preference is surfaced, not applied",
+      "chat_citations": []
+     }
+    ],
+    "blocked": []
+   }
+  },
+  {
+   "type": "add_effect",
+   "author": "director",
+   "on_behalf_of": "ava",
+   "category": "color_grade",
+   "context": {
+    "footage_type": "product",
+    "prev_edit": "jump_cut",
+    "format": "16:9",
+    "section": "body"
+   },
+   "payload": {
+    "effect": {
+     "id": "fx_new_16",
+     "target_id": "clp_0007",
+     "type": "color_grade",
+     "params": {
+      "look": "warm_film",
+      "intensity": 0.6
+     }
+    }
+   },
+   "memory": {
+    "action": "warm_film",
+    "confidence": 0.705,
+    "why": [
+     "Fell back from [footage_type=product, prev_edit=jump_cut, format=16:9, section=body] to the most reliable broader context [any context].",
+     "ava: warm_film holds 78% of the decayed weight here (effective support 58.9 after decay, 53 supporting events, 2 rejections of it); confidence 0.70 (Wilson lower bound).",
+     "1 conflict(s) surfaced; see conflicts[]."
+    ],
+    "source_events": [
+     "proj_ava_12/op_0104",
+     "proj_ava_12/op_0062",
+     "proj_ava_12/op_0031",
+     "proj_ava_11/op_0081",
+     "proj_ava_11/op_0065",
+     "proj_ava_11/op_0041",
+     "proj_ava_11/op_0010",
+     "proj_ava_10/op_0089"
+    ],
+    "preference_id": "ava/any/color_grade/*/warm_film#1",
+    "conflicts": [
+     {
+      "kind": "team_vs_private",
+      "category": "color_grade",
+      "context": {
+       "footage_type": "product",
+       "prev_edit": "jump_cut",
+       "format": "16:9",
+       "section": "body"
+      },
+      "private": {
+       "side": "private",
+       "owner": "ava",
+       "observed_in": "any",
+       "action": "warm_film",
+       "confidence": 0.705,
+       "share": 0.781,
+       "context_used": "*",
+       "preference_id": "ava/any/color_grade/*/warm_film#1",
+       "source_events": [
+        "proj_ava_12/op_0104",
+        "proj_ava_12/op_0062",
+        "proj_ava_12/op_0031",
+        "proj_ava_11/op_0081",
+        "proj_ava_11/op_0065",
+        "proj_ava_11/op_0041"
+       ]
+      },
+      "team": {
+       "side": "team",
+       "owner": "team_northwind",
+       "observed_in": "team",
+       "action": "neutral_clean",
+       "confidence": 0.654,
+       "share": 1.0,
+       "context_used": "footage_type=product|format=16:9",
+       "preference_id": "team_northwind/team/color_grade/footage_type=product|format=16:9/neutral_clean#1",
+       "source_events": [
+        "proj_team_northwind_05/op_0102",
+        "proj_team_northwind_05/op_0071",
+        "proj_team_northwind_03/op_0094",
+        "proj_team_northwind_03/op_0050"
+       ]
+      },
+      "resolution": "ava's own project under team scope: ava's team-scope behaviour applies; the team standard is surfaced",
+      "chat_citations": []
+     }
+    ],
+    "blocked": []
+   }
+  },
+  {
+   "type": "trim_clip",
+   "author": "director",
+   "on_behalf_of": "ava",
+   "category": "cut_length",
+   "context": {
+    "footage_type": "product",
+    "prev_edit": "jump_cut",
+    "format": "16:9",
+    "section": "body"
+   },
+   "payload": {
+    "clip_id": "clp_0007",
+    "edge": "out",
+    "after": {
+     "duration": 2.8
+    },
+    "bucket": "medium"
+   },
+   "memory": {
+    "action": "medium",
+    "confidence": 0.509,
+    "why": [
+     "Exact context match [footage_type=product, prev_edit=jump_cut, format=16:9, section=body].",
+     "ava: medium holds 100% of the decayed weight here (effective support 1.7 after decay, 2 supporting events, 0 rejections of it); confidence 0.51 (Wilson lower bound)."
+    ],
+    "source_events": [
+     "proj_ava_12/op_0106",
+     "proj_ava_03/op_0055"
+    ],
+    "preference_id": "ava/any/cut_length/footage_type=product|prev_edit=jump_cut|format=16:9|section=body/medium#1",
+    "conflicts": [],
+    "blocked": []
+   }
+  },
+  {
+   "type": "add_transition",
+   "author": "director",
+   "on_behalf_of": "ava",
+   "category": "transition",
+   "context": {
+    "footage_type": "broll",
+    "prev_edit": "scene_change",
+    "format": "16:9",
+    "section": "outro"
+   },
+   "payload": {
+    "transition": {
+     "id": "tr_new_18",
+     "track_id": "V1",
+     "from_clip": "clp_0007",
+     "to_clip": "clp_0008",
+     "type": "crossfade",
+     "duration": 0.4
+    }
+   },
+   "memory": {
+    "action": "crossfade",
+    "confidence": 0.802,
+    "why": [
+     "Fell back from [footage_type=broll, prev_edit=scene_change, format=16:9, section=outro] to the most reliable broader context [footage_type=broll, prev_edit=scene_change].",
+     "ava: crossfade holds 92% of the decayed weight here (effective support 18.0 after decay, 21 supporting events, 1 rejections of it); confidence 0.80 (Wilson lower bound)."
+    ],
+    "source_events": [
+     "proj_ava_12/op_0088",
+     "proj_ava_12/op_0072",
+     "proj_ava_12/op_0053",
+     "proj_ava_12/op_0038",
+     "proj_ava_12/op_0019",
+     "proj_ava_11/op_0055",
+     "proj_ava_11/op_0020",
+     "proj_ava_08/op_0094"
+    ],
+    "preference_id": "ava/any/transition/footage_type=broll|prev_edit=scene_change/crossfade#1",
+    "conflicts": [],
+    "blocked": []
+   }
+  },
+  {
+   "type": "add_effect",
+   "author": "director",
+   "on_behalf_of": "ava",
+   "category": "color_grade",
+   "context": {
+    "footage_type": "broll",
+    "prev_edit": "scene_change",
+    "format": "16:9",
+    "section": "outro"
+   },
+   "payload": {
+    "effect": {
+     "id": "fx_new_19",
+     "target_id": "clp_0008",
+     "type": "color_grade",
+     "params": {
+      "look": "teal_orange",
+      "intensity": 0.6
+     }
+    }
+   },
+   "memory": {
+    "action": "teal_orange",
+    "confidence": 0.677,
+    "why": [
+     "Fell back from [footage_type=broll, prev_edit=scene_change, format=16:9, section=outro] to the most reliable broader context [footage_type=broll, format=16:9].",
+     "ava: teal_orange holds 88% of the decayed weight here (effective support 8.5 after decay, 10 supporting events, 2 rejections of it); confidence 0.68 (Wilson lower bound).",
+     "2 conflict(s) surfaced; see conflicts[]."
+    ],
+    "source_events": [
+     "proj_ava_12/op_0114",
+     "proj_ava_12/op_0094",
+     "proj_ava_11/op_0096",
+     "proj_ava_11/op_0037",
+     "proj_ava_11/op_0027",
+     "proj_ava_08/op_0103",
+     "proj_ava_07/op_0065",
+     "proj_ava_06/op_0110"
+    ],
+    "preference_id": "ava/any/color_grade/footage_type=broll|format=16:9/teal_orange#1",
+    "conflicts": [
+     {
+      "kind": "team_vs_private",
+      "category": "color_grade",
+      "context": {
+       "footage_type": "broll",
+       "prev_edit": "scene_change",
+       "format": "16:9",
+       "section": "outro"
+      },
+      "private": {
+       "side": "private",
+       "owner": "ava",
+       "observed_in": "any",
+       "action": "teal_orange",
+       "confidence": 0.677,
+       "share": 0.882,
+       "context_used": "footage_type=broll|format=16:9",
+       "preference_id": "ava/any/color_grade/footage_type=broll|format=16:9/teal_orange#1",
+       "source_events": [
+        "proj_ava_12/op_0114",
+        "proj_ava_12/op_0094",
+        "proj_ava_11/op_0096",
+        "proj_ava_11/op_0037",
+        "proj_ava_11/op_0027",
+        "proj_ava_08/op_0103"
+       ]
+      },
+      "team": {
+       "side": "team",
+       "owner": "team_northwind",
+       "observed_in": "team",
+       "action": "neutral_clean",
+       "confidence": 0.629,
+       "share": 0.827,
+       "context_used": "footage_type=broll",
+       "preference_id": "team_northwind/team/color_grade/footage_type=broll/neutral_clean#1",
+       "source_events": [
+        "proj_team_northwind_11/op_0069",
+        "proj_team_northwind_10/op_0112",
+        "proj_team_northwind_08/op_0133",
+        "proj_team_northwind_08/op_0045",
+        "proj_team_northwind_07/op_0103",
+        "proj_team_northwind_06/op_0107"
+       ]
+      },
+      "resolution": "ava's own project under team scope: ava's team-scope behaviour applies; the team standard is surfaced",
+      "chat_citations": []
+     },
+     {
+      "kind": "team_vs_private",
+      "category": "color_grade",
+      "context": {
+       "footage_type": "broll",
+       "prev_edit": "scene_change",
+       "format": "16:9",
+       "section": "outro"
+      },
+      "private": {
+       "side": "private",
+       "owner": "ava",
+       "observed_in": "private",
+       "action": "warm_film",
+       "confidence": 0.732,
+       "share": 0.84,
+       "context_used": "*",
+       "preference_id": "ava/private/color_grade/*/warm_film#1",
+       "source_events": [
+        "proj_ava_11/op_0081",
+        "proj_ava_11/op_0065",
+        "proj_ava_11/op_0041",
+        "proj_ava_11/op_0010",
+        "proj_ava_10/op_0089",
+        "proj_ava_10/op_0039"
+       ]
+      },
+      "team": {
+       "side": "team_scope_behaviour",
+       "owner": "ava",
+       "observed_in": "any",
+       "action": "teal_orange",
+       "confidence": 0.677,
+       "share": 0.882,
+       "context_used": "footage_type=broll|format=16:9",
+       "preference_id": "ava/any/color_grade/footage_type=broll|format=16:9/teal_orange#1",
+       "source_events": [
+        "proj_ava_12/op_0114",
+        "proj_ava_12/op_0094",
+        "proj_ava_11/op_0096",
+        "proj_ava_11/op_0037",
+        "proj_ava_11/op_0027",
+        "proj_ava_08/op_0103"
+       ]
+      },
+      "resolution": "team-scope project: ava's private-project preference is surfaced, not applied",
+      "chat_citations": []
+     }
+    ],
+    "blocked": []
+   }
+  },
+  {
+   "type": "trim_clip",
+   "author": "director",
+   "on_behalf_of": "ava",
+   "category": "cut_length",
+   "context": {
+    "footage_type": "broll",
+    "prev_edit": "scene_change",
+    "format": "16:9",
+    "section": "outro"
+   },
+   "payload": {
+    "clip_id": "clp_0008",
+    "edge": "out",
+    "after": {
+     "duration": 5.5
+    },
+    "bucket": "long"
+   },
+   "memory": {
+    "action": "long",
+    "confidence": 0.578,
+    "why": [
+     "Fell back from [footage_type=broll, prev_edit=scene_change, format=16:9, section=outro] to the most reliable broader context [section=outro].",
+     "ava: long holds 76% of the decayed weight here (effective support 11.6 after decay, 13 supporting events, 1 rejections of it); confidence 0.58 (Wilson lower bound).",
+     "Active since ava_s14: superseded short (long led the recent window (97% of fast-decayed weight) in 2 consecutive sessions with new evidence).",
+     "2 conflict(s) surfaced; see conflicts[]."
+    ],
+    "source_events": [
+     "proj_ava_12/op_0073",
+     "proj_ava_11/op_0115",
+     "proj_ava_11/op_0076",
+     "proj_ava_11/op_0039",
+     "proj_ava_09/op_0086",
+     "proj_ava_09/op_0042",
+     "proj_ava_08/op_0071",
+     "proj_ava_06/op_0120"
+    ],
+    "preference_id": "ava/any/cut_length/section=outro/long#1",
+    "conflicts": [
+     {
+      "kind": "team_vs_private",
+      "category": "cut_length",
+      "context": {
+       "footage_type": "broll",
+       "prev_edit": "scene_change",
+       "format": "16:9",
+       "section": "outro"
+      },
+      "private": {
+       "side": "private",
+       "owner": "ava",
+       "observed_in": "any",
+       "action": "long",
+       "confidence": 0.578,
+       "share": 0.763,
+       "context_used": "section=outro",
+       "preference_id": "ava/any/cut_length/section=outro/long#1",
+       "source_events": [
+        "proj_ava_12/op_0073",
+        "proj_ava_11/op_0115",
+        "proj_ava_11/op_0076",
+        "proj_ava_11/op_0039",
+        "proj_ava_09/op_0086",
+        "proj_ava_09/op_0042"
+       ]
+      },
+      "team": {
+       "side": "team",
+       "owner": "team_northwind",
+       "observed_in": "team",
+       "action": "medium",
+       "confidence": 0.624,
+       "share": 0.908,
+       "context_used": "footage_type=broll|prev_edit=scene_change",
+       "preference_id": "team_northwind/team/cut_length/footage_type=broll|prev_edit=scene_change/medium#1",
+       "source_events": [
+        "proj_team_northwind_11/op_0055",
+        "proj_team_northwind_11/op_0010",
+        "proj_team_northwind_06/op_0062",
+        "proj_team_northwind_06/op_0018",
+        "proj_team_northwind_05/op_0121",
+        "proj_team_northwind_05/op_0017"
+       ]
+      },
+      "resolution": "ava's own project under team scope: ava's team-scope behaviour applies; the team standard is surfaced",
+      "chat_citations": []
+     },
+     {
+      "kind": "team_vs_private",
+      "category": "cut_length",
+      "context": {
+       "footage_type": "broll",
+       "prev_edit": "scene_change",
+       "format": "16:9",
+       "section": "outro"
+      },
+      "private": {
+       "side": "private",
+       "owner": "ava",
+       "observed_in": "private",
+       "action": "medium",
+       "confidence": 0.568,
+       "share": 0.665,
+       "context_used": "*",
+       "preference_id": "ava/private/cut_length/*/medium#1",
+       "source_events": [
+        "proj_ava_11/op_0113",
+        "proj_ava_11/op_0074",
+        "proj_ava_11/op_0067",
+        "proj_ava_11/op_0029",
+        "proj_ava_11/op_0021",
+        "proj_ava_11/op_0017"
+       ]
+      },
+      "team": {
+       "side": "team_scope_behaviour",
+       "owner": "ava",
+       "observed_in": "any",
+       "action": "long",
+       "confidence": 0.578,
+       "share": 0.763,
+       "context_used": "section=outro",
+       "preference_id": "ava/any/cut_length/section=outro/long#1",
+       "source_events": [
+        "proj_ava_12/op_0073",
+        "proj_ava_11/op_0115",
+        "proj_ava_11/op_0076",
+        "proj_ava_11/op_0039",
+        "proj_ava_09/op_0086",
+        "proj_ava_09/op_0042"
+       ]
+      },
+      "resolution": "team-scope project: ava's private-project preference is surfaced, not applied",
+      "chat_citations": []
+     }
+    ],
+    "blocked": []
+   }
+  },
+  {
+   "type": "add_clip",
+   "author": "director",
+   "on_behalf_of": "ava",
+   "category": "music_mood",
+   "context": {
+    "footage_type": "screen_recording",
+    "format": "16:9",
+    "section": "hook"
+   },
+   "payload": {
+    "track_id": "A1",
+    "clip": {
+     "id": "clp_music_21",
+     "music_mood": "upbeat",
+     "asset_label": "music_upbeat",
+     "section": "hook"
+    }
+   },
+   "memory": {
+    "action": "upbeat",
+    "confidence": 0.594,
+    "why": [
+     "Fell back from [footage_type=screen_recording, format=16:9, section=hook] to the most reliable broader context [footage_type=screen_recording, section=hook].",
+     "ava: upbeat holds 100% of the decayed weight here (effective support 2.4 after decay, 3 supporting events, 0 rejections of it); confidence 0.59 (Wilson lower bound).",
+     "1 conflict(s) surfaced; see conflicts[]."
+    ],
+    "source_events": [
+     "proj_ava_12/op_0086",
+     "proj_ava_12/op_0051",
+     "proj_ava_12/op_0009"
+    ],
+    "preference_id": "ava/team/music_mood/footage_type=screen_recording|section=hook/upbeat#1",
+    "conflicts": [
+     {
+      "kind": "team_vs_private",
+      "category": "music_mood",
+      "context": {
+       "footage_type": "screen_recording",
+       "format": "16:9",
+       "section": "hook"
+      },
+      "private": {
+       "side": "private",
+       "owner": "ava",
+       "observed_in": "team",
+       "action": "upbeat",
+       "confidence": 0.594,
+       "share": 1.0,
+       "context_used": "footage_type=screen_recording|section=hook",
+       "preference_id": "ava/team/music_mood/footage_type=screen_recording|section=hook/upbeat#1",
+       "source_events": [
+        "proj_ava_12/op_0086",
+        "proj_ava_12/op_0051",
+        "proj_ava_12/op_0009"
+       ]
+      },
+      "team": {
+       "side": "team",
+       "owner": "team_northwind",
+       "observed_in": "team",
+       "action": "corporate",
+       "confidence": 0.647,
+       "share": 1.0,
+       "context_used": "footage_type=screen_recording|section=hook",
+       "preference_id": "team_northwind/team/music_mood/footage_type=screen_recording|section=hook/corporate#1",
+       "source_events": [
+        "proj_team_northwind_02/op_0095",
+        "proj_team_northwind_02/op_0050",
+        "proj_team_northwind_02/op_0009"
+       ]
+      },
+      "resolution": "ava's own project under team scope: ava's team-scope behaviour applies; the team standard is surfaced",
+      "chat_citations": []
+     }
+    ],
+    "blocked": []
+   }
+  },
+  {
+   "type": "add_clip",
+   "author": "director",
+   "on_behalf_of": "ava",
+   "category": "music_mood",
+   "context": {
+    "footage_type": "screen_recording",
+    "format": "16:9",
+    "section": "body"
+   },
+   "payload": {
+    "track_id": "A1",
+    "clip": {
+     "id": "clp_music_22",
+     "music_mood": "chill_lofi",
+     "asset_label": "music_calm",
+     "section": "body"
+    }
+   },
+   "memory": {
+    "action": "chill_lofi",
+    "confidence": 0.911,
+    "why": [
+     "Fell back from [footage_type=screen_recording, format=16:9, section=body] to the most reliable broader context [section=body].",
+     "ava: chill_lofi holds 98% of the decayed weight here (effective support 32.1 after decay, 38 supporting events, 2 rejections of it); confidence 0.91 (Wilson lower bound).",
+     "1 conflict(s) surfaced; see conflicts[]."
+    ],
+    "source_events": [
+     "proj_ava_12/op_0071",
+     "proj_ava_12/op_0020",
+     "proj_ava_11/op_0018",
+     "proj_ava_10/op_0031",
+     "proj_ava_10/op_0028",
+     "proj_ava_10/op_0019",
+     "proj_ava_09/op_0117",
+     "proj_ava_09/op_0079"
+    ],
+    "preference_id": "ava/any/music_mood/section=body/chill_lofi#1",
+    "conflicts": [
+     {
+      "kind": "team_vs_private",
+      "category": "music_mood",
+      "context": {
+       "footage_type": "screen_recording",
+       "format": "16:9",
+       "section": "body"
+      },
+      "private": {
+       "side": "private",
+       "owner": "ava",
+       "observed_in": "any",
+       "action": "chill_lofi",
+       "confidence": 0.911,
+       "share": 0.975,
+       "context_used": "section=body",
+       "preference_id": "ava/any/music_mood/section=body/chill_lofi#1",
+       "source_events": [
+        "proj_ava_12/op_0071",
+        "proj_ava_12/op_0020",
+        "proj_ava_11/op_0018",
+        "proj_ava_10/op_0031",
+        "proj_ava_10/op_0028",
+        "proj_ava_10/op_0019"
+       ]
+      },
+      "team": {
+       "side": "team",
+       "owner": "team_northwind",
+       "observed_in": "team",
+       "action": "corporate",
+       "confidence": 0.622,
+       "share": 1.0,
+       "context_used": "footage_type=screen_recording|format=16:9|section=body",
+       "preference_id": "team_northwind/team/music_mood/footage_type=screen_recording|format=16:9|section=body/corporate#1",
+       "source_events": [
+        "proj_team_northwind_08/op_0078",
+        "proj_team_northwind_08/op_0037",
+        "proj_team_northwind_02/op_0060"
+       ]
+      },
+      "resolution": "ava's own project under team scope: ava's team-scope behaviour applies; the team standard is surfaced",
+      "chat_citations": []
+     }
+    ],
+    "blocked": []
+   }
+  },
+  {
+   "type": "add_clip",
+   "author": "director",
+   "on_behalf_of": "ava",
+   "category": "music_mood",
+   "context": {
+    "footage_type": "broll",
+    "format": "16:9",
+    "section": "outro"
+   },
+   "payload": {
+    "track_id": "A1",
+    "clip": {
+     "id": "clp_music_23",
+     "music_mood": "cinematic",
+     "asset_label": "music_calm",
+     "section": "outro"
+    }
+   },
+   "memory": {
+    "action": "cinematic",
+    "confidence": 0.509,
+    "why": [
+     "Exact context match [footage_type=broll, format=16:9, section=outro].",
+     "ava: cinematic holds 100% of the decayed weight here (effective support 1.7 after decay, 2 supporting events, 0 rejections of it); confidence 0.51 (Wilson lower bound).",
+     "1 conflict(s) surfaced; see conflicts[]."
+    ],
+    "source_events": [
+     "proj_ava_12/op_0113",
+     "proj_ava_07/op_0076"
+    ],
+    "preference_id": "ava/team/music_mood/footage_type=broll|format=16:9|section=outro/cinematic#1",
+    "conflicts": [
+     {
+      "kind": "team_vs_private",
+      "category": "music_mood",
+      "context": {
+       "footage_type": "broll",
+       "format": "16:9",
+       "section": "outro"
+      },
+      "private": {
+       "side": "private",
+       "owner": "ava",
+       "observed_in": "team",
+       "action": "cinematic",
+       "confidence": 0.509,
+       "share": 1.0,
+       "context_used": "footage_type=broll|format=16:9|section=outro",
+       "preference_id": "ava/team/music_mood/footage_type=broll|format=16:9|section=outro/cinematic#1",
+       "source_events": [
+        "proj_ava_12/op_0113",
+        "proj_ava_07/op_0076"
+       ]
+      },
+      "team": {
+       "side": "team",
+       "owner": "team_northwind",
+       "observed_in": "team",
+       "action": "upbeat",
+       "confidence": 0.629,
+       "share": 0.769,
+       "context_used": "section=outro",
+       "preference_id": "team_northwind/team/music_mood/section=outro/upbeat#1",
+       "source_events": [
+        "proj_team_northwind_11/op_0078",
+        "proj_team_northwind_11/op_0032",
+        "proj_team_northwind_10/op_0125",
+        "proj_team_northwind_10/op_0083",
+        "proj_team_northwind_10/op_0042",
+        "proj_team_northwind_09/op_0104"
+       ]
+      },
+      "resolution": "ava's own project under team scope: ava's team-scope behaviour applies; the team standard is surfaced",
+      "chat_citations": []
+     }
+    ],
+    "blocked": []
+   }
+  },
+  {
+   "type": "add_text",
+   "author": "director",
+   "on_behalf_of": "ava",
+   "category": "font",
+   "context": {
+    "format": "16:9",
+    "section": "hook"
+   },
+   "payload": {
+    "text_layer": {
+     "id": "txt_title_24",
+     "track_id": "T1",
+     "role": "title",
+     "text": "Demo cut",
+     "style": {
+      "font": "Montserrat"
+     }
+    }
+   },
+   "memory": {
+    "action": "Montserrat",
+    "confidence": 0.895,
+    "why": [
+     "Exact context match [format=16:9, section=hook].",
+     "ava: Montserrat holds 100% of the decayed weight here (effective support 13.9 after decay, 16 supporting events, 0 rejections of it); confidence 0.89 (Wilson lower bound).",
+     "1 conflict(s) surfaced; see conflicts[]."
+    ],
+    "source_events": [
+     "proj_ava_12/op_0115",
+     "proj_ava_11/op_0117",
+     "proj_ava_11/op_0082",
+     "proj_ava_11/op_0044",
+     "proj_ava_10/op_0121",
+     "proj_ava_10/op_0042",
+     "proj_ava_09/op_0127",
+     "proj_ava_08/op_0114"
+    ],
+    "preference_id": "ava/any/font/format=16:9|section=hook/Montserrat#1",
+    "conflicts": [
+     {
+      "kind": "team_vs_private",
+      "category": "font",
+      "context": {
+       "format": "16:9",
+       "section": "hook"
+      },
+      "private": {
+       "side": "private",
+       "owner": "ava",
+       "observed_in": "any",
+       "action": "Montserrat",
+       "confidence": 0.895,
+       "share": 1.0,
+       "context_used": "format=16:9|section=hook",
+       "preference_id": "ava/any/font/format=16:9|section=hook/Montserrat#1",
+       "source_events": [
+        "proj_ava_12/op_0115",
+        "proj_ava_11/op_0117",
+        "proj_ava_11/op_0082",
+        "proj_ava_11/op_0044",
+        "proj_ava_10/op_0121",
+        "proj_ava_10/op_0042"
+       ]
+      },
+      "team": {
+       "side": "team",
+       "owner": "team_northwind",
+       "observed_in": "team",
+       "action": "Inter",
+       "confidence": 0.878,
+       "share": 1.0,
+       "context_used": "format=16:9|section=hook",
+       "preference_id": "team_northwind/team/font/format=16:9|section=hook/Inter#1",
+       "source_events": [
+        "proj_team_northwind_10/op_0126",
+        "proj_team_northwind_10/op_0085",
+        "proj_team_northwind_09/op_0106",
+        "proj_team_northwind_09/op_0036",
+        "proj_team_northwind_08/op_0093",
+        "proj_team_northwind_08/op_0047"
+       ]
+      },
+      "resolution": "ava's own project under team scope: ava's team-scope behaviour applies; the team standard is surfaced",
+      "chat_citations": []
+     }
+    ],
+    "blocked": []
+   }
+  }
+ ],
+ "ask_user": [],
+ "notes": [
+  "planned 24 memory lookups for 7 clips",
+  "logo northwind_logo.png required in outro at bottom_right"
+ ],
+ "llm_note": "(no LLM key in env: deterministic agent, no LLM note)"
+}

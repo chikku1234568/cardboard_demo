@@ -1,0 +1,19 @@
+{
+  "version_id": "0ab715c39409c78edcb4808765d68eebc26085ebb1df0f45eaa07de286e3a300",
+  "project_id": "proj_ben_03",
+  "timeline_hash": "bc4f801e44f311b2b83da80db06b7a2b4ea0421b011603594058b18838c8639e",
+  "parents": [
+    "54bcc21aa99eb822f3b6e5ca6530cd9e3c952b28efd7a1f58e6a5406eeb9955c"
+  ],
+  "branch": "ben/cut-08",
+  "author": "director",
+  "timestamp": "2026-06-20T13:07:29+05:30",
+  "message": "Director: caption_style, cut_length, font, music_mood",
+  "op_ids": [
+    "proj_ben_03/op_0079",
+    "proj_ben_03/op_0080",
+    "proj_ben_03/op_0081",
+    "proj_ben_03/op_0082"
+  ],
+  "session_id": "ben_s08"
+}

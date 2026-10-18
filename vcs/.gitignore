@@ -1,0 +1,10 @@
+node_modules/
+.workspace/
+web/dist/
+renders/cache/
+renders/.fonts/
+renders/.text/
+*.filtergraph.txt
+
+# keep the demo renders (root .gitignore ignores renders/)
+!renders/

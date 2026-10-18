@@ -1,0 +1,30 @@
+{
+  "project_id": "proj_ava_10",
+  "note": "Branch refs. No main: every branch is a peer.",
+  "branches": {
+    "rough-cut": {
+      "head": "b6cc6e957be192235eefaa816ae0498fede521a7561a583f6acd6ae9681ee4e7",
+      "created_from": null,
+      "created_by": "ava",
+      "created_at": "2026-09-12T18:12:00+05:30"
+    },
+    "ava/cut-28": {
+      "head": "9b08080c42469198d85f92c01127eefeba2fd381a8a3d72b6bda2e2e0d906507",
+      "created_from": "b6cc6e957be192235eefaa816ae0498fede521a7561a583f6acd6ae9681ee4e7",
+      "created_by": "ava",
+      "created_at": "2026-09-12T18:12:30+05:30"
+    },
+    "ava/cut-29": {
+      "head": "27e04fdf8cc7a4593ee1d121c827dcf5d1859829f4780b667ce7046a1c0d7df9",
+      "created_from": "b6cc6e957be192235eefaa816ae0498fede521a7561a583f6acd6ae9681ee4e7",
+      "created_by": "ava",
+      "created_at": "2026-09-15T13:09:30+05:30"
+    },
+    "ava/cut-30": {
+      "head": "94706db7b4aab081dbb26fa69de529adbcc7b15f46705a00a9b20db068c49a97",
+      "created_from": "b6cc6e957be192235eefaa816ae0498fede521a7561a583f6acd6ae9681ee4e7",
+      "created_by": "ava",
+      "created_at": "2026-09-28T14:33:30+05:30"
+    }
+  }
+}

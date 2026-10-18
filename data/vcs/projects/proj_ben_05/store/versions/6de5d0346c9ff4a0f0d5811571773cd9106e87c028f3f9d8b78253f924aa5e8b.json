@@ -1,0 +1,17 @@
+{
+  "version_id": "6de5d0346c9ff4a0f0d5811571773cd9106e87c028f3f9d8b78253f924aa5e8b",
+  "project_id": "proj_ben_05",
+  "timeline_hash": "5b40c5d70f5e299c46bd2335246318ad67bd5980416781a4b267c7f723efe10c",
+  "parents": [
+    "957bfd919ff01ae2747b61c52db10e8a9cc72245d062b649677e8ffb2e1db34c"
+  ],
+  "branch": "ben/cut-13",
+  "author": "director",
+  "timestamp": "2026-07-12T19:07:04+05:30",
+  "message": "Director: caption_style, font",
+  "op_ids": [
+    "proj_ben_05/op_0047",
+    "proj_ben_05/op_0048"
+  ],
+  "session_id": "ben_s13"
+}

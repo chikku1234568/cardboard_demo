@@ -1,0 +1,20 @@
+{
+  "version_id": "c120b216c68c398eff78a76c0266cd81c42261e79053f499282200b10c2554e9",
+  "project_id": "proj_ben_08",
+  "timeline_hash": "7b2707fe9bbe7f9553e83ce7664460933817255e31ada707364e4d7c1e43dbdb",
+  "parents": [
+    "205766227dd65a0cae892bbec14e400a90f3e45f50812b3e1ee96ba2d67ed19f"
+  ],
+  "branch": "ben/cut-22",
+  "author": "director",
+  "timestamp": "2026-08-22T14:56:08+05:30",
+  "message": "Director: caption_style, font, music_mood, transition",
+  "op_ids": [
+    "proj_ben_08/op_0036",
+    "proj_ben_08/op_0037",
+    "proj_ben_08/op_0038",
+    "proj_ben_08/op_0039",
+    "proj_ben_08/op_0040"
+  ],
+  "session_id": "ben_s22"
+}
